@@ -10373,13 +10373,13 @@ form.kobolg-checkout::after {
 }
 
 .validate-required label::after {
-	content: '*';
+	content: '';
 	color: #cd0000;
 }
 
-/*.kobolg-billing-fields*/
+/*.kobolg-fields*/
 
-.kobolg-billing-fields>h3 {
+.kobolg-fields>h3 {
 	font-size: 18px;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
@@ -10389,7 +10389,7 @@ form.kobolg-checkout::after {
 	margin: 0;
 }
 
-.kobolg-billing-fields__field-wrapper {
+.kobolg-fields__field-wrapper {
 	padding: 30px 25px 35px 25px;
 }
 
@@ -10475,7 +10475,7 @@ form.kobolg-checkout::after {
 	padding-top: 20px;
 }
 
-#order_comments {
+#nots {
 	border-radius: 4px;
 	background-color: #fff;
 	border-color: #fff;
@@ -10627,7 +10627,7 @@ form.kobolg-checkout::after {
 
 .no-sidebar #customer_details {
 	float: left;
-	width: calc(100% - 480px);
+	width: calc(120% - 249px);
 }
 
 .no-sidebar #order_review {
@@ -10761,7 +10761,7 @@ form.kobolg-checkout::after {
 		width: 100%;
 		padding-left: 0;
 	}
-	.kobolg-checkout-login .kobolg-form-login, #payment ul, #customer_details .col-2, .kobolg-billing-fields>h3, .kobolg-billing-fields__field-wrapper {
+	.kobolg-checkout-login .kobolg-form-login, #payment ul, #customer_details .col-2, .kobolg-fields>h3, .kobolg-fields__field-wrapper {
 		padding: 20px 15px;
 	}
 	.place-order .kobolg-terms-and-conditions-wrapper {
@@ -10773,7 +10773,7 @@ form.kobolg-checkout::after {
 	.kobolg-account-fields {
 		padding: 0 15px 20px 15px;
 	}
-	.kobolg-billing-fields>h3 {
+	.kobolg-fields>h3 {
 		font-size: 16px;
 		letter-spacing: 0.1em;
 	}

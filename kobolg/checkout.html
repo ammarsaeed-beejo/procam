@@ -1003,11 +1003,12 @@
                         </div>
                         <div class="newsletter-form-wrap">
                             <div class="newsletter-form-inner">
-                                <input class="email email-newsletter" name="email" placeholder="Enter your email ..."
-                                    type="email">
-                                <a href="#" class="button btn-submit submit-newsletter">
-                                    <span class="text">Subscribe</span>
-                                </a>
+                                <input id="emailSubscribe" class="email email-newsletter" name="email"
+                                    placeholder="Enter your email ..." type="email">
+                                <button id="submit" class="button btn-submit submit-newsletter">Subscribe</button>
+    
+    
+    
                             </div>
                         </div>
                     </div>
@@ -1111,6 +1112,21 @@
     <script src="./assets/js/mobilemenu.js"></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
     <script src="./assets/js/functions.js"></script>
+    <script src="./email/email.js" type="module"></script>
+    
+    <!--firebase start-->
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    
+    <!--firebase end-->
 </body>
 
 </html>

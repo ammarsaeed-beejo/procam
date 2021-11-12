@@ -220,7 +220,7 @@
                         <form role="search" method="get" class="form-search block-search-form kobolg-live-search-form">
                             <div class="form-content search-box results-search">
                                 <div class="inner">
-                                    <input onkeyup="myFunction" autocomplete="off" class="searchfield txt-livesearch input" name="s" value=""
+                                    <input id="myInput" onkeyup="myFunction()" autocomplete="off" class="searchfield txt-livesearch input" name="s" value=""
                                         placeholder="Search here..." type="text">
                                 </div>
                             </div>
@@ -378,16 +378,17 @@
                                 <h3 class="title" style="margin-bottom: 30px;">Newsletter</h3>
                                 <h4 class="subtitle" style="margin-bottom: 60px; font-size: 15pt;">Subscribe to receive
                                     our offers and news</h4>
-    
+
                             </div>
                         </div>
                         <div class="newsletter-form-wrap">
                             <div class="newsletter-form-inner">
-                                <input class="email email-newsletter" name="email" placeholder="Enter your email ..."
+                                <input id="emailSubscribe" class="email email-newsletter" name="email" placeholder="Enter your email ..."
                                     type="email">
-                                <a href="#" class="button btn-submit submit-newsletter">
-                                    <span class="text">Subscribe</span>
-                                </a>
+                                    <button id="submit" class="button btn-submit submit-newsletter">Subscribe</button>
+                                
+                                    
+                                
                             </div>
                         </div>
                     </div>
@@ -397,21 +398,19 @@
         <div class="section-010">
             <div class="container">
                 <div class="row">
-                    <div id="infodata">
+                    <div id="infodata" >
                         <div id="fonefax">
                             <p>Phone : +962 6 5828442 <br>
-                                Fax :+962 6 5828442</p>
+                            Fax :+962 6 5828442</p>                      
                         </div>
                         <div id="tel">
-                            <p> Mobile 1 :<a href="tel+962777850080"> +962777850080 </a> <br>
-                                Mobile 2 : +962777642888
-                            </p>
+                           <p> Mobile 1 :<a href="tel+962777850080"> +962777850080 </a> <br>
+                            Mobile 2 : +962777642888
+</p>
                         </div>
-                        <div id="loceshin">
-                            <p>- Location :Al- Bayader – HusniSobar Street- Building no.34 floor 1 office 103
-                                - Opening hours : Sun – Thursday 8:30 am – 5:00 pm
-                            </p>
-                        </div>
+                        <div id="loceshin"><p>- Location :Al- Bayader – HusniSobar Street- Building no.34 floor 1 office 103
+                        - Opening hours : Sun – Thursday 8:30 am – 5:00 pm
+</p></div>
                     </div>
                     <div class="col-md-2">
                         <div class="kobolg-socials style-01">
@@ -427,10 +426,9 @@
                                             <i class="fa fa-instagram"></i>
                                         </a>
                                     </li>
-    
+
                                     <li>
-                                        <a href="https://www.google.jo/maps/dir/31.9767111,35.9623705/pro+cam/@31.9682355,35.8937913,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x151ca1153e61a017:0x10ae62be233752ff!2m2!1d35.8419105!2d31.9552317"
-                                            target="_blank">
+                                        <a href="https://www.google.jo/maps/dir/31.9767111,35.9623705/pro+cam/@31.9682355,35.8937913,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x151ca1153e61a017:0x10ae62be233752ff!2m2!1d35.8419105!2d31.9552317" target="_blank">
                                             <i class="fa fa-map-pin"></i>
                                         </a>
                                     </li>
@@ -479,7 +477,24 @@
     </a>
 
    
-   
+   <script>
+       function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("Compact");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+   </script>
 
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -495,6 +510,21 @@
     <script src="assets/js/mobilemenu.js"></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
     <script src="./assets/js/cart/Compact.js" type="module"></script>
+    <script src="./email/email.js" type="module"></script>
+    
+    <!--firebase start-->
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    
+    <!--firebase end-->
 </body>
 
 </html>
