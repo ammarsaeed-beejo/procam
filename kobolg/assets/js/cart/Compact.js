@@ -367,59 +367,88 @@ for (let index = 0; index < products.length; index++) {
 
 
 
-const searchInpot = document.getElementById('searchinput');
+// const searchInpot = document.getElementById('searchinput');
 
-const list = document.getElementById('Compact');
+// const list = document.getElementById('Compact');
 
-function setList(group) {
-    clearList();
-    for (const cam of group) {
-        const item = document.createElement('li');
-        item.classList.add('list-group-item');
-        const text = document.createTextNode(cam.name);
-        item.appendChild(text);
-        list.appendChild(item);
+// function setList(group) {
+//     clearList();
+//     for (const cam of group) {
+//         const item = document.createElement('li');
+//         item.classList.add('list-group-item');
+//         const text = document.createTextNode(cam.name);
+//         item.appendChild(text);
+//         list.appendChild(item);
+//     }
+//     if (group.length === 0) {
+//         setNoResults();
+//     }
+// }
+
+// function clearList() {
+//     while (list.firstChild) {
+//         list.removeChild(list.firstChild);
+//     }
+// }
+
+// function setNoResults() {
+//     const item = document.createElement('li');
+//     item.classList.add('list-group-item');
+//     const text = document.createTextNode('no results found');
+//     item.appendChild(text);
+//     list.appendChild(item);
+// }
+
+// function getRelevancy(value, searchTerm) {
+//     if (value === searchTerm) {
+//         return 2;
+//     } else if (value.statsWith(searchTerm)) {
+//         return 1;
+//     } else if (value.includes(searchTerm)) {
+//         return 0;
+//     }
+// }
+
+// searchInpot.addEventListener('input', (event) => {
+//     let value = event.target.value;
+//     if (value && value.trim().length > 0) {
+//         value = value;
+//         setList(products.filter(cam => {
+//             return cam.name.includes(value);
+//         }).sort((camA, camB) => {
+//             return getRelevancy(camB.name, value) - getRelevancy(camA.name, value);
+//         }));
+//     } else {
+//         clearList();
+//     }
+
+// })
+
+
+
+const searchField = document.querySelector('#searchinput');
+const searchResultsContainer = document.querySelector('#searchresult');
+
+searchField.addEventListener('input', (e) => {
+
+    // if input field is empty, clear the search results
+    if (e.target.value === '') {
+        searchResultsContainer.innerHTML = '';
+        return;
     }
-    if (group.length === 0) {
-        setNoResults();
-    }
-}
 
-function clearList() {
-    while (list.firstChild) {
-        list.removeChild(list.firstChild);
-    }
-}
+    // filter the products array
+    const searchResults = products.filter(meal => {
+        return meal.name.toLowerCase().includes(e.target.value.toLowerCase());
+    });
 
-function setNoResults() {
-    const item = document.createElement('li');
-    item.classList.add('list-group-item');
-    const text = document.createTextNode('no results found');
-    item.appendChild(text);
-    list.appendChild(item);
-}
+    // before displaying the search results, clear the search results div
+    searchResultsContainer.innerHTML = '';
 
-function getRelevancy(value, searchTerm) {
-    if (value === searchTerm) {
-        return 2;
-    } else if (value.statsWith(searchTerm)) {
-        return 1;
-    } else if (value.includes(searchTerm)) {
-        return 0;
-    }
-}
-
-searchInpot.addEventListener('input', (event) => {
-    let value = event.value;
-    if (value && value.trim().length > 0) {
-        value = value;
-        setList(products.filter(cam => {
-            return cam.name.includes(value);
-        }).sort((camA, camB) => {
-            return getRelevancy(camB.name, value) - getRelevancy(camA.name, value);
-        }));
-    } else {
-        clearList();
-    }
-
-})
+    // display the names of the meal objects that include the text entered in input field
+    searchResults.forEach((element, index) => {
+        const p = document.createElement('p');
+        p.textContent = (index + 1) + '. ' + element.name;
+        searchResultsContainer.appendChild(p);
+    });
+});
