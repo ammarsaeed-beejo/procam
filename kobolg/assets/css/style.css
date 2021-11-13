@@ -2,13 +2,17 @@
 	display: flex;
 }
 
+#fot{
+	margin-left: 10px;
+}
+
 #Compact {
 	display: flex;
 	flex-wrap: wrap;
 }
 
 #loceshin {
-	width: 53%;
+	width: 44%;
 	margin-left: 15px;
 }
 
@@ -10630,15 +10634,11 @@ form.kobolg-checkout::after {
 	width: calc(120% - 249px);
 }
 
-.no-sidebar #order_review {
-	float: right;
-	width: 480px;
-	padding-left: 30px;
-}
+
 
 .no-sidebar #order_review_heading {
 	float: right;
-	width: 450px;
+	width: 100%;
 }
 
 .kobolg-order .kobolg-notice {
