@@ -2,7 +2,7 @@
 	display: flex;
 }
 
-#fot{
+#fot {
 	margin-left: 10px;
 }
 
@@ -115,10 +115,6 @@
 	display: flex;
 }
 
-.btn-primary {
-	margin-left: 20px;
-}
-
 .catecategory {
 	width: 100%;
 	text-align: center;
@@ -129,6 +125,7 @@
 .img-responsive {
 	border: 10px solid white;
 }
+
 
 .products2 {
 	display: flex;
@@ -520,10 +517,14 @@ AUTO CLEAR
 	}
 }
 
+@media (max-width:576px){
+
+}
+
 @media (min-width: 576px) and (max-width: 767px) {
-	.col-xs-15, .col-xs-25, .col-xs-35, .col-xs-45 {
+	/* .col-xs-15, .col-xs-25, .col-xs-35, .col-xs-45 {
 		float: left;
-	}
+	} */
 	.col-xs-15 {
 		width: 20%;
 	}
@@ -1924,11 +1925,11 @@ th, td {
 }
 
 .owl-slick .slick-arrow.prev {
-	left: -40px;
+	left: -7px;
 }
 
 .owl-slick .slick-arrow.next {
-	right: -40px;
+	right: -7px;
 }
 
 .slide-home-04 .owl-slick .slick-arrow {
@@ -10433,8 +10434,7 @@ form.kobolg-checkout::after {
 	width: 100%;
 	height: 52px;
 	line-height: 50px;
-	background-color: #fff;
-	border-color: #fff;
+	background-color: #e7e7e7;
 }
 
 .form-row-first {
@@ -10633,8 +10633,6 @@ form.kobolg-checkout::after {
 	float: left;
 	width: calc(120% - 249px);
 }
-
-
 
 .no-sidebar #order_review_heading {
 	float: right;
@@ -11706,6 +11704,7 @@ body.error404 .header {
 	.col-md-2 {
 		position: absolute;
 		margin-left: 25%;
+		
 	}
 	#infodata {
 		margin-top: 60px;
@@ -15012,9 +15011,10 @@ body .az_toggle_default .az_toggle_content p:last-child {
 }
 
 .response-product {
-	background-color: #eeeeee;
+	border: 2px solid #ff0000;
 	padding: 25px;
 	margin-bottom: 20px;
+	border-radius: 20px;
 }
 
 .p-arab {
@@ -15592,7 +15592,7 @@ body .az_toggle_default .az_toggle_content p:last-child {
 .section-010 {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background: #f4f4f4;
+	background: #e7e7e7;
 	border-top: 1px solid #ff0000;
 }
 
@@ -17073,7 +17073,7 @@ body .kobolg-mapper .text__area {
 }
 
 .footer-device-mobile-item>a {
-	display: inline-block;
+	display: none;
 	padding: 5px 0;
 	color: #222;
 	line-height: normal;
@@ -17105,11 +17105,9 @@ body .kobolg-mapper .text__area {
 
 @media (max-width: 767px) {
 	.footer-device-mobile {
-		display: block;
+		display: none;
 	}
-	body {
-		margin-bottom: 56px;
-	}
+	
 }
 
 .container-video {

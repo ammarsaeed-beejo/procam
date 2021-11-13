@@ -26,7 +26,7 @@ getAnalytics(app);
 
 
 var products = [
-    
+
     {
         id: 1,
         img: "./assets/images/Compact/ixus-185-bk-frt-flipped-800x524.jpg",
@@ -73,7 +73,7 @@ var products = [
         total: 0,
     },
 
-    
+
     {
         id: 5,
         img: "./assets/images/Compact/PowerShot SX70 HS.jpg",
@@ -96,13 +96,15 @@ var products = [
         total: 0,
     },
 
-    
 
-    
 
-    
-   
+
+
+
+
 ];
+
+
 
 
 
@@ -360,6 +362,64 @@ for (let index = 0; index < products.length; index++) {
                                     </div>
                                 </div>
                             </li>`;
-    
+
 }
 
+
+
+const searchInpot = document.getElementById('searchinput');
+
+const list = document.getElementById('Compact');
+
+function setList(group) {
+    clearList();
+    for (const cam of group) {
+        const item = document.createElement('li');
+        item.classList.add('list-group-item');
+        const text = document.createTextNode(cam.name);
+        item.appendChild(text);
+        list.appendChild(item);
+    }
+    if (group.length === 0) {
+        setNoResults();
+    }
+}
+
+function clearList() {
+    while (list.firstChild) {
+        list.removeChild(list.firstChild);
+    }
+}
+
+function setNoResults() {
+    const item = document.createElement('li');
+    item.classList.add('list-group-item');
+    const text = document.createTextNode('no results found');
+    item.appendChild(text);
+    list.appendChild(item);
+}
+
+function getRelevancy(value, searchTerm) {
+    if (value === searchTerm) {
+        return 2;
+    } else if (value.statsWith(searchTerm)) {
+        return 1;
+    } else if (value.includes(searchTerm)) {
+        return 0;
+    }
+}
+
+searchInpot.addEventListener('input', (event) => {
+    let value = event.value;
+    if (value && value.trim().length > 0) {
+        value = value;
+        setList(products.filter(cam => {
+            return cam.name.includes(value);
+        }).sort((camA, camB) => {
+            return getRelevancy(camB.name, value) - getRelevancy(camA.name, value);
+        }));
+    } else {
+        clearList();
+    }
+
+})

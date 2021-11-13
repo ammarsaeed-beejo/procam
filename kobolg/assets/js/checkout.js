@@ -1,31 +1,31 @@
 
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
-// import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
 
 
 
 
-// const firebaseConfig = {
-//     apiKey: "AIzaSyCwDLNDUINuCDZckS5C1M-I-9ia7ZoKIsw",
-//     authDomain: "pro-cam-web.firebaseapp.com",
-//     databaseURL: "https://pro-cam-web-default-rtdb.firebaseio.com",
-//     projectId: "pro-cam-web",
-//     storageBucket: "pro-cam-web.appspot.com",
-//     messagingSenderId: "1043601014942",
-//     appId: "1:1043601014942:web:c4608e15cdafb23fb3bb8f",
-//     measurementId: "G-L8XZNC95BJ"
-// };
+const firebaseConfig = {
+    apiKey: "AIzaSyCwDLNDUINuCDZckS5C1M-I-9ia7ZoKIsw",
+    authDomain: "pro-cam-web.firebaseapp.com",
+    databaseURL: "https://pro-cam-web-default-rtdb.firebaseio.com",
+    projectId: "pro-cam-web",
+    storageBucket: "pro-cam-web.appspot.com",
+    messagingSenderId: "1043601014942",
+    appId: "1:1043601014942:web:c4608e15cdafb23fb3bb8f",
+    measurementId: "G-L8XZNC95BJ"
+};
 
-// // Initialize Firebase
-// // Initialize Firebase error here
-// firebase.initializeApp(firebaseConfig);
-// firebase.analytics();
+// Initialize Firebase
+// Initialize Firebase error here
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 let firestore = firebase.firestore();
 
 const db = firestore.collection("normal");
 
-const submitBtn = document.querySelector("#submit2");
+const submitBtn = document.querySelector("#submit");
 let first_name = document.querySelector("#first_name");
 let last_name = document.querySelector("#last_name");
 let addresses_1 = document.querySelector("#addresses_1");

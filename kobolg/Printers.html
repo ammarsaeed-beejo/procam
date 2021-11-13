@@ -26,7 +26,7 @@
 <body>
 
     <header id="header" class="header style-04 header-dark">
-
+    
         <div class="header-top">
             <div class="container">
                 <div class="header-top-inner">
@@ -84,7 +84,7 @@
                                                 <span class="flaticon-online-shopping-cart"></span>
                                                 <!-- <span class="count" id="cartnum"></span> -->
                                             </a>
-
+    
                                         </div>
                                 </a>
                             </div>
@@ -94,7 +94,7 @@
             </div>
         </div>
         </div>
-
+    
         <div class="header-middle">
             <div class="container">
                 <div class="box-header-nav menu-nocenter">
@@ -106,28 +106,28 @@
                         <li id="menu-item-228"
                             class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-228 parent parent-megamenu item-megamenu menu-item-has-children">
                             <a class="kobolg-menu-item-title" title="Shop" href="#Products">products</a>
-
+    
                         </li>
-
+    
                         <li id="menu-item-229"
                             class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-229 parent parent-megamenu item-megamenu menu-item-has-children">
                             <a class="kobolg-menu-item-title" title="Elements" href="#services">services</a>
-
+    
                         </li>
                         <li id="menu-item-996"
                             class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-996 parent parent-megamenu item-megamenu menu-item-has-children">
                             <a class="kobolg-menu-item-title" title="News" href="#news">News</a>
                         </li>
-
+    
                         <li id="menu-item-238"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238">
-
+    
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-
+    
         <div class="header-wrap-stick">
             <div class="header-position">
                 <div class="header-nav">
@@ -167,7 +167,7 @@
                                 
                                 </div>
                             </div><!-- block category -->
-
+    
                             <div class="header-search-mid">
                                 <div class="header-search">
                                     <div class="block-search">
@@ -175,13 +175,13 @@
                                             class="form-search block-search-form kobolg-live-search-form">
                                             <div class="form-content search-box results-search">
                                                 <div class="inner">
-                                                    <input autocomplete="off" class="searchfield txt-livesearch input"
+                                                    <input onkeyup="myFunction()" autocomplete="off" class="searchfield txt-livesearch input"
                                                         name="s" value="" placeholder="Search here..." type="text">
                                                 </div>
                                             </div>
                                             <input name="post_type" value="product" type="hidden">
                                             <input name="taxonomy" value="product_cat" type="hidden">
-
+    
                                             <button type="submit" class="btn-submit">
                                                 <span class="flaticon-search"></span>
                                             </button>
@@ -189,13 +189,13 @@
                                     </div>
                                 </div>
                             </div>
-
+    
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    
         <div class="header-mobile">
             <div class="header-mobile-left">
                 <div class="block-menu-bar">
@@ -215,7 +215,7 @@
                         <form role="search" method="get" class="form-search block-search-form kobolg-live-search-form">
                             <div class="form-content search-box results-search">
                                 <div class="inner">
-                                    <input autocomplete="off" class="searchfield txt-livesearch input" name="s" value=""
+                                    <input id="myInput" onkeyup="myFunction()" autocomplete="off" class="searchfield txt-livesearch input" name="s" value=""
                                         placeholder="Search here..." type="text">
                                 </div>
                             </div>
@@ -241,7 +241,7 @@
                         </form>
                     </div>
                 </div>
-
+    
             </div>
             <div class="header-mobile-mid">
                 <div class="header-logo">
@@ -282,7 +282,7 @@
                                 </li>
                             </ul>
                         </div>
-
+    
                         <a href="./cart.html">
                             <div class="block-minicart block-dreaming kobolg-mini-cart kobolg-dropdown">
                                 <div class="shopcart-dropdown block-cart-link">
@@ -290,7 +290,7 @@
                                         <span class="flaticon-online-shopping-cart"></span>
                                         <!-- <span class="count" id="cartnum"></span> -->
                                     </a>
-
+    
                                 </div>
                         </a>
                         <div class="widget kobolg widget_shopping_cart">
@@ -344,7 +344,7 @@
             </div>
         </div>
         </div>
-
+    
     </header>
 
     <div class="main-container shop-page no-sidebar">
@@ -353,9 +353,9 @@
                 <div class="main-content col-md-12">
 
                     <div class="auto-clear equal-container better-height kobolg-products">
-                        <ul id="bestseller" class="row products columns-3">
-
-
+                        <ul id="Compact" class="row products columns-3">
+                
+                            
                         </ul>
                     </div>
 
@@ -378,13 +378,12 @@
                         </div>
                         <div class="newsletter-form-wrap">
                             <div class="newsletter-form-inner">
-                                <input id="emailSubscribe" class="email email-newsletter" name="email"
-                                    placeholder="Enter your email ..." type="email">
-                                <button id="submit" class="button btn-submit submit-newsletter">Subscribe</button>
-
-
-
-
+                                <input id="emailSubscribe" class="email email-newsletter" name="email" placeholder="Enter your email ..."
+                                    type="email">
+                                    <button id="submit" class="button btn-submit submit-newsletter">Subscribe</button>
+                                
+                                    
+                                
                             </div>
                         </div>
                     </div>
@@ -394,21 +393,19 @@
         <div class="section-010">
             <div class="container">
                 <div class="row">
-                    <div id="infodata">
+                    <div id="infodata" >
                         <div id="fonefax">
                             <p>Phone : +962 6 5828442 <br>
-                                Fax :+962 6 5828442</p>
+                            Fax :+962 6 5828442</p>                      
                         </div>
                         <div id="tel">
-                            <p> Mobile 1 :<a href="tel+962777850080"> +962777850080 </a> <br>
-                                Mobile 2 : +962777642888
-                            </p>
+                           <p> Mobile 1 :<a href="tel+962777850080"> +962777850080 </a> <br>
+                            Mobile 2 : +962777642888
+</p>
                         </div>
-                        <div id="loceshin">
-                            <p>- Location :Al- Bayader – HusniSobar Street- Building no.34 floor 1 office 103
-                                - Opening hours : Sun – Thursday 8:30 am – 5:00 pm
-                            </p>
-                        </div>
+                        <div id="loceshin"><p>- Location :Al- Bayader – HusniSobar Street- Building no.34 floor 1 office 103
+                        - Opening hours : Sun – Thursday 8:30 am – 5:00 pm
+</p></div>
                     </div>
                     <div class="col-md-2">
                         <div class="kobolg-socials style-01">
@@ -426,8 +423,7 @@
                                     </li>
 
                                     <li>
-                                        <a href="https://www.google.jo/maps/dir/31.9767111,35.9623705/pro+cam/@31.9682355,35.8937913,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x151ca1153e61a017:0x10ae62be233752ff!2m2!1d35.8419105!2d31.9552317"
-                                            target="_blank">
+                                        <a href="https://www.google.jo/maps/dir/31.9767111,35.9623705/pro+cam/@31.9682355,35.8937913,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x151ca1153e61a017:0x10ae62be233752ff!2m2!1d35.8419105!2d31.9552317" target="_blank">
                                             <i class="fa fa-map-pin"></i>
                                         </a>
                                     </li>
@@ -449,7 +445,7 @@
                     Home
                 </a>
             </div>
-
+    
             <div class="footer-device-mobile-item device-home device-cart">
                 <a href="cart.html">
                     <span class="icon">
@@ -474,6 +470,27 @@
     <a href="#" class="backtotop active">
         <i class="fa fa-angle-up"></i>
     </a>
+
+   
+   <script>
+       function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("Compact");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+   </script>
+
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/chosen.min.js"></script>
@@ -487,23 +504,21 @@
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/mobilemenu.js"></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
-    <script src="assets/js/functions.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.9/firebase.js"></script>
-    <script src="./assets/js/cart/shoppingcart_FUN.js" type='module'></script>
+    <script src="./assets/js/cart/Printers.js" type="module"></script>
     <script src="./email/email.js" type="module"></script>
-
+    
     <!--firebase start-->
-
+    
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-
-
+    
+    
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
-
+    
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
-
+    
     <!--firebase end-->
 </body>
 
