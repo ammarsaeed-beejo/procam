@@ -26,7 +26,6 @@ getAnalytics(app);
 
 
 var products = [
-
     {
         id: 1,
         img: "./assets/images/Compact/ixus-185-bk-frt-flipped-800x524.jpg",
@@ -88,23 +87,14 @@ var products = [
     {
         id: 6,
         img: "./assets/images/Compact/canon_powershot_g7_x_mark_iii.jpg",
-        name: "PowerShot G7X MK-III",
+        name: " G7X MK-III",
         price: 299,
         cart: false,
         quantity: 1,
         href: "/kobolg/DSLR/PowerShot G7X MK-III.html",
         total: 0,
     },
-
-
-
-
-
-
-
 ];
-
-
 
 
 
@@ -237,7 +227,6 @@ function add(id) {
 }
 
 window.add = add;
-
 window.reduceAmount = reduceAmount;
 window.addAmount = addAmount;
 window.buy = buy;
@@ -333,21 +322,26 @@ function addAmount(id) {
 }
 
 for (let index = 0; index < products.length; index++) {
+
     document.getElementById('Compact').innerHTML += `
                                     <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
-                                data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
+                                    id="${products[index].id}"
+                                    data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
                                 <div class="product-inner tooltip-left" >
                                     <div class="product-thumb">
-                                        <a class="thumb-link" href="${products[index].href}">
+                                            
+                                            <a href="./single-product.html">
+
+
                                             <img class="img-responsive" src="${products[index].img}"
                                                 width="600" height="778">
                                         </a>
-
                                     </div>
                                     <div class="product-info equal-elem">
                                         <h3 class="product-name product_title">
                                             <a href="#">${products[index].name}</a>
                                         </h3>
+
 
                                         <span class="price">
                                             <span class="kobolg-Price-amount amount">
@@ -363,67 +357,28 @@ for (let index = 0; index < products.length; index++) {
                                 </div>
                             </li>`;
 
+
 }
 
+for (let index = 0; index < products.length; index++) {
+    document.getElementById(products[index].id).onclick = () => {
+        var name = products[index].name;
+        var price = products[index].price;
+        var quentity = products[index].quantity;
+        var id = products[index].id;
+        var cart_status = products[index].cart;
+        var total_items_price = products[index].total;
+        var img = products[index].img;
+        localStorage.setItem('item-name', name);
+        localStorage.setItem('item-price', price);
+        localStorage.setItem('item-total', total_items_price);
+        localStorage.setItem('item-quentity', quentity);
+        localStorage.setItem('item-cart_status', cart_status);
+        localStorage.setItem('item-id', id);
+        localStorage.setItem('item-img', img);
+    };
 
-
-// const searchInpot = document.getElementById('searchinput');
-
-// const list = document.getElementById('Compact');
-
-// function setList(group) {
-//     clearList();
-//     for (const cam of group) {
-//         const item = document.createElement('li');
-//         item.classList.add('list-group-item');
-//         const text = document.createTextNode(cam.name);
-//         item.appendChild(text);
-//         list.appendChild(item);
-//     }
-//     if (group.length === 0) {
-//         setNoResults();
-//     }
-// }
-
-// function clearList() {
-//     while (list.firstChild) {
-//         list.removeChild(list.firstChild);
-//     }
-// }
-
-// function setNoResults() {
-//     const item = document.createElement('li');
-//     item.classList.add('list-group-item');
-//     const text = document.createTextNode('no results found');
-//     item.appendChild(text);
-//     list.appendChild(item);
-// }
-
-// function getRelevancy(value, searchTerm) {
-//     if (value === searchTerm) {
-//         return 2;
-//     } else if (value.statsWith(searchTerm)) {
-//         return 1;
-//     } else if (value.includes(searchTerm)) {
-//         return 0;
-//     }
-// }
-
-// searchInpot.addEventListener('input', (event) => {
-//     let value = event.target.value;
-//     if (value && value.trim().length > 0) {
-//         value = value;
-//         setList(products.filter(cam => {
-//             return cam.name.includes(value);
-//         }).sort((camA, camB) => {
-//             return getRelevancy(camB.name, value) - getRelevancy(camA.name, value);
-//         }));
-//     } else {
-//         clearList();
-//     }
-
-// })
-
+}
 
 
 const searchField = document.querySelector('#searchinput');
@@ -448,7 +403,7 @@ searchField.addEventListener('input', (e) => {
     // display the names of the meal objects that include the text entered in input field
     searchResults.forEach((element, index) => {
         const p = document.createElement('p');
-        p.textContent =  element.name;
+        p.textContent = element.name;
         searchResultsContainer.appendChild(p);
     });
 });

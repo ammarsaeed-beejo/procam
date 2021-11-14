@@ -1,233 +1,33 @@
-// Import the functions you need from the SDKs you need
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-analytics.js";
-import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    apiKey: "AIzaSyCwDLNDUINuCDZckS5C1M-I-9ia7ZoKIsw",
-    authDomain: "pro-cam-web.firebaseapp.com",
-    databaseURL: "https://pro-cam-web-default-rtdb.firebaseio.com",
-    projectId: "pro-cam-web",
-    storageBucket: "pro-cam-web.appspot.com",
-    messagingSenderId: "1043601014942",
-    appId: "1:1043601014942:web:c4608e15cdafb23fb3bb8f",
-    measurementId: "G-L8XZNC95BJ"
-};
+var item_name = localStorage.getItem('item-name');
+var item_price = localStorage.getItem('item-price');
+var item_quentity = localStorage.getItem('item-quentity');
+var item_id = localStorage.getItem('item-id');
+var item_cart_status = localStorage.getItem('item-cart_status');
+var item_img = localStorage.getItem('item-img');
+var item_total_price = localStorage.getItem('item-total');
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-getAnalytics(app);
+document.getElementById('title').innerText = item_name;
+document.getElementById('price').innerText = item_price;
+document.getElementById('img').innerHTML = `
+    <img style="width: 90%;" alt="img"
+        src="${item_img}">
+`;
+document.getElementById('id').innerText = item_id;
 
 
 var products = [
-    
     {
-        id: 1,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS 4000D",
-        lens:"EF-S 18-55mm",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
+        id: item_id,
+        img: item_img,
+        name: item_name,
+        price: item_price,
+        color: "Black,Silver,red",
+        cart: item_cart_status,
+        quantity: item_quentity,
+        total: item_total_price,
     },
-
-    {
-        id: 2,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS 2000D",
-        lens: "EF-S 18-55mm/DC",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 3,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS 250D",
-        lens: "BK 18-55mm",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 4,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS 850D",
-        lens: "EF-18-55mm",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 5,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS 850D",
-        lens: "EF-18-135mm",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 6,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS 80D",
-        lens: "18-135mm",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 7,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS 90D",
-        lens: "EF 18-135mm",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 8,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS 5D Mark IV",
-        lens: "24-105 F4L",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 9,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS M50",
-        lens: "EF-M 15-45S",
-        price: 2500,
-        color: "blk ,White" ,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 10,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS M50 VLOGGER Kit",
-        lens: "",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 11,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS RP Body",
-        lens: "Mount Adapter EU26",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 12,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS RP",
-        lens: "24-105 F4-7.1 IS",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 13,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS R Body",
-        lens: "Mount Adapter EU26",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 14,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS R RF",
-        lens: "24-105 F4-7.1 IS STM",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 15,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS R6",
-        lens: "body only",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 16,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS R5",
-        lens: "body only",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-
-    {
-        id: 17,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "EOS R3",
-        lens: "body only",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
- 
-
-    {
-        id: 19,
-        img: "./assets/images/eos dslr/1dx.jpg",
-        name: "Canon LEGRIA HF R806",
-        lens: "body only",
-        price: 2500,
-        cart: false,
-        quantity: 1,
-        total: 0,
-    },
-    
-   
 ];
-
 
 
 
@@ -360,10 +160,10 @@ function add(id) {
 }
 
 window.add = add;
-
 window.reduceAmount = reduceAmount;
 window.addAmount = addAmount;
 window.buy = buy;
+
 
 
 function updateCart() {
@@ -455,37 +255,8 @@ function addAmount(id) {
     }
 }
 
-for (let index = 0; index < products.length; index++) {
-    document.getElementById('bestseller').innerHTML += `
-                                    <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
-                                data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
-                                <div class="product-inner tooltip-left" >
-                                    <div class="product-thumb">
-                                        <a class="thumb-link" href="#">
-                                            <img class="img-responsive" src="${products[index].img}"
-                                                width="600" height="778">
-                                        </a>
-
-                                    </div>
-                                    <div class="product-info equal-elem">
-                                        <h3 class="product-name product_title">
-                                            <a href="#">${products[index].name}</a>
-                                            <p style="font-size: 8pt; margin-top:3px;">${products[index].lens}</p>
-                                        </h3>
-
-                                        <span class="price">
-                                            <span class="kobolg-Price-amount amount">
-                                                <span>
-                                                    <span class="kobolg-Price-amount amount">
-                                                        ${products[index].price}
-                                                    </span>
-                                                    <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>`;
-    
-}
-
+document.getElementById('add-button-container').innerHTML += `<button
+                                            onclick="add(${item_id})"
+                                            type="submit" id="add" class="single_add_to_cart_button button alt kobolg-variation-selection-needed">
+                                                Add to cart
+                                            </button>`;

@@ -2,7 +2,6 @@
 	display: flex;
 }
 
-
 #fot {
 	margin-left: 10px;
 }
@@ -15591,6 +15590,10 @@ body .az_toggle_default .az_toggle_content p:last-child {
 	padding-bottom: 10px;
 	background: #e7e7e7;
 	border-top: 1px solid #ff0000;
+}
+
+.section-010 container {
+	margin-left: 10px;
 }
 
 .section-010 p {

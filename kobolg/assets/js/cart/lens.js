@@ -129,7 +129,6 @@ var products = [
         id: 10,
         img: "./assets/images/eos dslr/1dx.jpg",
         name: "EOS M50 VLOGGER Kit",
-        lens: "",
         price: 2500,
         cart: false,
         quantity: 1,
@@ -184,7 +183,6 @@ var products = [
         id: 15,
         img: "./assets/images/eos dslr/1dx.jpg",
         name: "EOS R6",
-        lens: "body only",
         price: 2500,
         cart: false,
         quantity: 1,
@@ -195,7 +193,6 @@ var products = [
         id: 16,
         img: "./assets/images/eos dslr/1dx.jpg",
         name: "EOS R5",
-        lens: "body only",
         price: 2500,
         cart: false,
         quantity: 1,
@@ -206,19 +203,16 @@ var products = [
         id: 17,
         img: "./assets/images/eos dslr/1dx.jpg",
         name: "EOS R3",
-        lens: "body only",
         price: 2500,
         cart: false,
         quantity: 1,
         total: 0,
     },
- 
 
     {
-        id: 19,
+        id: 18,
         img: "./assets/images/eos dslr/1dx.jpg",
-        name: "Canon LEGRIA HF R806",
-        lens: "body only",
+        name: "EOS R3",
         price: 2500,
         cart: false,
         quantity: 1,
@@ -456,7 +450,7 @@ function addAmount(id) {
 }
 
 for (let index = 0; index < products.length; index++) {
-    document.getElementById('bestseller').innerHTML += `
+    document.getElementById('lenses').innerHTML += `
                                     <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
                                 data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
                                 <div class="product-inner tooltip-left" >
