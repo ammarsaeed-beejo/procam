@@ -2,6 +2,7 @@
 	display: flex;
 }
 
+
 #fot {
 	margin-left: 10px;
 }
@@ -125,7 +126,6 @@
 .img-responsive {
 	border: 10px solid white;
 }
-
 
 .products2 {
 	display: flex;
@@ -517,9 +517,7 @@ AUTO CLEAR
 	}
 }
 
-@media (max-width:576px){
-
-}
+@media (max-width:576px) {}
 
 @media (min-width: 576px) and (max-width: 767px) {
 	/* .col-xs-15, .col-xs-25, .col-xs-35, .col-xs-45 {
@@ -11704,7 +11702,6 @@ body.error404 .header {
 	.col-md-2 {
 		position: absolute;
 		margin-left: 25%;
-		
 	}
 	#infodata {
 		margin-top: 60px;
@@ -17107,7 +17104,6 @@ body .kobolg-mapper .text__area {
 	.footer-device-mobile {
 		display: none;
 	}
-	
 }
 
 .container-video {

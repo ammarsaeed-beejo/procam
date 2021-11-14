@@ -448,7 +448,7 @@ searchField.addEventListener('input', (e) => {
     // display the names of the meal objects that include the text entered in input field
     searchResults.forEach((element, index) => {
         const p = document.createElement('p');
-        p.textContent = (index + 1) + '. ' + element.name;
+        p.textContent =  element.name;
         searchResultsContainer.appendChild(p);
     });
 });
