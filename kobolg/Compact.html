@@ -148,30 +148,23 @@
                                     <ul id="menu-vertical-menu" class="azeroth-nav vertical-menu default">
                                         <li id="menu-item-886"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-886">
-                                            <a class="azeroth-menu-item-title" title="Camera" href="./EOS DSLR.html">EOS
-                                                DSLR
-                                                Cameras</a>
-                                        </li>
-                                        <li id="menu-item-886"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-886">
-                                            <a class="azeroth-menu-item-title" title="Camera"
-                                                href="./Compact.html">Compact
-                                                Cameras</a>
+                                            <a class="azeroth-menu-item-title" title="Camera" href="#"><span
+                                                    class="icon flaticon-technology"></span>Camera</a>
                                         </li>
                                         <li id="menu-item-895"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-895">
-                                            <a class="azeroth-menu-item-title" title="Lenses"
-                                                href="./Lenses.html">Lenses</a>
+                                            <a class="azeroth-menu-item-title" title="Lenses" href="#"><span
+                                                    class="icon flaticon-console"></span>Lenses</a>
                                         </li>
                                         <li id="menu-item-888"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-888">
-                                            <a class="azeroth-menu-item-title" title="Printers"
-                                                href="./Printers.html">Printers</a>
+                                            <a class="azeroth-menu-item-title" title="Printers" href="#"><span
+                                                    class="icon flaticon-print-button"></span>Printers</a>
                                         </li>
                                         <li id="menu-item-889"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-889">
-                                            <a class="azeroth-menu-item-title" title="Speaker"
-                                                href="./accessories.html">accessories</a>
+                                            <a class="azeroth-menu-item-title" title="Speaker" href="#"><span
+                                                    class="icon flaticon-technology-1"></span>Speaker</a>
                                         </li>
 
 
@@ -187,12 +180,12 @@
                                             class="form-search block-search-form kobolg-live-search-form">
                                             <div class="form-content search-box results-search">
                                                 <div class="inner">
-                                                    <input id="searchinput" autocomplete="off"
+                                                    <input id="searchinput" onkeyup="myFunction()" autocomplete="off"
                                                         class="searchfield txt-livesearch input" name="s" value=""
                                                         placeholder="Search here..." type="text">
                                                 </div>
-                                                <div style="text-align: left; padding-left: 10px; ">
-                                                    <a id="searchresult" href=""></a>
+                                                <div id="searchresult">
+
                                                 </div>
                                             </div>
                                             <input name="post_type" value="product" type="hidden">
@@ -492,26 +485,40 @@
     </a>
 
 
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("Compact");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 
-
-    <script src="assets/js/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/chosen.min.js"></script>
-    <script src="assets/js/countdown.min.js"></script>
-    <script src="assets/js/jquery.scrollbar.min.js"></script>
-    <script src="assets/js/lightbox.min.js"></script>
-    <script src="assets/js/magnific-popup.min.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/jquery.zoom.min.js"></script>
-    <script src="assets/js/threesixty.min.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <script src="assets/js/mobilemenu.js"></script>
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/chosen.min.js"></script>
+    <script src="./assets/js/countdown.min.js"></script>
+    <script src="./assets/js/jquery.scrollbar.min.js"></script>
+    <script src="./assets/js/lightbox.min.js"></script>
+    <script src="./assets/js/magnific-popup.min.js"></script>
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/jquery.zoom.min.js"></script>
+    <script src="./assets/js/threesixty.min.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/mobilemenu.js"></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
     <script src="./assets/js/cart/Compact.js" type="module"></script>
-    <script src=./assets/js/cart/singel-product.js"></script>
-
     <script src="./email/email.js" type="module"></script>
-
 
     <!--firebase start-->
 

@@ -36,6 +36,7 @@ var products = [
         quantity: 1,
         href: "./compact/IXUS 185.html",
         total: 0,
+        
     },
 
     {

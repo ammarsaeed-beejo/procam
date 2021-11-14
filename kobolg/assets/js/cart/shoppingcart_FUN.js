@@ -24,16 +24,19 @@ getAnalytics(app);
 
 
 var products = [
-    
+
+    /////////////////////////////////////////////////////////////////DSLR////////////////////////////////////////////////////////////////////////////
+
     {
         id: 1,
         img: "./assets/images/eos dslr/1dx.jpg",
         name: "EOS 4000D",
-        lens:"EF-S 18-55mm",
+        lens: "EF-S 18-55mm",
         price: 2500,
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -45,6 +48,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -56,6 +60,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -67,6 +72,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -78,6 +84,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -89,6 +96,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -100,6 +108,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -111,6 +120,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -119,10 +129,11 @@ var products = [
         name: "EOS M50",
         lens: "EF-M 15-45S",
         price: 2500,
-        color: "blk ,White" ,
+        color: "blk ,White",
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -134,6 +145,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -145,6 +157,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -156,6 +169,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -167,6 +181,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -178,6 +193,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -189,6 +205,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -200,6 +217,7 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
 
     {
@@ -211,8 +229,9 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
- 
+
 
     {
         id: 19,
@@ -223,10 +242,151 @@ var products = [
         cart: false,
         quantity: 1,
         total: 0,
+        tiye: "dslr",
     },
-    
-   
+
+    /////////////////////////////////////////////////////////////////COMPACT////////////////////////////////////////////////////////////////////////////
+
+    {
+        id: 20,
+        img: "./assets/images/Compact/ixus-185-bk-frt-flipped-800x524.jpg",
+        name: "IXUS 185",
+        price: 249,
+        color: "Black,Silver,red",
+        cart: false,
+        quantity: 1,
+        href: "./compact/IXUS 185.html",
+        total: 0,
+        tiye: "compact",
+
+    },
+
+    {
+        id: 21,
+        img: "./assets/images/Compact/PowerShot SX620.jpg",
+        name: "POWERSHOT SX-620 HS",
+        price: 129,
+        color: "Black,red",
+        cart: false,
+        quantity: 1,
+        href: "./compact/POWERSHOT SX-620.html",
+        total: 0,
+        tiye: "compact",
+    },
+
+    {
+        id: 23,
+        img: "./assets/images/Compact/PowerShot SX540 HS.jpg",
+        name: "POWERSHOT SX540 HS",
+        price: 199,
+        cart: false,
+        quantity: 1,
+        href: "/kobolg/DSLR/PowerShot SX540 HS.html",
+        total: 0,
+        tiye: "compact",
+    },
+
+    {
+        id: 24,
+        img: "./assets/images/Compact/PowerShot-SX430.jpg",
+        name: "POWERSHOT SX-430 IS BK",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        href: "/kobolg/DSLR/POWERSHOT SX-430 IS BK.html",
+        total: 0,
+        tiye: "compact",
+    },
+
+
+    {
+        id: 25,
+        img: "./assets/images/Compact/PowerShot SX70 HS.jpg",
+        name: "PowerShot SX70 HS",
+        price: 499,
+        cart: false,
+        quantity: 1,
+        href: "/kobolg/DSLR/PowerShot SX70 HS.html",
+        total: 0,
+        tiye: "compact",
+    },
+
+    {
+        id: 26,
+        img: "./assets/images/Compact/canon_powershot_g7_x_mark_iii.jpg",
+        name: " G7X MK-III",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        tiye: "compact",
+    },
+
+    /////////////////////////////////////////////////////////////////ACCESSORIES////////////////////////////////////////////////////////////////////////////
+
+    {
+        id: 27,
+        img: "./assets/images/Compact/canon_powershot_g7_x_mark_iii.jpg",
+        name: "Canon RP-108  H-Capacity Paper",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        tiye: "accessories",
+    },
+
 ];
+
+
+document.getElementById("dslrcamera").addEventListener("click", dslrcam);
+
+function dslrcam() {
+
+    var filterdata = products.filter(function (product) {
+        return product.tiye == "dslr";
+    });
+
+    document.getElementById('bestseller-dslrcam').innerHTML(filterdata) += `
+                                    <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
+                                data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
+                                <div class="product-inner tooltip-left" >
+                                    <div class="product-thumb">
+                                        <a class="thumb-link" href="#">
+                                            <img class="img-responsive" src="${products[index].img}"
+                                                width="600" height="778">
+                                        </a>
+
+                                    </div>
+                                    <div class="product-info equal-elem">
+                                        <h3 class="product-name product_title">
+                                            <a href="#">${products[index].name}</a>
+                                            <p style="font-size: 8pt; margin-top:3px;">${products[index].lens}</p>
+                                        </h3>
+
+                                        <span class="price">
+                                            <span class="kobolg-Price-amount amount">
+                                                <span>
+                                                    <span class="kobolg-Price-amount amount">
+                                                        ${products[index].price}
+                                                    </span>
+                                                    <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>`;
+
+}
+
+window.dslrcam = dslrcam;
+
+
+
+
+
+
+
 
 
 
@@ -455,37 +615,37 @@ function addAmount(id) {
     }
 }
 
-for (let index = 0; index < products.length; index++) {
-    document.getElementById('bestseller').innerHTML += `
-                                    <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
-                                data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
-                                <div class="product-inner tooltip-left" >
-                                    <div class="product-thumb">
-                                        <a class="thumb-link" href="#">
-                                            <img class="img-responsive" src="${products[index].img}"
-                                                width="600" height="778">
-                                        </a>
+// for (let index = 0; index < products.length; index++) {
+//     document.getElementById('bestseller-dslrcam').innerHTML += `
+//                                     <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
+//                                 data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
+//                                 <div class="product-inner tooltip-left" >
+//                                     <div class="product-thumb">
+//                                         <a class="thumb-link" href="#">
+//                                             <img class="img-responsive" src="${products[index].img}"
+//                                                 width="600" height="778">
+//                                         </a>
 
-                                    </div>
-                                    <div class="product-info equal-elem">
-                                        <h3 class="product-name product_title">
-                                            <a href="#">${products[index].name}</a>
-                                            <p style="font-size: 8pt; margin-top:3px;">${products[index].lens}</p>
-                                        </h3>
+//                                     </div>
+//                                     <div class="product-info equal-elem">
+//                                         <h3 class="product-name product_title">
+//                                             <a href="#">${products[index].name}</a>
+//                                             <p style="font-size: 8pt; margin-top:3px;">${products[index].lens}</p>
+//                                         </h3>
 
-                                        <span class="price">
-                                            <span class="kobolg-Price-amount amount">
-                                                <span>
-                                                    <span class="kobolg-Price-amount amount">
-                                                        ${products[index].price}
-                                                    </span>
-                                                    <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>`;
-    
-}
+//                                         <span class="price">
+//                                             <span class="kobolg-Price-amount amount">
+//                                                 <span>
+//                                                     <span class="kobolg-Price-amount amount">
+//                                                         ${products[index].price}
+//                                                     </span>
+//                                                     <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
+//                                                 </span>
+//                                             </span>
+//                                         </span>
+//                                     </div>
+//                                 </div>
+//                             </li>`;
+
+// }
 
