@@ -22,7 +22,6 @@ var products = [
         img: item_img,
         name: item_name,
         price: item_price,
-        color: "Black,Silver,red",
         cart: item_cart_status,
         quantity: item_quentity,
         total: item_total_price,
