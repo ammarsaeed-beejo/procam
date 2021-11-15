@@ -144,7 +144,7 @@
 //     <td></td>
 //     <td></td>
 //     <td>
- 
+
 //     </td>
 //     <td>
 //       <button onclick="buy()"class="btn btn-success">Buy</button>
@@ -173,7 +173,7 @@
 //                 document.getElementById("cartItems").innerHTML += `
 //             <tr>
 //            <th scope="row">${con + 1}</th>
-       
+
 //            <td><img style="width: 5rem;" src="${products[index3].img}" ></td>
 //            <td>${products[index3].name}</td>
 //            <td>
@@ -417,7 +417,7 @@ var products = [
 
     {
         id: 9,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/m50.jpg",
         name: "EOS M50",
         lens: "EF-M 15-45S",
         price: 2500,
@@ -430,9 +430,9 @@ var products = [
 
     {
         id: 10,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/m50.jpg",
         name: "EOS M50 VLOGGER Kit",
-        lens: "",
+        lens: "body only",
         price: 2500,
         cart: false,
         quantity: 1,
@@ -442,7 +442,7 @@ var products = [
 
     {
         id: 11,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/rp.jpg",
         name: "EOS RP Body",
         lens: "Mount Adapter EU26",
         price: 2500,
@@ -454,7 +454,7 @@ var products = [
 
     {
         id: 12,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/rp.jpg",
         name: "EOS RP",
         lens: "24-105 F4-7.1 IS",
         price: 2500,
@@ -466,7 +466,7 @@ var products = [
 
     {
         id: 13,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/EOS R.jpg",
         name: "EOS R Body",
         lens: "Mount Adapter EU26",
         price: 2500,
@@ -478,7 +478,7 @@ var products = [
 
     {
         id: 14,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/EOS R.jpg",
         name: "EOS R RF",
         lens: "24-105 F4-7.1 IS STM",
         price: 2500,
@@ -490,7 +490,7 @@ var products = [
 
     {
         id: 15,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/EOS-R6.jpg",
         name: "EOS R6",
         lens: "body only",
         price: 2500,
@@ -502,7 +502,7 @@ var products = [
 
     {
         id: 16,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/EOS-R5.jpg",
         name: "EOS R5",
         lens: "body only",
         price: 2500,
@@ -514,7 +514,7 @@ var products = [
 
     {
         id: 17,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/EOS-R3.jpg",
         name: "EOS R3",
         lens: "body only",
         price: 2500,
@@ -527,7 +527,7 @@ var products = [
 
     {
         id: 19,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/LEGRIA HF R806.jpg",
         name: "Canon LEGRIA HF R806",
         lens: "body only",
         price: 2500,
@@ -585,7 +585,6 @@ var products = [
         price: 299,
         cart: false,
         quantity: 1,
-        href: "/kobolg/DSLR/POWERSHOT SX-430 IS BK.html",
         total: 0,
         type: "compact",
     },
@@ -605,7 +604,7 @@ var products = [
     {
         id: 26,
         img: "./assets/images/Compact/canon_powershot_g7_x_mark_iii.jpg",
-        name: " G7X MK-III",
+        name: "POWERSHOT G7X MK-III",
         price: 299,
         cart: false,
         quantity: 1,
@@ -613,12 +612,24 @@ var products = [
         type: "compact",
     },
 
+
     /////////////////////////////////////////////////////////////////ACCESSORIES////////////////////////////////////////////////////////////////////////////
 
     {
         id: 27,
-        img: "./assets/images/Compact/canon_powershot_g7_x_mark_iii.jpg",
+        img: "./assets/images/ACCESSORIES/Canon RP-108  H-Capacity Paper.jpg",
         name: "Canon RP-108  H-Capacity Paper",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "accessories",
+    },
+
+    {
+        id: 28,
+        img: "./assets/images/ACCESSORIES/CAMERA MOUNT ADAP EF-EOS M.jpg",
+        name: "CAMERA MOUNT ADAP EF-EOS M",
         price: 299,
         cart: false,
         quantity: 1,
@@ -628,19 +639,245 @@ var products = [
 
     ///////////////////////////////////////////////////////////////////////Lenses/////////////////////////////////////////////////////////////////////////////
 
-   
+    {
+        id: 29,
+        img: "./assets/images/lenses/50mm.jpg",
+        name: "EF 50mm f/1.8 STM",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Lenses",
+    },
 
+    {
+        id: 30,
+        img: "./assets/images/lenses/EF 50mm f-1.4.jpg",
+        name: "EF 50mm f/1.4 USM",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Lenses",
+    },
+
+    {
+        id: 31,
+        img: "./assets/images/lenses/EF_50mm_f1.2L.jpg",
+        name: "EF 50mm f/1.2L USM",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Lenses",
+    },
+
+    {
+        id: 32,
+        img: "./assets/images/lenses/EF_50mm_f1.2L.jpg",
+        name: "EF 85mm f/1.8 USM",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Lenses",
+    },
+
+    {
+        id: 33,
+        img: "./assets/images/lenses/EF_50mm_f1.2L.jpg",
+        name: "EF 85MM F/1.4L IS USM",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Lenses",
+    },
+
+    {
+        id: 34,
+        img: "./assets/images/lenses/85mm.jpg",
+        name: "EF 85mm f/1.2L II USM",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Lenses",
+    },
+
+    {
+        id: 35,
+        img: "./assets/images/lenses/100mm-macro.jpg",
+        name: "EF 100mm f/2.8L Macro IS USM",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Lenses",
+    },
+
+    {
+        id: 36,
+        img: "./assets/images/lenses/EF-16-35mm.jpg",
+        name: "EF 16-35mm f/2.8L III USM",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Lenses",
+    },
+
+
+    {
+        id: 37,
+        img: "./assets/images/lenses/ef-24-70mm-f2.8L-II.jpg",
+        name: "EF 24-70mm f/2.8L II USM",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Lenses",
+    },
+
+    {
+        id: 38,
+        img: "./assets/images/lenses/70-200mm.jpg",
+        name: "EF 70-200mm f/2.8L IS III USM",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Lenses",
+    },
+
+    {
+        id: 39,
+        img: "./assets/images/lenses/400mm.jpg",
+        name: "EF 400MM F/2.8L IS III USM",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Lenses",
+    },
+
+    
+  ///////////////////////////////////////////////////////////////////////Printers/////////////////////////////////////////////////////////////////////////////
+
+    {
+        id: 40,
+        img: "./assets/images/Printers/selphy-cp-1300-bk-frt_810x475.webp",
+        name: "SELPHY CP-1300",
+        color:"black,white,pink",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Printers",
+    },
+
+    {
+        id: 41,
+        img: "./assets/images/Printers/Canon PIXMA MG2540.jpg",
+        name: "PIXMA MG-2540S ",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Printers",
+    },
+
+    {
+        id: 42,
+        img: "./assets/images/Printers/pixma_ts3140-bk-fra_3dee65c7e1df4e208499df5a373e62d8.webp",
+        name: "PIXMA TS-3140 ",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Printers",
+    },
+
+    {
+        id: 43,
+        img: "./assets/images/Printers/pixma-g3420-frt-04_gallery_bc252724311948fdb39b941dd900bfee.webp",
+        name: "PIXMA G3420 Wifi ",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Printers",
+    },
+
+    {
+        id: 44,
+        img: "./assets/images/Printers/pixma-ix6850-frt_5bc8618a37e148108abf85e838027835.webp",
+        name: "PIXMA iX6840",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Printers",
+    },
+
+    {
+        id: 45,
+        img: "./assets/images/Printers/pixma-tr150-eur-fra-01_c2cebf5c3e8742e5b85bf05dd314de37.webp",
+        name: "PIXMA TR-150 with battery",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Printers",
+    },
+    
+    {
+        id: 46,
+        img: "./assets/images/Printers/maxify_mb2140-frt_bd38c38073694f119013d71b642dbd1c.webp",
+        name: "MAXIFY MB2140",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Printers",
+    },
+
+    {
+        id: 47,
+        img: "./assets/images/Printers/i-SENSYS MF640 Series-hero_810x475-50c969d8-190f-4f36-9587-be37fa8a83b7.jpg",
+        name: "i-SENSYS MF-643Cdw",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Printers",
+    },
+
+    {
+        id: 48,
+        img: "./assets/images/Printers/i-SENSYS MF640 Series-hero_810x475-50c969d8-190f-4f36-9587-be37fa8a83b7.jpg",
+        name: "i-SENSYS MF-643Cdw",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "Printers",
+    },
+
+    
 
 
 ];
 
-var filterdslr = products.filter(function (product) {return product.type == "dslr";});
+var filterdslr = products.filter(function (product) { return product.type == "dslr"; });
 
 var filtercompact = products.filter(function (product) { return product.type == "compact"; });
 
 var filteraccessories = products.filter(function (product) { return product.type == "accessories"; });
 
 var filterPrinters = products.filter(function (product) { return product.type == "Printers"; });
+
+var filterLenses = products.filter(function (product) { return product.type == "Lenses"; });
 
 
 
@@ -874,36 +1111,180 @@ function addAmount(id) {
     }
 }
 
-for (let index = 0; index < filterdslr.length; index++) {
-    document.getElementById('dslrcam').innerHTML += `
-                                    <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
-                                data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
-                                <div class="product-inner tooltip-left" >
-                                    <div class="product-thumb">
-                                        <a class="thumb-link" href="${filterdslr[index].href}">
-                                            <img class="img-responsive" src="${filterdslr[index].img}"
-                                                width="600" height="778">
-                                        </a>
 
-                                    </div>
-                                    <div class="product-info equal-Gelem">
-                                        <h3 class="product-name product_title">
-                                            <a href="#">${filterdslr[index].name}</a>
-                                        </h3>
+// for (let index = 0; index < filterdslr.length; index++) {
+//     document.getElementById('dslrcam').innerHTML += `
+//                                     <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
+//                                 data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
+//                                 <div class="product-inner tooltip-left" >
+//                                     <div class="product-thumb">
+//                                         <a class="thumb-link" href="${filterdslr[index].href}">
+//                                             <img class="img-responsive" src="${filterdslr[index].img}"
+//                                                 width="600" height="778">
+//                                         </a>
 
-                                        <span class="price">
-                                            <span class="kobolg-Price-amount amount">
-                                                <span>
-                                                    <span class="kobolg-Price-amount amount">
-                                                        ${filterdslr[index].price}
-                                                    </span>
-                                                    <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>`;
+//                                     </div>
+//                                     <div class="product-info equal-Gelem">
+//                                         <h3 class="product-name product_title">
+//                                             <a href="#">${filterdslr[index].name}</a>
+//                                             <p  style="font-size: 8pt;">${filterdslr[index].lens}</p>
+//                                         </h3>
 
-}
+//                                         <span class="price">
+//                                              <span class="kobolg-Price-amount amount">
+//                                                 <span>
+//                                                     <span class="kobolg-Price-amount amount">
+//                                                         ${filterdslr[index].price}
+//                                                     </span>
+//                                                     <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
+//                                                 </span>
+//                                             </span>
+//                                         </span>
+//                                     </div>
+//                                 </div>
+//                             </li>`;
+// }
+
+
+// for (let index = 0; index < filtercompact.length; index++) {
+//     // document.getElementById('dslrcamera').onclick =
+//     document.getElementById('Compactul').innerHTML += `
+//                                     <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
+//                                 data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
+//                                 <div class="product-inner tooltip-left" >
+//                                     <div class="product-thumb">
+//                                         <a class="thumb-link" href="${filtercompact[index].href}">
+//                                             <img class="img-responsive" src="${filtercompact[index].img}"
+//                                                 width="600" height="778">
+//                                         </a>
+
+//                                     </div>
+//                                     <div class="product-info equal-Gelem">
+//                                         <h3 class="product-name product_title">
+//                                             <a href="#">${filtercompact[index].name}</a>
+//                                         </h3>
+
+//                                         <span class="price">
+//                                             <span class="kobolg-Price-amount amount">
+//                                                 <span>
+//                                                     <span class="kobolg-Price-amount amount">
+//                                                         ${filtercompact[index].price}
+//                                                     </span>
+//                                                     <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
+//                                                 </span>
+//                                             </span>
+//                                         </span>
+//                                     </div>
+//                                 </div>
+//                             </li>`;
+
+// }
+
+
+
+
+// for (let index = 0; index < filteraccessories.length; index++) {
+//     // document.getElementById('dslrcamera').onclick =
+//     document.getElementById('accessories').innerHTML += `
+//                                     <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
+//                                 data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
+//                                 <div class="product-inner tooltip-left" >
+//                                     <div class="product-thumb">
+//                                         <a class="thumb-link" href="${filteraccessories[index].href}">
+//                                             <img class="img-responsive" src="${filteraccessories[index].img}"
+//                                                 width="600" height="778">
+//                                         </a>
+
+//                                     </div>
+//                                     <div class="product-info equal-Gelem">
+//                                         <h3 class="product-name product_title">
+//                                             <a href="#">${filteraccessories[index].name}</a>
+//                                         </h3>
+
+//                                         <span class="price">
+//                                             <span class="kobolg-Price-amount amount">
+//                                                 <span>
+//                                                     <span class="kobolg-Price-amount amount">
+//                                                         ${filteraccessories[index].price}
+//                                                     </span>
+//                                                     <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
+//                                                 </span>
+//                                             </span>
+//                                         </span>
+//                                     </div>
+//                                 </div>
+//                             </li>`;
+
+// }
+
+// for (let index = 0; index < filterLenses.length; index++) {
+//     // document.getElementById('dslrcamera').onclick =
+//     document.getElementById('lenses').innerHTML += `
+//                                     <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
+//                                 data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
+//                                 <div class="product-inner tooltip-left" >
+//                                     <div class="product-thumb">
+//                                         <a class="thumb-link" href="${filterLenses[index].href}">
+//                                             <img class="img-responsive" src="${filterLenses[index].img}"
+//                                                 width="600" height="778">
+//                                         </a>
+
+//                                     </div>
+//                                     <div class="product-info equal-Gelem">
+//                                         <h3 class="product-name product_title">
+//                                             <a href="#">${filterLenses[index].name}</a>
+//                                         </h3>
+
+//                                         <span class="price">
+//                                             <span class="kobolg-Price-amount amount">
+//                                                 <span>
+//                                                     <span class="kobolg-Price-amount amount">
+//                                                         ${filterLenses[index].price}
+//                                                     </span>
+//                                                     <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
+//                                                 </span>
+//                                             </span>
+//                                         </span>
+//                                     </div>
+//                                 </div>
+//                             </li>`;
+
+// }
+
+// for (let index = 0; index < filterPrinters.length; index++) {
+//     // document.getElementById('dslrcamera').onclick =
+//     document.getElementById('Printers').innerHTML += `
+//                                     <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
+//                                 data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
+//                                 <div class="product-inner tooltip-left" >
+//                                     <div class="product-thumb">
+//                                         <a class="thumb-link" href="${filterPrinters[index].href}">
+//                                             <img class="img-responsive" src="${filterPrinters[index].img}"
+//                                                 width="600" height="778">
+//                                         </a>
+
+//                                     </div>
+//                                     <div class="product-info equal-Gelem">
+//                                         <h3 class="product-name product_title">
+//                                             <a href="#">${filterPrinters[index].name}</a>
+//                                         </h3>
+
+//                                         <span class="price">
+//                                             <span class="kobolg-Price-amount amount">
+//                                                 <span>
+//                                                     <span class="kobolg-Price-amount amount">
+//                                                         ${filterPrinters[index].price}
+//                                                     </span>
+//                                                     <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
+//                                                 </span>
+//                                             </span>
+//                                         </span>
+//                                     </div>
+//                                 </div>
+//                             </li>`;
+
+// }
+
+
+
 
