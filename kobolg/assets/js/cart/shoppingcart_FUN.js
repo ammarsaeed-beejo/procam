@@ -874,37 +874,36 @@ function addAmount(id) {
     }
 }
 
-for (let index = 0; index < filtercompact.length; index++) {
-    // document.getElementById('dslrcam').innerHTML += `
-    //                                 <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
-    //                             data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
-    //                             <div class="product-inner tooltip-left" >
-    //                                 <div class="product-thumb">
-    //                                     <a class="thumb-link" href="${filtercompact[index].href}">
-    //                                         <img class="img-responsive" src="${filtercompact[index].img}"
-    //                                             width="600" height="778">
-    //                                     </a>
+for (let index = 0; index < filterdslr.length; index++) {
+    document.getElementById('dslrcam').innerHTML += `
+                                    <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
+                                data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
+                                <div class="product-inner tooltip-left" >
+                                    <div class="product-thumb">
+                                        <a class="thumb-link" href="${filterdslr[index].href}">
+                                            <img class="img-responsive" src="${filterdslr[index].img}"
+                                                width="600" height="778">
+                                        </a>
 
-    //                                 </div>
-    //                                 <div class="product-info equal-Gelem">
-    //                                     <h3 class="product-name product_title">
-    //                                         <a href="#">${filtercompact[index].name}</a>
-    //                                     </h3>
+                                    </div>
+                                    <div class="product-info equal-Gelem">
+                                        <h3 class="product-name product_title">
+                                            <a href="#">${filterdslr[index].name}</a>
+                                        </h3>
 
-    //                                     <span class="price">
-    //                                         <span class="kobolg-Price-amount amount">
-    //                                             <span>
-    //                                                 <span class="kobolg-Price-amount amount">
-    //                                                     ${filtercompact[index].price}
-    //                                                 </span>
-    //                                                 <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
-    //                                             </span>
-    //                                         </span>
-    //                                     </span>
-    //                                 </div>
-    //                             </div>
-    //                         </li>`;
+                                        <span class="price">
+                                            <span class="kobolg-Price-amount amount">
+                                                <span>
+                                                    <span class="kobolg-Price-amount amount">
+                                                        ${filterdslr[index].price}
+                                                    </span>
+                                                    <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>`;
 
-    
 }
 
