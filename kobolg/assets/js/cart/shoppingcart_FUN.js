@@ -317,11 +317,11 @@ getAnalytics(app);
 
 var products = [
 
-    /////////////////////////////////////////////////////////////////DSLR////////////////////////   ////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////DSLR//////////////////////////////////////////////////////////////////////////
 
     {
         id: 1,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/4000d.jpg",
         name: "EOS 4000D",
         lens: "EF-S 18-55mm",
         price: 2500,
@@ -333,7 +333,7 @@ var products = [
 
     {
         id: 2,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/2000d.jpg",
         name: "EOS 2000D",
         lens: "EF-S 18-55mm/DC",
         price: 2500,
@@ -345,7 +345,7 @@ var products = [
 
     {
         id: 3,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/250d.jpg",
         name: "EOS 250D",
         lens: "BK 18-55mm",
         price: 2500,
@@ -357,7 +357,7 @@ var products = [
 
     {
         id: 4,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/850d.jpg",
         name: "EOS 850D",
         lens: "EF-18-55mm",
         price: 2500,
@@ -369,7 +369,7 @@ var products = [
 
     {
         id: 5,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/850d.jpg",
         name: "EOS 850D",
         lens: "EF-18-135mm",
         price: 2500,
@@ -381,7 +381,7 @@ var products = [
 
     {
         id: 6,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/80D.jpg",
         name: "EOS 80D",
         lens: "18-135mm",
         price: 2500,
@@ -393,7 +393,7 @@ var products = [
 
     {
         id: 7,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/90d.jpg",
         name: "EOS 90D",
         lens: "EF 18-135mm",
         price: 2500,
@@ -405,7 +405,7 @@ var products = [
 
     {
         id: 8,
-        img: "./assets/images/eos dslr/1dx.jpg",
+        img: "./assets/images/eos dslr/5d IV.jpg",
         name: "EOS 5D Mark IV",
         lens: "24-105 F4L",
         price: 2500,
@@ -626,10 +626,23 @@ var products = [
         type: "accessories",
     },
 
+    ///////////////////////////////////////////////////////////////////////Lenses/////////////////////////////////////////////////////////////////////////////
+
+   
+
+
+
 ];
 
-var filterdata = products.filter(function (product) {return product.type == "accessories";});
-console.log(filterdata);
+var filterdslr = products.filter(function (product) {return product.type == "dslr";});
+
+var filtercompact = products.filter(function (product) { return product.type == "compact"; });
+
+var filteraccessories = products.filter(function (product) { return product.type == "accessories"; });
+
+var filterPrinters = products.filter(function (product) { return product.type == "Printers"; });
+
+
 
 
 
@@ -861,36 +874,37 @@ function addAmount(id) {
     }
 }
 
-for (let index = 0; index < products.length; index++) {
-    document.getElementById('bestseller').innerHTML += `
-                                    <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
-                                data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
-                                <div class="product-inner tooltip-left" >
-                                    <div class="product-thumb">
-                                        <a class="thumb-link" href="${products[index].href}">
-                                            <img class="img-responsive" src="${products[index].img}"
-                                                width="600" height="778">
-                                        </a>
+for (let index = 0; index < filtercompact.length; index++) {
+    // document.getElementById('dslrcam').innerHTML += `
+    //                                 <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
+    //                             data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
+    //                             <div class="product-inner tooltip-left" >
+    //                                 <div class="product-thumb">
+    //                                     <a class="thumb-link" href="${filtercompact[index].href}">
+    //                                         <img class="img-responsive" src="${filtercompact[index].img}"
+    //                                             width="600" height="778">
+    //                                     </a>
 
-                                    </div>
-                                    <div class="product-info equal-Gelem">
-                                        <h3 class="product-name product_title">
-                                            <a href="#">${products[index].name}</a>
-                                        </h3>
+    //                                 </div>
+    //                                 <div class="product-info equal-Gelem">
+    //                                     <h3 class="product-name product_title">
+    //                                         <a href="#">${filtercompact[index].name}</a>
+    //                                     </h3>
 
-                                        <span class="price">
-                                            <span class="kobolg-Price-amount amount">
-                                                <span>
-                                                    <span class="kobolg-Price-amount amount">
-                                                        ${products[index].price}
-                                                    </span>
-                                                    <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>`;
+    //                                     <span class="price">
+    //                                         <span class="kobolg-Price-amount amount">
+    //                                             <span>
+    //                                                 <span class="kobolg-Price-amount amount">
+    //                                                     ${filtercompact[index].price}
+    //                                                 </span>
+    //                                                 <span class="kobolg-Price-currencySymbol" style="color: rgb(114, 114, 114);">jd</span>
+    //                                             </span>
+    //                                         </span>
+    //                                     </span>
+    //                                 </div>
+    //                             </div>
+    //                         </li>`;
 
+    
 }
 
