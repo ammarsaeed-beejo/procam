@@ -28,124 +28,25 @@ getAnalytics(app);
 
 var products = [
   {
-    id: 29,
-    img: "./assets/images/lenses/50mm.jpg",
-    name: "EF 50mm f/1.8 STM",
+    id: 27,
+    img: "./assets/images/ACCESSORIES/Canon RP-108  H-Capacity Paper.jpg",
+    name: "Canon RP-108  H-Capacity Paper",
     price: 299,
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
+    type: "accessories",
   },
 
   {
-    id: 30,
-    img: "./assets/images/lenses/EF 50mm f-1.4.jpg",
-    name: "EF 50mm f/1.4 USM",
+    id: 28,
+    img: "./assets/images/ACCESSORIES/CAMERA MOUNT ADAP EF-EOS M.jpg",
+    name: "CAMERA MOUNT ADAP EF-EOS M",
     price: 299,
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
-  },
-
-  {
-    id: 31,
-    img: "./assets/images/lenses/EF_50mm_f1.2L.jpg",
-    name: "EF 50mm f/1.2L USM",
-    price: 299,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "Lenses",
-  },
-
-  {
-    id: 32,
-    img: "./assets/images/lenses/EF_50mm_f1.2L.jpg",
-    name: "EF 85mm f/1.8 USM",
-    price: 299,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "Lenses",
-  },
-
-  {
-    id: 33,
-    img: "./assets/images/lenses/EF_50mm_f1.2L.jpg",
-    name: "EF 85MM F/1.4L IS USM",
-    price: 299,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "Lenses",
-  },
-
-  {
-    id: 34,
-    img: "./assets/images/lenses/85mm.jpg",
-    name: "EF 85mm f/1.2L II USM",
-    price: 299,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "Lenses",
-  },
-
-  {
-    id: 35,
-    img: "./assets/images/lenses/100mm-macro.jpg",
-    name: "EF 100mm f/2.8L Macro IS USM",
-    price: 299,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "Lenses",
-  },
-
-  {
-    id: 36,
-    img: "./assets/images/lenses/EF-16-35mm.jpg",
-    name: "EF 16-35mm f/2.8L III USM",
-    price: 299,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "Lenses",
-  },
-
-  {
-    id: 37,
-    img: "./assets/images/lenses/ef-24-70mm-f2.8L-II.jpg",
-    name: "EF 24-70mm f/2.8L II USM",
-    price: 299,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "Lenses",
-  },
-
-  {
-    id: 38,
-    img: "./assets/images/lenses/70-200mm.jpg",
-    name: "EF 70-200mm f/2.8L IS III USM",
-    price: 299,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "Lenses",
-  },
-
-  {
-    id: 39,
-    img: "./assets/images/lenses/400mm.jpg",
-    name: "EF 400MM F/2.8L IS III USM",
-    price: 299,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "Lenses",
+    type: "accessories",
   },
 ];
 
@@ -275,7 +176,6 @@ function add(id) {
 }
 
 window.add = add;
-
 window.reduceAmount = reduceAmount;
 window.addAmount = addAmount;
 window.buy = buy;
@@ -373,21 +273,25 @@ function addAmount(id) {
 }
 
 for (let index = 0; index < products.length; index++) {
-  document.getElementById("lensesul").innerHTML += `
+  document.getElementById("accessoriesul").innerHTML += `
                                     <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
-                                data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
+                                    id="${products[index].id}"
+                                    data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
                                 <div class="product-inner tooltip-left" >
                                     <div class="product-thumb">
-                                        
+                                            
+                                            <a href="./single-product.html">
+
+
                                             <img class="img-responsive" src="${products[index].img}"
                                                 width="600" height="778">
-                                        
+                                        </a>
                                     </div>
                                     <div class="product-info equal-elem">
                                         <h3 class="product-name product_title">
                                             <a href="#">${products[index].name}</a>
-                                            <p style="font-size: 8pt; margin-top:3px;">${products[index].lens}</p>
                                         </h3>
+
 
                                         <span class="price">
                                             <span class="kobolg-Price-amount amount">
@@ -403,3 +307,48 @@ for (let index = 0; index < products.length; index++) {
                                 </div>
                             </li>`;
 }
+
+for (let index = 0; index < products.length; index++) {
+  document.getElementById(products[index].id).onclick = () => {
+    var name = products[index].name;
+    var price = products[index].price;
+    var quentity = products[index].quantity;
+    var id = products[index].id;
+    var cart_status = products[index].cart;
+    var total_items_price = products[index].total;
+    var img = products[index].img;
+    localStorage.setItem("item-name", name);
+    localStorage.setItem("item-price", price);
+    localStorage.setItem("item-total", total_items_price);
+    localStorage.setItem("item-quentity", quentity);
+    localStorage.setItem("item-cart_status", cart_status);
+    localStorage.setItem("item-id", id);
+    localStorage.setItem("item-img", img);
+  };
+}
+
+const searchField = document.querySelector("#searchinput");
+const searchResultsContainer = document.querySelector("#searchresult");
+
+searchField.addEventListener("input", (e) => {
+  // if input field is empty, clear the search results
+  if (e.target.value === "") {
+    searchResultsContainer.innerHTML = "";
+    return;
+  }
+
+  // filter the products array
+  const searchResults = products.filter((meal) => {
+    return meal.name.toLowerCase().includes(e.target.value.toLowerCase());
+  });
+
+  // before displaying the search results, clear the search results div
+  searchResultsContainer.innerHTML = "";
+
+  // display the names of the meal objects that include the text entered in input field
+  searchResults.forEach((element, index) => {
+    const p = document.createElement("p");
+    p.textContent = element.name;
+    searchResultsContainer.appendChild(p);
+  });
+});

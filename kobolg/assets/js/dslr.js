@@ -1,10 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-analytics.js";
-import {
-  getDatabase,
-  ref,
-  set,
-} from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -19,135 +15,238 @@ const firebaseConfig = {
   storageBucket: "pro-cam-web.appspot.com",
   messagingSenderId: "1043601014942",
   appId: "1:1043601014942:web:c4608e15cdafb23fb3bb8f",
-  measurementId: "G-L8XZNC95BJ",
+  measurementId: "G-L8XZNC95BJ"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 getAnalytics(app);
 
+
+
+
 var products = [
   {
-    id: 29,
-    img: "./assets/images/lenses/50mm.jpg",
-    name: "EF 50mm f/1.8 STM",
-    price: 299,
+    id: 1,
+    img: "./assets/images/eos dslr/4000d.jpg",
+    name: "EOS 4000D",
+    lens: "EF-S 18-55mm",
+    price: 2500,
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
+    type: "dslr",
   },
 
   {
-    id: 30,
-    img: "./assets/images/lenses/EF 50mm f-1.4.jpg",
-    name: "EF 50mm f/1.4 USM",
-    price: 299,
+    id: 2,
+    img: "./assets/images/eos dslr/2000d.jpg",
+    name: "EOS 2000D",
+    lens: "EF-S 18-55mm/DC",
+    price: 2500,
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
+    type: "dslr",
   },
 
   {
-    id: 31,
-    img: "./assets/images/lenses/EF_50mm_f1.2L.jpg",
-    name: "EF 50mm f/1.2L USM",
-    price: 299,
+    id: 3,
+    img: "./assets/images/eos dslr/250d.jpg",
+    name: "EOS 250D",
+    lens: "BK 18-55mm",
+    price: 2500,
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
+    type: "dslr",
   },
 
   {
-    id: 32,
-    img: "./assets/images/lenses/EF_50mm_f1.2L.jpg",
-    name: "EF 85mm f/1.8 USM",
-    price: 299,
+    id: 4,
+    img: "./assets/images/eos dslr/850d.jpg",
+    name: "EOS 850D",
+    lens: "EF-18-55mm",
+    price: 2500,
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
+    type: "dslr",
   },
 
   {
-    id: 33,
-    img: "./assets/images/lenses/EF_50mm_f1.2L.jpg",
-    name: "EF 85MM F/1.4L IS USM",
-    price: 299,
+    id: 5,
+    img: "./assets/images/eos dslr/850d.jpg",
+    name: "EOS 850D",
+    lens: "EF-18-135mm",
+    price: 2500,
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
+    type: "dslr",
   },
 
   {
-    id: 34,
-    img: "./assets/images/lenses/85mm.jpg",
-    name: "EF 85mm f/1.2L II USM",
-    price: 299,
+    id: 6,
+    img: "./assets/images/eos dslr/80D.jpg",
+    name: "EOS 80D",
+    lens: "18-135mm",
+    price: 2500,
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
+    type: "dslr",
   },
 
   {
-    id: 35,
-    img: "./assets/images/lenses/100mm-macro.jpg",
-    name: "EF 100mm f/2.8L Macro IS USM",
-    price: 299,
+    id: 7,
+    img: "./assets/images/eos dslr/90d.jpg",
+    name: "EOS 90D",
+    lens: "EF 18-135mm",
+    price: 2500,
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
+    type: "dslr",
   },
 
   {
-    id: 36,
-    img: "./assets/images/lenses/EF-16-35mm.jpg",
-    name: "EF 16-35mm f/2.8L III USM",
-    price: 299,
+    id: 8,
+    img: "./assets/images/eos dslr/5d IV.jpg",
+    name: "EOS 5D Mark IV",
+    lens: "24-105 F4L",
+    price: 2500,
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
+    type: "dslr",
   },
 
   {
-    id: 37,
-    img: "./assets/images/lenses/ef-24-70mm-f2.8L-II.jpg",
-    name: "EF 24-70mm f/2.8L II USM",
-    price: 299,
+    id: 9,
+    img: "./assets/images/eos dslr/m50.jpg",
+    name: "EOS M50",
+    lens: "EF-M 15-45S",
+    price: 2500,
+    color: "blk ,White",
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
+    type: "dslr",
   },
 
   {
-    id: 38,
-    img: "./assets/images/lenses/70-200mm.jpg",
-    name: "EF 70-200mm f/2.8L IS III USM",
-    price: 299,
+    id: 10,
+    img: "./assets/images/eos dslr/m50.jpg",
+    name: "EOS M50 VLOGGER Kit",
+    lens: "body only",
+    price: 2500,
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
+    type: "dslr",
   },
 
   {
-    id: 39,
-    img: "./assets/images/lenses/400mm.jpg",
-    name: "EF 400MM F/2.8L IS III USM",
-    price: 299,
+    id: 11,
+    img: "./assets/images/eos dslr/rp.jpg",
+    name: "EOS RP Body",
+    lens: "Mount Adapter EU26",
+    price: 2500,
     cart: false,
     quantity: 1,
     total: 0,
-    type: "Lenses",
+    type: "dslr",
   },
+
+  {
+    id: 12,
+    img: "./assets/images/eos dslr/rp.jpg",
+    name: "EOS RP",
+    lens: "24-105 F4-7.1 IS",
+    price: 2500,
+    cart: false,
+    quantity: 1,
+    total: 0,
+    type: "dslr",
+  },
+
+  {
+    id: 13,
+    img: "./assets/images/eos dslr/EOS R.jpg",
+    name: "EOS R Body",
+    lens: "Mount Adapter EU26",
+    price: 2500,
+    cart: false,
+    quantity: 1,
+    total: 0,
+    type: "dslr",
+  },
+
+  {
+    id: 14,
+    img: "./assets/images/eos dslr/EOS R.jpg",
+    name: "EOS R RF",
+    lens: "24-105 F4-7.1 IS STM",
+    price: 2500,
+    cart: false,
+    quantity: 1,
+    total: 0,
+    type: "dslr",
+  },
+
+  {
+    id: 15,
+    img: "./assets/images/eos dslr/EOS-R6.jpg",
+    name: "EOS R6",
+    lens: "body only",
+    price: 2500,
+    cart: false,
+    quantity: 1,
+    total: 0,
+    type: "dslr",
+  },
+
+  {
+    id: 16,
+    img: "./assets/images/eos dslr/EOS-R5.jpg",
+    name: "EOS R5",
+    lens: "body only",
+    price: 2500,
+    cart: false,
+    quantity: 1,
+    total: 0,
+    type: "dslr",
+  },
+
+  {
+    id: 17,
+    img: "./assets/images/eos dslr/EOS-R3.jpg",
+    name: "EOS R3",
+    lens: "body only",
+    price: 2500,
+    cart: false,
+    quantity: 1,
+    total: 0,
+    type: "dslr",
+  },
+
+
+  {
+    id: 19,
+    img: "./assets/images/eos dslr/LEGRIA HF R806.jpg",
+    name: "Canon LEGRIA HF R806",
+    lens: "body only",
+    price: 2500,
+    cart: false,
+    quantity: 1,
+    total: 0,
+    type: "dslr",
+  },
+
 ];
+
+
 
 const db = getDatabase();
 
@@ -164,7 +263,7 @@ function buy() {
       productsFirebase.push(product);
     }
   }
-  set(ref(db, "order/"), {
+  set(ref(db, 'order/'), {
     total: total(),
     products: productsFirebase,
   });
@@ -186,6 +285,7 @@ function total() {
   return total;
 }
 
+
 var con = 0;
 
 var con2 = [];
@@ -200,6 +300,7 @@ function clean() {
     updateCart();
   }
 }
+
 
 function add(id) {
   for (let index = 0; index < products.length; index++) {
@@ -241,8 +342,7 @@ function add(id) {
                                                         class="kobolg-Price-currencySymbol">$</span>150.00</span>
                                             </td>`;
       con++;
-      var total = (products[index].total =
-        products[index].price * products[index].quantity);
+      var total = products[index].total = products[index].price * products[index].quantity;
       total;
       localStorage.setItem("total", JSON.stringify(total));
     }
@@ -272,13 +372,15 @@ function add(id) {
     </td>
      </tr>
    `;
+
+
 }
 
 window.add = add;
-
 window.reduceAmount = reduceAmount;
 window.addAmount = addAmount;
 window.buy = buy;
+
 
 function updateCart() {
   con = 0;
@@ -295,15 +397,12 @@ function updateCart() {
            <td><img style="width: 5rem;" src="${products[index3].img}" ></td>
            <td>${products[index3].name}</td>
            <td>
-           <button class="btn btn-primary" onclick="reduceAmount(${
-             products[index3].id
-           })">-</button>
-           <input style="width: 2rem;" id="input${
-             products[index3].id
-           }" value="${products[index3].quantity}" disabled>
-           <button class="btn btn-primary" onclick="addAmount(${
-             products[index3].id
-           })" >+</button>
+           <button class="btn btn-primary" onclick="reduceAmount(${products[index3].id
+          })">-</button>
+           <input style="width: 2rem;" id="input${products[index3].id
+          }" value="${products[index3].quantity}" disabled>
+           <button class="btn btn-primary" onclick="addAmount(${products[index3].id
+          })" >+</button>
            </td>
            <td>$ ${products[index3].price * products[index3].quantity}.00</td>
             </tr>
@@ -373,21 +472,26 @@ function addAmount(id) {
 }
 
 for (let index = 0; index < products.length; index++) {
-  document.getElementById("lensesul").innerHTML += `
+
+  document.getElementById('dslrcam').innerHTML += `
                                     <li  class="product-item wow fadeInUp product-item rows-space-30 col-bg-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-ts-6 style-01 post-24 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-table product_cat-new-arrivals product_tag-light product_tag-hat product_tag-sock first instock featured shipping-taxable purchasable product-type-variable has-default-attributes"
-                                data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
+                                    id="${products[index].id}"
+                                    data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
                                 <div class="product-inner tooltip-left" >
                                     <div class="product-thumb">
-                                        
+                                            
+                                            <a href="./single-product.html">
+
+
                                             <img class="img-responsive" src="${products[index].img}"
                                                 width="600" height="778">
-                                        
+                                        </a>
                                     </div>
                                     <div class="product-info equal-elem">
                                         <h3 class="product-name product_title">
                                             <a href="#">${products[index].name}</a>
-                                            <p style="font-size: 8pt; margin-top:3px;">${products[index].lens}</p>
                                         </h3>
+
 
                                         <span class="price">
                                             <span class="kobolg-Price-amount amount">
@@ -402,4 +506,54 @@ for (let index = 0; index < products.length; index++) {
                                     </div>
                                 </div>
                             </li>`;
+
+
 }
+
+for (let index = 0; index < products.length; index++) {
+  document.getElementById(products[index].id).onclick = () => {
+    var name = products[index].name;
+    var price = products[index].price;
+    var quentity = products[index].quantity;
+    var id = products[index].id;
+    var cart_status = products[index].cart;
+    var total_items_price = products[index].total;
+    var img = products[index].img;
+    localStorage.setItem('item-name', name);
+    localStorage.setItem('item-price', price);
+    localStorage.setItem('item-total', total_items_price);
+    localStorage.setItem('item-quentity', quentity);
+    localStorage.setItem('item-cart_status', cart_status);
+    localStorage.setItem('item-id', id);
+    localStorage.setItem('item-img', img);
+  };
+
+}
+
+
+const searchField = document.querySelector('#searchinput');
+const searchResultsContainer = document.querySelector('#searchresult');
+
+searchField.addEventListener('input', (e) => {
+
+  // if input field is empty, clear the search results
+  if (e.target.value === '') {
+    searchResultsContainer.innerHTML = '';
+    return;
+  }
+
+  // filter the products array
+  const searchResults = products.filter(meal => {
+    return meal.name.toLowerCase().includes(e.target.value.toLowerCase());
+  });
+
+  // before displaying the search results, clear the search results div
+  searchResultsContainer.innerHTML = '';
+
+  // display the names of the meal objects that include the text entered in input field
+  searchResults.forEach((element, index) => {
+    const p = document.createElement('p');
+    p.textContent = element.name;
+    searchResultsContainer.appendChild(p);
+  });
+});

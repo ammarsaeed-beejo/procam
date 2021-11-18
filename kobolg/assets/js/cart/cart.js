@@ -1,7 +1,10 @@
-
 // Import the functions you need from the SDKs you need
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-analytics.js";
-import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
+import {
+  getDatabase,
+  ref,
+  set,
+} from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
 // TODO: Add SDKs for Firebase cartItems that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -9,14 +12,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyCwDLNDUINuCDZckS5C1M-I-9ia7ZoKIsw",
-    authDomain: "pro-cam-web.firebaseapp.com",
-    databaseURL: "https://pro-cam-web-default-rtdb.firebaseio.com",
-    projectId: "pro-cam-web",
-    storageBucket: "pro-cam-web.appspot.com",
-    messagingSenderId: "1043601014942",
-    appId: "1:1043601014942:web:c4608e15cdafb23fb3bb8f",
-    measurementId: "G-L8XZNC95BJ"
+  apiKey: "AIzaSyCwDLNDUINuCDZckS5C1M-I-9ia7ZoKIsw",
+  authDomain: "pro-cam-web.firebaseapp.com",
+  databaseURL: "https://pro-cam-web-default-rtdb.firebaseio.com",
+  projectId: "pro-cam-web",
+  storageBucket: "pro-cam-web.appspot.com",
+  messagingSenderId: "1043601014942",
+  appId: "1:1043601014942:web:c4608e15cdafb23fb3bb8f",
+  measurementId: "G-L8XZNC95BJ",
 };
 
 // Initialize Firebase
@@ -26,39 +29,38 @@ getAnalytics(app);
 const cartItems = JSON.parse(localStorage.getItem("cartItems"));
 const total = JSON.parse(localStorage.getItem("total"));
 
-
 const db = getDatabase();
 
 function buy() {
-    var cartItemsFirebase = [];
-    for (let index = 0; index < cartItems.length; index++) {
-        if (cartItems[index].cart) {
-            var product = {
-                name: cartItems[index].name,
-                price: cartItems[index].price,
-                quantity: cartItems[index].quantity,
-                total: cartItems[index].total,
-            };
-            cartItemsFirebase.push(product);
-        }
+  var cartItemsFirebase = [];
+  for (let index = 0; index < cartItems.length; index++) {
+    if (cartItems[index].cart) {
+      var product = {
+        name: cartItems[index].name,
+        price: cartItems[index].price,
+        quantity: cartItems[index].quantity,
+        total: cartItems[index].total,
+      };
+      cartItemsFirebase.push(product);
     }
-    set(ref(db, 'order/'), {
-        total: total(),
-        cartItems: cartItemsFirebase,
-    });
-    Swal.fire({
-        type: "success",
-        title: "Success",
-        text: "Operation Completed!",
-    });
-    clean();
+  }
+  set(ref(db, "order/"), {
+    total: total(),
+    cartItems: cartItemsFirebase,
+  });
+  Swal.fire({
+    type: "success",
+    title: "Success",
+    text: "Operation Completed!",
+  });
+  clean();
 }
 
 // function total() {
 //     let total = 0;
 //     for (let index = 0; index < cartItems.length; index++) {
 //         if (cartItems[index].cart) {
-//             total += cartItems[index].total;    
+//             total += cartItems[index].total;
 //         }
 //     }
 //     return total;
@@ -70,13 +72,13 @@ var con2 = [];
 //POSITION AT TABLE
 
 function clean() {
-    for (let index = 0; index < cartItems.length; index++) {
-        cartItems[index].total = 0;
-        cartItems[index].quantity = 1;
-        cartItems[index].cart = false;
-        con2 = [];
-        updateCart();
-    }
+  for (let index = 0; index < cartItems.length; index++) {
+    cartItems[index].total = 0;
+    cartItems[index].quantity = 1;
+    cartItems[index].cart = false;
+    con2 = [];
+    updateCart();
+  }
 }
 
 window.remove = remove;
@@ -85,70 +87,74 @@ window.addAmount = addAmount;
 window.buy = buy;
 
 function remove(id) {
-    // for (let index = 0; index < products.length; index++) {
-    //     if (products[index].id == id) {
-    //         products[index].cart = false;
-    //         products[index].total = 0;
-    //         products[index].quantity = 1;
-    //         total();
-    var myItem = JSON.parse(localStorage.getItem("cartItems"));
-    var filter = myItem.filter(Item => Item.id != id)
-    localStorage.clear();
-    localStorage.setItem("cartItems", JSON.stringify(filter));
-    console.log(id);
-    console.log(filter);
-    //         for (let index2 = 0; index2 < con2.length; index2++) {
-    //             if (products[index].id == con2[index2]) {
-    //                 con2.splice(index2, 1);
-    //             } else {
-    //             }
-    //         }
+  // for (let index = 0; index < products.length; index++) {
+  //     if (products[index].id == id) {
+  //         products[index].cart = false;
+  //         products[index].total = 0;
+  //         products[index].quantity = 1;
+  //         total();
+  var myItem = JSON.parse(localStorage.getItem("cartItems"));
+  var filter = myItem.filter((Item) => Item.id != id);
+  localStorage.clear();
+  localStorage.setItem("cartItems", JSON.stringify(filter));
+  console.log(id);
+  console.log(filter);
+  //         for (let index2 = 0; index2 < con2.length; index2++) {
+  //             if (products[index].id == con2[index2]) {
+  //                 con2.splice(index2, 1);
+  //             } else {
+  //             }
+  //         }
 
-    //         updateCart();
-    //     } else {
-    //         updateCart();
-    //     }
-    // }
+  //         updateCart();
+  //     } else {
+  //         updateCart();
+  //     }
+  // }
 }
 
 function updateCart() {
-    con = 0;
-    var totalTable = 0;
-    document.getElementById("cartItems").innerHTML = "";
-    for (let index = 0; index < con2.length; index++) {
-        var position = con2[index];
-        for (let index3 = 0; index3 < cartItems.length; index3++) {
-            if (position == cartItems[index3].id) {
-                document.getElementById("cartItems").innerHTML += `
+  con = 0;
+  var totalTable = 0;
+  document.getElementById("cartItems").innerHTML = "";
+  for (let index = 0; index < con2.length; index++) {
+    var position = con2[index];
+    for (let index3 = 0; index3 < cartItems.length; index3++) {
+      if (position == cartItems[index3].id) {
+        document.getElementById("cartItems").innerHTML += `
             <tr>
            <th scope="row">${con + 1}</th>
-           <td><button class="btn btn-danger" onclick="remove(${cartItems[index3].id
-                    })">X</button></td>
+           <td><button class="btn btn-danger" onclick="remove(${
+             cartItems[index3].id
+           })">X</button></td>
            <td><img style="width: 5rem;" src="${cartItems[index3].img}" ></td>
            <td>${cartItems[index3].name}</td>
            <td>
-           <button class="btn btn-primary" onclick="reduceAmount(${cartItems[index3].id
-                    })">-</button>
-           <input style="width: 2rem;" id="input${cartItems[index3].id
-                    }" value="${cartItems[index3].quantity}" disabled>
-           <button class="btn btn-primary" onclick="addAmount(${cartItems[index3].id
-                    })" >+</button>
+           <button class="btn btn-primary" onclick="reduceAmount(${
+             cartItems[index3].id
+           })">-</button>
+           <input style="width: 2rem;" id="input${
+             cartItems[index3].id
+           }" value="${cartItems[index3].quantity}" disabled>
+           <button class="btn btn-primary" onclick="addAmount(${
+             cartItems[index3].id
+           })" >+</button>
            </td>
            <td>$ ${cartItems[index3].price * cartItems[index3].quantity}.00</td>
             </tr>
            `;
-                cartItems[index3].total =
-                    cartItems[index3].price * cartItems[index3].quantity;
-            } else {
-            }
-        }
-
-        con = con + 1;
+        cartItems[index3].total =
+          cartItems[index3].price * cartItems[index3].quantity;
+      } else {
+      }
     }
-    if (total() == 0) {
-        document.getElementById("total").innerHTML = "";
-    } else {
-        document.getElementById("total").innerHTML = `
+
+    con = con + 1;
+  }
+  if (total() == 0) {
+    document.getElementById("total").innerHTML = "";
+  } else {
+    document.getElementById("total").innerHTML = `
     <tr>
     <th scope="row"></th>
     <td></td>
@@ -172,38 +178,38 @@ function updateCart() {
      </td>
       </tr>
     `;
-    }
+  }
 }
 
 function reduceAmount(id) {
-    for (let index = 0; index < cartItems.length; index++) {
-        if (cartItems[index].id == id) {
-            if (cartItems[index].quantity > 1) {
-                cartItems[index].quantity = cartItems[index].quantity - 1;
-                updateCart();
-            } else {
-            }
-        } else {
-        }
+  for (let index = 0; index < cartItems.length; index++) {
+    if (cartItems[index].id == id) {
+      if (cartItems[index].quantity > 1) {
+        cartItems[index].quantity = cartItems[index].quantity - 1;
+        updateCart();
+      } else {
+      }
+    } else {
     }
+  }
 }
 
 function addAmount(id) {
-    for (let index = 0; index < cartItems.length; index++) {
-        if (cartItems[index].id == id) {
-            if (cartItems[index].quantity > 0) {
-                cartItems[index].quantity = cartItems[index].quantity + 1;
-                updateCart();
-            } else {
-            }
-        } else {
-        }
+  for (let index = 0; index < cartItems.length; index++) {
+    if (cartItems[index].id == id) {
+      if (cartItems[index].quantity > 0) {
+        cartItems[index].quantity = cartItems[index].quantity + 1;
+        updateCart();
+      } else {
+      }
+    } else {
     }
+  }
 }
 
 for (let index = 0; index < cartItems.length; index++) {
-    console.log(cartItems);
-    document.getElementById('cart_Items').innerHTML += `
+  console.log(cartItems);
+  document.getElementById("cart_Items").innerHTML += `
     
         <tr class="kobolg-cart-form__cart-item cart_item">
                                             <td class="product-remove">
@@ -246,4 +252,3 @@ for (let index = 0; index < cartItems.length; index++) {
         
         `;
 }
-

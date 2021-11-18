@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/pro cam icon.png" />
-    
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -194,6 +194,7 @@
                                                         class="searchfield txt-livesearch input" name="s" value=""
                                                         placeholder="Search here..." type="text">
                                                 </div>
+                                                <div id="searchresults"></div>
                                             </div>
                                             <input name="post_type" value="product" type="hidden">
                                             <input name="taxonomy" value="product_cat" type="hidden">
@@ -231,9 +232,10 @@
                         <form role="search" method="get" class="form-search block-search-form kobolg-live-search-form">
                             <div class="form-content search-box results-search">
                                 <div class="inner">
-                                    <input autocomplete="off" class="searchfield txt-livesearch input" name="s" value=""
+                                    <input id="searchinputmob" autocomplete="off" class="searchfield txt-livesearch input" name="s" value=""
                                         placeholder="Search here..." type="text">
                                 </div>
+                                <div id="searchresultsmob"></div>
                             </div>
                             <input name="post_type" value="product" type="hidden">
                             <input name="taxonomy" value="product_cat" type="hidden">
@@ -309,7 +311,7 @@
 
                                 </div>
                         </a>
-                        
+
                     </div>
                 </div>
             </div>
@@ -423,13 +425,13 @@
                             </div>
                             <div class=" product-info equal-elem">
                                     <h3 class="product-name product_title" style="text-align: center;">
-                                        <a href="#" tabindex="0">Cameras</a>
+                                        <a href="#" tabindex="0">DSLR Cameras</a>
                                     </h3>
 
 
                             </div>
 
-                            
+
 
 
                         </div>
@@ -439,11 +441,11 @@
                         class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                         <div class="product-inner tooltip-left">
                             <div class="product-thumb">
-                                <a class="thumb-link" href="./Lenses.html" tabindex="0">
-                                    <img id="class=" dropbtn"" class="img-responsive"
-                                        src="./assets/images/EF_180mm_f3.5L_Macro_USM_Default_tcm13-950174.jpg"
-                                        alt="White Watches" width="270" height="350">
-                                </a>
+
+                                <img id="class=" dropbtn"" class="img-responsive"
+                                    src="./assets/images/EF_180mm_f3.5L_Macro_USM_Default_tcm13-950174.jpg"
+                                    alt="White Watches" width="270" height="350">
+
 
                             </div>
                             <div class="product-info equal-elem">
@@ -460,11 +462,32 @@
                         class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                         <div class="product-inner tooltip-left">
                             <div class="product-thumb">
-                                <a class="thumb-link" href="./accessories.html" tabindex="0">
-                                    <img class="img-responsive"
-                                        src="./assets/images/Polaroid_PLTRI72_PLTRI72_72_Tripod_W_3_Way_1293021011_748512.png"
-                                        alt="White Watches" width="270" height="350" style="margin-bottom: 20xp;">
-                                </a>
+
+                                <img id="class=" dropbtn"" class="img-responsive"
+                                    src="./assets/images/Compact/ixus-185 box.jpg" alt="White Watches" width="270"
+                                    height="350">
+
+
+                            </div>
+                            <div class="product-info equal-elem">
+                                <h3 class="product-name product_title" style="text-align: center;">
+                                    <a href="#" tabindex="0">compact CAMERA</a>
+                                </h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="slick-slide01"
+                        class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                        <div class="product-inner tooltip-left">
+                            <div class="product-thumb">
+
+                                <img class="img-responsive"
+                                    src="./assets/images/Polaroid_PLTRI72_PLTRI72_72_Tripod_W_3_Way_1293021011_748512.png"
+                                    alt="White Watches" width="270" height="350" style="margin-bottom: 20xp;">
+
 
                             </div>
                             <div class="product-info equal-elem">
@@ -566,8 +589,7 @@
                         <h3 class="title" id="best">Best Offers</h3>
                     </div>
 
-                    <div id="seller"
-                        class="response-product product-list-owl owl-slick equal-container better-height"
+                    <div id="seller" class="response-product product-list-owl owl-slick equal-container better-height"
                         data-slick="{&quot;arrows&quot;:true,&quot;slidesMargin&quot;:30,&quot;dots&quot;:true,&quot;infinite&quot;:false,&quot;speed&quot;:300,&quot;slidesToShow&quot;:4,&quot;rows&quot;:1}"
                         data-responsive="[{&quot;breakpoint&quot;:480,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesMargin&quot;:&quot;10&quot;}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesMargin&quot;:&quot;10&quot;}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesMargin&quot;:&quot;20&quot;}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesMargin&quot;:&quot;20&quot;}},{&quot;breakpoint&quot;:1500,&quot;settings&quot;:{&quot;slidesToShow&quot;:4,&quot;slidesMargin&quot;:&quot;30&quot;}}]">
 
@@ -964,7 +986,7 @@
     </div>
     <footer id="footer" class="footer style-01">
         <div class="section-001 section-009">
-            <div  class="container">
+            <div class="container">
                 <div class="kobolg-newsletter style-01">
                     <div class="newsletter-inner">
                         <div class="newsletter-info">
@@ -1074,7 +1096,7 @@
     </a>
 
 
-  
+
 
 
     <script src="./assets/js/jquery-1.12.4.min.js"></script>
