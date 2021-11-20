@@ -1,0 +1,276 @@
+
+        /*! CSS Used from: https://www.canon-europe.com/system/assets/FFP/css/style.min.css?v=Q04.21.11.3 ; media=screen, print */
+        @media screen,print {
+            a {
+                background-color: transparent;
+            }
+
+            .container {
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            a:active {
+                outline: 0;
+            }
+
+            a:hover {
+                outline: 0;
+            }
+
+            sup {
+                font-size: 75%;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            }
+
+            sup {
+                top: -.5em;
+            }
+
+            *,
+            ::before,
+            ::after {
+                -webkit-box-sizing: inherit;
+                box-sizing: inherit;
+            }
+
+            h2,
+            h3,
+            h4 {
+                margin-top: 0;
+                margin-bottom: .5rem;
+            }
+
+            p {
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                color: #0275d8;
+                text-decoration: none;
+            }
+
+            a:focus,
+            a:hover {
+                color: #014c8c;
+                text-decoration: underline;
+            }
+
+            a:focus {
+                outline: thin dotted;
+                outline: 5px auto -webkit-focus-ring-color;
+                outline-offset: -2px;
+            }
+
+            a {
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+            }
+
+            .row {
+                margin-left: -.9375rem;
+                margin-right: -.9375rem;
+            }
+
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .col-xs-12,
+            .col-lg-4,
+            .col-lg-8 {
+                position: relative;
+                min-height: 1px;
+                padding-left: .9375rem;
+                padding-right: .9375rem;
+            }
+
+            .col-xs-12 {
+                float: left;
+            }
+
+            .col-xs-12 {
+                width: 100%;
+            }
+
+            @media (min-width: 992px) {
+
+                .col-lg-4,
+                .col-lg-8 {
+                    float: left;
+                }
+
+                .col-lg-4 {
+                    width: 33.33333%;
+                }
+
+                .col-lg-8 {
+                    width: 66.66667%;
+                }
+            }
+
+            .clearfix::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .pl-spacer--in--smallest {
+                padding: 15px;
+            }
+
+            @media (min-width: 544px) {
+                .pl-spacer--in--smallest {
+                    padding: 20px;
+                }
+            }
+
+            .pl-spacer--out--small {
+                margin: 35px;
+            }
+
+            @media (min-width: 544px) {
+                .pl-spacer--out--small {
+                    margin: 65px;
+                }
+            }
+
+            .pl-spacer--out--smaller {
+                margin: 20px;
+            }
+
+            @media (min-width: 544px) {
+                .pl-spacer--out--smaller {
+                    margin: 30px;
+                }
+            }
+
+            .pl-spacer--cut-h[class*="in"] {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .pl-spacer--cut-h[class*="out"] {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .pl-spacer--cut-v[class*="out"] {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .row.no-gutter {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .row.no-gutter [class*='col-'] {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .pl-h2 {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            .pl-h2--alt {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            @media (min-width: 544px) {
+                .pl-h2 {
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+
+                .pl-h2--alt {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+            }
+
+            .pl-h5 {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            @media (min-width: 544px) {
+                .pl-h5 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            a:link,
+            a:active,
+            a:hover,
+            a:visited {
+                color: #006FB4;
+                text-decoration: none;
+                outline: 0;
+            }
+
+            a:focus {
+                outline: 0;
+            }
+
+            .container .row p a:not(.pl-link):hover {
+                text-decoration: underline;
+            }
+
+            * {
+                -webkit-font-smoothing: antialiased;
+            }
+
+            .product-specification__item__details {
+                padding: 0;
+            }
+
+            .product-specification__item__details__element {
+                border-top: 1px solid #ECEDED;
+            }
+
+            .product-specification__item__details__element:last-child {
+                border-bottom: 1px solid #ECEDED;
+            }
+
+            .product-specification__item__details__element p:last-child {
+                margin-bottom: 0;
+            }
+
+            ::-webkit-input-placeholder {
+                color: #D9D9D9;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            ::-moz-placeholder {
+                color: #D9D9D9;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            :-moz-placeholder {
+                color: #D9D9D9;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            :-ms-input-placeholder {
+                color: #D9D9D9;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }

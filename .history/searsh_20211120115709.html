@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropdiv {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdiv:hover, .dropdiv:focus {
+  background-color: #2980B9;
+}
+
+.camtype {
+  position: relative;
+  display: inline-block;
+}
+
+.camtype-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.camtype-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.camtype a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+<h2>Clickable camtype</h2>
+<p>Click on the button to open the camtype menu.</p>
+
+<div class="camtype">
+  <button onclick="myFunction()" class="dropdiv">camtype</button>
+  <div id="mycamtype" class="camtype-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the camtype content */
+function myFunction() {
+  document.getElementById("mycamtype").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdiv')) {
+    var dropdowns = document.getElementsByClassName("camtype-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

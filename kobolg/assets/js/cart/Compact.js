@@ -363,3 +363,24 @@ for (let index = 0; index < products.length; index++) {
     
 }
 
+<<<<<<< Updated upstream
+=======
+const searchField = document.querySelector("#searchinput");
+const searchResultsContainer = document.querySelector("#  ");
+
+searchField.addEventListener("input", (e) => {
+  // if input field is empty, clear the search results
+  if (e.target.value === "") {
+    searchResultsContainer.innerHTML = "";
+    return;
+  }
+
+  // filter the products array
+  const searchResults = products.filter((meal) => {
+    return meal.name.toLowerCase().includes(e.target.value.toLowerCase());
+  });
+
+  // before displaying the search results, clear the search results div
+  searchResultsContainer.innerHTML = "";
+});
+>>>>>>> Stashed changes

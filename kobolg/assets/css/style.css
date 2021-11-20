@@ -2,8 +2,50 @@
 	display: flex;
 }
 
+<<<<<<< Updated upstream
 #fot{
 	margin-left: 10px;
+=======
+#checkout{
+  display: flex;
+}
+
+
+#fot {
+  margin-left: 10px;
+}
+
+#searchresults {
+  text-align: center;
+  padding-left: 20px;
+  text-align: center;
+  display: none;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  border: 2px solid #ff0000;
+  border-radius: 21px;
+  max-height: 400px;
+  overflow: auto;
+  width: 300px;
+  z-index: 999;
+}
+
+#searchresultsmob {
+  text-align: center;
+  padding-left: 20px;
+  text-align: center;
+  display: none;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  border: 2px solid #ff0000;
+  border-radius: 21px;
+  max-height: 400px;
+  overflow: auto;
+  width: 300px;
+  z-index: 999;
+>>>>>>> Stashed changes
 }
 
 #Compact {
@@ -6431,8 +6473,16 @@ ul.products li.product-category a .kobolg-loop-category__title mark {
 7.2 PRODUCT ITEM
 ========================================================================== */
 
+<<<<<<< Updated upstream
 .product-inner, .product-thumb, .thumb-link {
 	position: relative;
+=======
+.product-inner,
+.product-thumb,
+.thumb-link {
+  position: relative;
+  cursor: pointer;
+>>>>>>> Stashed changes
 }
 
 .product-thumb img {
@@ -8348,8 +8398,15 @@ body.admin-bar #yith-quick-view-modal {
 }
 
 .contain-left .entry-summary {
+<<<<<<< Updated upstream
 	overflow: hidden;
 	margin-bottom: 30px;
+=======
+  overflow: hidden;
+  margin-bottom: 30px;
+      margin-top: 9%;
+    margin-left: 64%;
+>>>>>>> Stashed changes
 }
 
 /*.kobolg-product-gallery*/

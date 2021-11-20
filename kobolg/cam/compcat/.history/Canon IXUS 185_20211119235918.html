@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*! CSS Used from: https://www.canon-europe.com/system/assets/FFP/css/style.min.css?v=Q04.21.11.3 ; media=screen, print */
+        @media screen,print {
+            a {
+                background-color: transparent;
+            }
+
+            #productspecificationkey{
+                display: grid;
+            }
+
+            .container {
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            a:active {
+                outline: 0;
+            }
+
+            a:hover {
+                outline: 0;
+            }
+
+            sup {
+                font-size: 75%;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            }
+
+            sup {
+                top: -.5em;
+            }
+
+            *,
+            ::before,
+            ::after {
+                -webkit-box-sizing: inherit;
+                box-sizing: inherit;
+            }
+
+            h2,
+            h3,
+            h4 {
+                margin-top: 0;
+                margin-bottom: .5rem;
+            }
+
+            p {
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                color: #0275d8;
+                text-decoration: none;
+            }
+
+            a:focus,
+            a:hover {
+                color: #014c8c;
+                text-decoration: underline;
+            }
+
+            a:focus {
+                outline: thin dotted;
+                outline: 5px auto -webkit-focus-ring-color;
+                outline-offset: -2px;
+            }
+
+            a {
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+            }
+
+            .row {
+                margin-left: -.9375rem;
+                margin-right: -.9375rem;
+            }
+
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .col-xs-12,
+            .col-lg-4,
+            .col-lg-8 {
+                position: relative;
+                min-height: 1px;
+                padding-left: .9375rem;
+                padding-right: .9375rem;
+            }
+
+            .col-xs-12 {
+                float: left;
+            }
+
+            .col-xs-12 {
+                width: 100%;
+            }
+
+            @media (min-width: 992px) {
+
+                .col-lg-4,
+                .col-lg-8 {
+                    float: left;
+                }
+
+                .col-lg-4 {
+                    width: 33.33333%;
+                }
+
+                .col-lg-8 {
+                    width: 66.66667%;
+                }
+            }
+
+            .clearfix::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .pl-spacer--in--smallest {
+                padding: 15px;
+            }
+
+            @media (min-width: 544px) {
+                .pl-spacer--in--smallest {
+                    padding: 20px;
+                }
+            }
+
+            .pl-spacer--out--small {
+                margin: 35px;
+            }
+
+            @media (min-width: 544px) {
+                .pl-spacer--out--small {
+                    margin: 65px;
+                }
+            }
+
+            .pl-spacer--out--smaller {
+                margin: 20px;
+            }
+
+            @media (min-width: 544px) {
+                .pl-spacer--out--smaller {
+                    margin: 30px;
+                }
+            }
+
+            .pl-spacer--cut-h[class*="in"] {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .pl-spacer--cut-h[class*="out"] {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .pl-spacer--cut-v[class*="out"] {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .row.no-gutter {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .row.no-gutter [class*='col-'] {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .pl-h2 {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            .pl-h2--alt {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            @media (min-width: 544px) {
+                .pl-h2 {
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+
+                .pl-h2--alt {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+            }
+
+            .pl-h5 {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            @media (min-width: 544px) {
+                .pl-h5 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            a:link,
+            a:active,
+            a:hover,
+            a:visited {
+                color: #006FB4;
+                text-decoration: none;
+                outline: 0;
+            }
+
+            a:focus {
+                outline: 0;
+            }
+
+            .container .row p a:not(.pl-link):hover {
+                text-decoration: underline;
+            }
+
+            * {
+                -webkit-font-smoothing: antialiased;
+            }
+
+            .product-specification__item__details {
+                padding: 0;
+            }
+
+            .product-specification__item__details__element {
+                border-top: 1px solid #ECEDED;
+            }
+
+            .product-specification__item__details__element:last-child {
+                border-bottom: 1px solid #ECEDED;
+            }
+
+            .product-specification__item__details__element p:last-child {
+                margin-bottom: 0;
+            }
+
+            ::-webkit-input-placeholder {
+                color: #D9D9D9;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            ::-moz-placeholder {
+                color: #D9D9D9;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            :-moz-placeholder {
+                color: #D9D9D9;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            :-ms-input-placeholder {
+                color: #D9D9D9;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section
+        class="product-specification__key-features pl-spacer pl-spacer--in--small pl-spacer--cut-h pl-bg pl-bg--white" id="productspecificationkey">
+        <div class="container">
+
+
+            <div class="specifications-list__content__items pl-spacer pl-spacer--out--medium pl-spacer--cut-h">
+                <div class="row specifications-list__content__items__row">
+
+
+
+                    <div class="col-xs-12 col-lg-4">
+                        <div
+                            class="specifications-list__content__item pl-spacer--in--smallest pl-spacer--cut-h col-xs-12">
+                            <div class="specifications-list__content__item__icon col-xs-3">
+                                <img srcset="//i1.adis.ws/i/canon/20.0-mp-160x100?w=100%&amp;fmt=jpg&amp;fmt.options=interlaced&amp;bg=rgb(255,255,255)"
+                                    alt="20.0 MP">
+                            </div>
+                            <div class="specifications-list__content__item__desc col-xs-9">
+
+
+                                <p class="additional-info pl-text pl-text--small pl-color pl-color--gray-dark">20
+                                    Megapixels
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-xs-12 col-lg-4">
+                        <div
+                            class="specifications-list__content__item pl-spacer--in--smallest pl-spacer--cut-h col-xs-12">
+                            <div class="specifications-list__content__item__icon col-xs-3">
+                                <img srcset="//i1.adis.ws/i/canon/28mm-8x-zoom-160x100?w=100%&amp;fmt=jpg&amp;fmt.options=interlaced&amp;bg=rgb(255,255,255)"
+                                    alt="28mm 8x zoom">
+                            </div>
+                            <div class="specifications-list__content__item__desc col-xs-9">
+
+
+                                <p class="additional-info pl-text pl-text--small pl-color pl-color--gray-dark">8x
+                                    optical
+                                    zoom with wide-angle</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-xs-12 col-lg-4">
+                        <div
+                            class="specifications-list__content__item pl-spacer--in--smallest pl-spacer--cut-h col-xs-12">
+                            <div class="specifications-list__content__item__icon col-xs-3">
+                                <img srcset="//i1.adis.ws/i/canon/16x-zoom-plus-160x100?w=100%&amp;fmt=jpg&amp;fmt.options=interlaced&amp;bg=rgb(255,255,255)"
+                                    alt="16x zoom plus">
+                            </div>
+                            <div class="specifications-list__content__item__desc col-xs-9">
+
+
+                                <p class="additional-info pl-text pl-text--small pl-color pl-color--gray-dark">Zoom to
+                                    16x
+                                    with great quality</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+                <div class="row specifications-list__content__items__row hidden-md-down more-key-features">
+
+
+
+                    <div class="col-xs-12 col-lg-4">
+                        <div
+                            class="specifications-list__content__item pl-spacer--in--smallest pl-spacer--cut-h col-xs-12">
+                            <div class="specifications-list__content__item__icon col-xs-3">
+                                <img srcset="//i1.adis.ws/i/canon/digic-4-160x100?w=100%&amp;fmt=jpg&amp;fmt.options=interlaced&amp;bg=rgb(255,255,255)"
+                                    alt="Digic 4">
+                            </div>
+                            <div class="specifications-list__content__item__desc col-xs-9">
+
+
+                                <p class="additional-info pl-text pl-text--small pl-color pl-color--gray-dark">Powerful
+                                    DIGIC processing</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-xs-12 col-lg-4">
+                        <div
+                            class="specifications-list__content__item pl-spacer--in--smallest pl-spacer--cut-h col-xs-12">
+                            <div class="specifications-list__content__item__icon col-xs-3">
+                                <img srcset="//i1.adis.ws/i/canon/easy-auto-160x100?w=100%&amp;fmt=jpg&amp;fmt.options=interlaced&amp;bg=rgb(255,255,255)"
+                                    alt="Easy Auto">
+                            </div>
+                            <div class="specifications-list__content__item__desc col-xs-9">
+
+
+                                <p class="additional-info pl-text pl-text--small pl-color pl-color--gray-dark">Simple,
+                                    worry-free camera control</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-xs-12 col-lg-4">
+                        <div
+                            class="specifications-list__content__item pl-spacer--in--smallest pl-spacer--cut-h col-xs-12">
+                            <div class="specifications-list__content__item__icon col-xs-3">
+                                <img srcset="//i1.adis.ws/i/canon/smart-auto-32-scenes-160x100?w=100%&amp;fmt=jpg&amp;fmt.options=interlaced&amp;bg=rgb(255,255,255)"
+                                    alt="Smart Auto 32 scenes">
+                            </div>
+                            <div class="specifications-list__content__item__desc col-xs-9">
+
+
+                                <p class="additional-info pl-text pl-text--small pl-color pl-color--gray-dark">Auto mode
+                                    with 32-scene detection</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="row specifications-list__content__items__row hidden-md-down more-key-features">
+
+
+
+                    <div class="col-xs-12 col-lg-4">
+                        <div
+                            class="specifications-list__content__item pl-spacer--in--smallest pl-spacer--cut-h col-xs-12">
+                            <div class="specifications-list__content__item__icon col-xs-3">
+                                <img srcset="//i1.adis.ws/i/canon/hd-movies-720p-160x100?w=100%&amp;fmt=jpg&amp;fmt.options=interlaced&amp;bg=rgb(255,255,255)"
+                                    alt="HD movies 720p">
+                            </div>
+                            <div class="specifications-list__content__item__desc col-xs-9">
+
+
+                                <p class="additional-info pl-text pl-text--small pl-color pl-color--gray-dark">720p
+                                    movies
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-xs-12 col-lg-4">
+                        <div
+                            class="specifications-list__content__item pl-spacer--in--smallest pl-spacer--cut-h col-xs-12">
+                            <div class="specifications-list__content__item__icon col-xs-3">
+                                <img srcset="//i1.adis.ws/i/canon/date-stamp-160x100?w=100%&amp;fmt=jpg&amp;fmt.options=interlaced&amp;bg=rgb(255,255,255)"
+                                    alt="Date stamp">
+                            </div>
+                            <div class="specifications-list__content__item__desc col-xs-9">
+
+
+                                <p class="additional-info pl-text pl-text--small pl-color pl-color--gray-dark">Add date
+                                    stamps to your images</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="row specifications-list__content__items__row hidden-md-down more-key-features">
+
+
+
+                </div>
+
+
+                <div class="row specifications-list__content__items__row hidden-md-down more-key-features">
+
+
+
+                </div>
+
+
+                <a href="#"
+                    class="hidden-lg-up pl-link pl-link--animated pl-link--animated--expand pl-spacer--out--smallest pl-spacer--cut-bottom pl-spacer--cut-h show-more-key-features"
+                    data-less="Show less">View all<i></i></a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section
+        class="product-specification__specification pl-spacer pl-spacer--in--small pl-spacer--cut-h pl-bg pl-bg--white">
+        <div class="container">
+            <div>
+                <h2 class="pl-h2">Specifications in detail</h2>
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="image-sensor_1">
+                    <h3 class="pl-h2 pl-h2--alt">Image Sensor</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Type</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>1/2.3 type CCD</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Effective Pixels</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Approx. 20.0M <a><sup></sup></a><a href="#footnote-1"
+                                        class="product-specification-detail__link" canon-link--blue="">1</a></p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Effective / Total
+                                Pixels
+                            </h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Approx. 20.5M</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="image-processor_2">
+                    <h3 class="pl-h2 pl-h2--alt">Image Processor</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Type</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>DIGIC 4+</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h" id="lens_3">
+                    <h3 class="pl-h2 pl-h2--alt">Lens</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Focal Length</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>5.0 – 40.0 mm (35 mm equivalent: 28 – 224 mm)</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Zoom</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Optical 8x
+                                    <br>
+                                    ZoomPlus 16x
+                                    <br>
+                                    Digital approx. 4x
+                                    <br>
+                                    Combined approx. 32x <a><sup></sup></a><a href="#footnote-2"
+                                        class="product-specification-detail__link" canon-link--blue="">2</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Maximum f/number</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>f/3.2 – f/6.9</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Construction</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>8 elements in 7 groups (1 double-sided aspherical lens)</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Image Stabilisation
+                            </h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Electronic type (Digital IS Mode)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="focusing_4">
+                    <h3 class="pl-h2 pl-h2--alt">Focusing</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Type</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>TTL</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">AF System/ Points</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>AiAF (Face Detection / 9-point), 1-point AF (fixed to centre)</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">AF Modes</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Single, Continuous, Servo AF/AE, Tracking AF <a><sup></sup></a><a href="#footnote-3"
+                                        class="product-specification-detail__link" canon-link--blue="">3</a></p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">AF Assist Beam</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Yes</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Closest Focusing
+                                Distance
+                            </h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>1 cm (W) from front of lens in Macro</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="exposure-control_5">
+                    <h3 class="pl-h2 pl-h2--alt">Exposure Control</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Metering modes</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Evaluative (linked to Face Detection AF frame), Centre-weighted average, Spot
+                                    (centre)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Exposure Compensation
+                            </h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>+/- 2 EV in 1/3 stop increments
+                                    <br>
+                                    i-Contrast for automatic dynamic range correction
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">ISO Sensitivity</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>AUTO, 100, 200, 400, 800, 1600
+                                    <br>
+                                    AUTO ISO: 100 - 800
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="shutter_6">
+                    <h3 class="pl-h2 pl-h2--alt">Shutter</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Speed</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>1 – 1/2000 s (Auto Mode)
+                                    <br>
+                                    15 – 1/2000 s (total range – varies by shooting mode)
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="white-balance_7">
+                    <h3 class="pl-h2 pl-h2--alt">White Balance</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Type</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>TTL</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Settings</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Auto (including Face Detection WB), Daylight, Cloudy, Light bulb, Fluorescent,
+                                    Fluorescent H, Custom</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="lcd-monitor_8">
+                    <h3 class="pl-h2 pl-h2--alt">LCD Monitor</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Monitor</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>6.8 cm (2.7") LCD (TFT), approx. 230,000 dots</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Coverage</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Approx. 100%</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Brightness</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Adjustable to one of five levels.
+                                    <br>
+                                    Quick-bright LCD available via holding INFO Button
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h" id="flash_9">
+                    <h3 class="pl-h2 pl-h2--alt">Flash</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Modes</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Auto, Manual Flash On / Off, Slow Synchro</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Slow Sync Speed</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Yes. Fastest speed 1/2000 s</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Red-Eye Reduction</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Yes</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Flash Exposure
+                                Compensation
+                            </h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Face Detection FE</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Built-in Flash Range
+                            </h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>50 cm – 3.0 m (W) / 1.3 – 1.5 m (T)</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">External Flash</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Canon High Power Flash HF-DC2</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="shooting_10">
+                    <h3 class="pl-h2 pl-h2--alt">Shooting</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Modes</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Smart Auto (32 scenes detected), P, Portrait, FaceSelf-Timer, Low Light (5.0 MP),
+                                    Digital
+                                    IS, Fish-eye Effect, Miniature Effect, Toy Camera Effect, Monochrome, Super Vivid,
+                                    Poster Effect, Fireworks, Long Shutter
+                                    <br>
+                                    Easy Auto activated by default
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Drive modes</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Single, Continuous, Self-Timer</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Continuous Shooting
+                            </h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Approx. 0.8 shots/s
+                                    <br>
+                                    Low Light Mode (5.0 MP): Approx. 2.2 shots/s
+                                    <br>
+                                    (all speeds are until memory card becomes full) <a><sup></sup></a><a
+                                        href="#footnote-4" class="product-specification-detail__link"
+                                        canon-link--blue="">4</a><a>,
+                                        <sup></sup></a><a href="#footnote-5" class="product-specification-detail__link"
+                                        canon-link--blue="">5</a>
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h" id="_11">
+                    <h3 class="pl-h2 pl-h2--alt">Recording Pixels / Compression</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Image Size</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>4:3 - (L) 5152 x 3864, (M1) 3648 x 2736, (M2) 2048 x 1536, (S) 640 x 480
+                                    <br>
+                                    16:9/ W - (L) 5152 x 2896
+                                    <br>
+                                    Resize option available in playback
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Compression</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Fine</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Movies</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>(HD) 1280 x 720, 25 fps, (L) 640 x 480, 29.97 fps</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Movie Length</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>
+                                </p>
+                                <p>(HD) Up to 4 GB or 29 min 59 s <a><sup></sup></a><a href="#footnote-6"
+                                        class="product-specification-detail__link" canon-link--blue="">6</a></p>
+                                <p>(L) up to 4 GB or 1 hour <a><sup></sup></a><a href="#footnote-7"
+                                        class="product-specification-detail__link" canon-link--blue="">7</a></p>
+                                <p></p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h" id="_12">
+                    <h3 class="pl-h2 pl-h2--alt">File Types</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Still Image Type</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>JPEG compression, (Exif 2.3 [Exif Print] compliant) / Design rule for Camera File
+                                    system,
+                                    Digital Print Order Format [DPOF] Version 1.1 compliant</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Movies</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>MOV [Video: H.264, Audio: MPEG4 AAC-LC (monaural)]</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="other-features_13">
+                    <h3 class="pl-h2 pl-h2--alt">Other Features</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Red-Eye Correction</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Yes</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Intelligent Orientation
+                                Sensor</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Yes, with Auto Rotate</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Histogram</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Yes, during playback</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Playback zoom</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Approx. 2x – 10x</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Self Timer</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Approx. 2, 10 s or Custom</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Menu Languages</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>English, German, French, Dutch, Danish, Finnish, Italian, Greek, Norwegian,
+                                    Portuguese,
+                                    Russian, Swedish, Spanish, Ukrainian, Polish, Czech, Hungarian, Turkish, Simplified
+                                    Chinese, Chinese (traditional), Japanese, Korean, Thai, Arabic, Romanian, Farsi,
+                                    Hindi,
+                                    Malay, Indonesian, Vietnamese, Hebrew</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="interface_14">
+                    <h3 class="pl-h2 pl-h2--alt">Interface</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Computer</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Hi-Speed USB composite connector (Mini-B compatible)</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Other</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>A/V output, composite connector (PAL/NTSC)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="memory-card_15">
+                    <h3 class="pl-h2 pl-h2--alt">Memory Card</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Type</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>SD, SDHC, SDXC</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="supported-operating-system_16">
+                    <h3 class="pl-h2 pl-h2--alt">Supported Operating System</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">PC &amp; Macintosh</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Windows 10 / 8.1 / 8 / 7 SP1 <a><sup></sup></a><a href="#footnote-8"
+                                        class="product-specification-detail__link" canon-link--blue="">8</a>
+                                    <br>
+                                    Mac OS X 10.9 / 10.10 / 10.11 / 10.12
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="software_17">
+                    <h3 class="pl-h2 pl-h2--alt">Software</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Other</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>CameraWindow DC</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="power-source_18">
+                    <h3 class="pl-h2 pl-h2--alt">Power Source</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Batteries</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Rechargeable Li-ion Battery NB-11L / NB-11LH (NB-11L battery and charger supplied)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Battery life</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Approx. 210 shots
+                                    <br>
+                                    Eco Mode: Approx. 285 shots
+                                    <br>
+                                    Playback Mode: Approx. 240 min
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h"
+                    id="accessories_19">
+                    <h3 class="pl-h2 pl-h2--alt">Accessories</h3>
+                    <div
+                        class="product-specification__item__details  pl-spacer pl-spacer--out--smaller pl-spacer--cut-h">
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Cases / Straps</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Soft Case DCC-1320
+                                    <br>
+                                    Soft Case DCC-1350
+                                    <br>
+                                    Soft Case DCC-1370
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Flash</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Canon High Power Flash HF-DC2</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Power Supply &amp;
+                                Battery
+                                Chargers</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Battery Charger CB-2LFE / CB-2LDE
+                                    <br>
+                                    Rechargeable Li-ion Battery NB-11L/ NB-11LH
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-specification__item__details__element pl-spacer pl-spacer--in--smallest pl-spacer--cut-h clearfix row no-gutter">
+
+                            <h4 class="col-xs-12 col-lg-4 pl-h5 pl-spacer--out pl-spacer--cut-v">Other</h4>
+                            <div class="col-xs-12 col-lg-8">
+                                <p>Canon AV Cable AVC-DC400
+                                    <br>
+                                    Interface cable IFC-400PCU
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+            <div
+                class="product-specification__footnotes pl-text pl-text--small pl-spacer pl-spacer--in--large pl-spacer--cut-h pl-spacer--cut-bottom">
+                <div class="col-xs-12 col-lg-7 pl-spacer pl-spacer--in--medium pl-spacer--cut-h pl-spacer--cut-bottom">
+
+                    <p>All data is based on Canon standard testing methods (according to CIPA Standards) except where
+                        indicated.</p>
+
+                    <p>Subject to change without notice.</p>
+
+                    <ol class="footnotes">
+
+                        <li data-number="1">
+                            <span id="footnote-1">Image processing may cause a decrease in the number of pixels.</span>
+                        </li>
+
+                        <li data-number="2">
+                            <span id="footnote-2">Depending on the image size selected.</span>
+                        </li>
+
+                        <li data-number="3">
+                            <span id="footnote-3">Some settings limit availability.</span>
+                        </li>
+
+                        <li data-number="4">
+                            <span id="footnote-4">Under conditions where the flash does not fire.</span>
+                        </li>
+
+                        <li data-number="5">
+                            <span id="footnote-5">Depending on memory card speed / capacity / compression
+                                setting.</span>
+                        </li>
+
+                        <li data-number="6">
+                            <span id="footnote-6">The following Speed Class memory cards are required for maximum record
+                                time: (HD) 1280 x 720 Speed Class 4 or above. (Full HD) 1920 x 1080 Speed Class 6 or
+                                above.
+                                (iFrame) 1280 x 720 Speed Class 6 or above.</span>
+                        </li>
+
+                        <li data-number="7">
+                            <span id="footnote-7">Depending on memory card speed / capacity / compression
+                                setting.</span>
+                        </li>
+
+                        <li data-number="8">
+                            <span id="footnote-8">Software applications compatible with Windows 10 in Windows 10 Desktop
+                                Mode only</span>
+                        </li>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/pro cam icon.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/chosen.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/jquery.scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/lightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/megamenu.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/dreaming-attribute.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
+    <style>
+.dropdiv {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdiv:hover, .dropdiv:focus {
+  background-color: #2980B9;
+}
+
+.camtype {
+  position: relative;
+  display: inline-block;
+}
+
+.camtype-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.camtype-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.camtype a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+    <title>pro cam</title>
+</head>
+
+<body>
+
+    <header id="header" class="header style-04 header-dark">
+
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-inner">
+                    <div class="header-logo-menu">
+                        <div class="block-menu-bar">
+                            <a class="menu-bar menu-toggle" href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <div class="header-logo">
+                            <a href="index.html" style="text-align: center;"><img class="logo"
+                                    src="./././assets/images/logo.png"></a>
+                        </div>
+                    </div>
+                    <div class="header-control">
+                        <div class="header-control-inner">
+                            <div class="meta-dreaming">
+                                <div class="menu-item block-user block-dreaming kobolg-dropdown">
+                                    <a class="block-link" href="my-account.html">
+                                        <span class="flaticon-profile"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li
+                                            class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--dashboard is-active">
+                                            <a href="#">Dashboard</a>
+                                        </li>
+                                        <li
+                                            class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--orders">
+                                            <a href="#">Orders</a>
+                                        </li>
+                                        <li
+                                            class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--downloads">
+                                            <a href="#">Downloads</a>
+                                        </li>
+                                        <li
+                                            class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--edit-addresses">
+                                            <a href="#">Addresses</a>
+                                        </li>
+                                        <li
+                                            class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--edit-account">
+                                            <a href="#">Account details</a>
+                                        </li>
+                                        <li
+                                            class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--customer-logout">
+                                            <a href="#">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="./cart.html">
+                                    <div class="block-minicart block-dreaming kobolg-mini-cart kobolg-dropdown">
+                                        <div class="shopcart-dropdown block-cart-link">
+                                            <a class="block-link link-dropdown" href="./cart.html">
+                                                <span class="flaticon-online-shopping-cart"></span>
+                                                <!-- <span class="count" id="cartnum"></span> -->
+                                            </a>
+
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="header-middle">
+            <div class="container">
+                <div class="box-header-nav menu-nocenter">
+                    <ul id="menu-primary-menu" class="clone-main-menu kobolg-clone-mobile-menu kobolg-nav main-menu">
+                        <li id="menu-item-237"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-237 parent">
+                            <a class="kobolg-menu-item-title" title="Pages" href="./index.html">Home</a>
+                        </li>
+                        <li id="menu-item-228"
+                            class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-228 parent parent-megamenu item-megamenu menu-item-has-children">
+                            <a class="kobolg-menu-item-title" title="Shop" href="#Products">products</a>
+
+                        </li>
+
+                        <li id="menu-item-229"
+                            class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-229 parent parent-megamenu item-megamenu menu-item-has-children">
+                            <a class="kobolg-menu-item-title" title="Elements" href="#services">services</a>
+
+                        </li>
+                        <li id="menu-item-996"
+                            class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-996 parent parent-megamenu item-megamenu menu-item-has-children">
+                            <a class="kobolg-menu-item-title" title="News" href="#news">News</a>
+                        </li>
+
+                        <li id="menu-item-238"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-wrap-stick">
+            <div class="header-position">
+                <div class="header-nav">
+                    <div class="container">
+                        <div class="kobolg-menu-wapper"></div>
+                        <div class="header-nav-inner">
+                            <div data-items="8"
+                                class="vertical-wrapper block-nav-category has-vertical-menu show-button-all">
+                                <div class="block-title">
+                                    <span class="before">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </span>
+                                    <span class="text-title">SHOP BY CATEGORIES</span>
+                                </div>
+                                <div class="block-content verticalmenu-content">
+                                    <ul id="menu-vertical-menu" class="azeroth-nav vertical-menu default">
+                                        <li id="menu-item-886"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-886">
+                                            <a class="azeroth-menu-item-title" title="Camera" href="./EOS DSLR.html">EOS
+                                                DSLR Cameras</a>
+                                        </li>
+                                        <li id="menu-item-886"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-886">
+                                            <a class="azeroth-menu-item-title" title="Camera"
+                                                href="./Compact.html">Compact Cameras</a>
+                                        </li>
+                                        <li id="menu-item-895"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-895">
+                                            <a class="azeroth-menu-item-title" title="Lenses"
+                                                href="./Lenses.html">Lenses</a>
+                                        </li>
+                                        <li id="menu-item-888"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-888">
+                                            <a class="azeroth-menu-item-title" title="Printers"
+                                                href="./Printers.html">Printers</a>
+                                        </li>
+                                        <li id="menu-item-889"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-889">
+                                            <a class="azeroth-menu-item-title" title="Speaker"
+                                                href="./accessories.html">accessories</a>
+                                        </li>
+
+
+                                    </ul>
+
+                                </div>
+                            </div><!-- block category -->
+
+                            <div class="header-search-mid">
+                                <div class="header-search">
+                                    <div class="block-search">
+                                        <form role="search" method="get"
+                                            class="form-search block-search-form kobolg-live-search-form">
+                                            <div class="form-content search-box results-search">
+                                                <div class="inner">
+                                                    <input id="searchinput" autocomplete="off"
+                                                        class="searchfield txt-livesearch input" name="s" value=""
+                                                        placeholder="Search here..." type="text">
+                                                </div>
+                                                <div id="searchresults"></div>
+                                            </div>
+                                            <input name="post_type" value="product" type="hidden">
+                                            <input name="taxonomy" value="product_cat" type="hidden">
+
+                                            <button type="submit" class="btn-submit">
+                                                <span class="flaticon-search"></span>
+                                            </button>
+                                        </form><!-- block search -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mobile">
+            <div class="header-mobile-left">
+                <div class="block-menu-bar">
+                    <a class="menu-bar menu-toggle" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="header-search kobolg-dropdown">
+                    <div class="header-search-inner" data-kobolg="kobolg-dropdown">
+                        <a href="#" class="link-dropdown block-link">
+                            <span class="flaticon-search"></span>
+                        </a>
+                    </div>
+                    <div class="block-search">
+                        <form role="search" method="get" class="form-search block-search-form kobolg-live-search-form">
+                            <div class="form-content search-box results-search">
+                                <div class="inner">
+                                    <input id="searchinputmob" autocomplete="off" class="searchfield txt-livesearch input" name="s" value=""
+                                        placeholder="Search here..." type="text">
+                                </div>
+                                <div id="searchresultsmob"></div>
+                            </div>
+                            <input name="post_type" value="product" type="hidden">
+                            <input name="taxonomy" value="product_cat" type="hidden">
+                            <div class="category">
+                                <select title="product_cat" name="product_cat" id="1770352541"
+                                    class="category-search-option" tabindex="-1" style="display: none;">
+                                    <option value="0">All Categories</option>
+                                    <option class="level-0" value="light">Camera</option>
+                                    <option class="level-0" value="chair">Accessories</option>
+                                    <option class="level-0" value="table">Game & Consoles</option>
+                                    <option class="level-0" value="bed">Life style</option>
+                                    <option class="level-0" value="new-arrivals">New arrivals</option>
+                                    <option class="level-0" value="lamp">Summer Sale</option>
+                                    <option class="level-0" value="specials">Specials</option>
+                                    <option class="level-0" value="sofas">Featured</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn-submit">
+                                <span class="flaticon-search"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="header-mobile-mid">
+                <div class="header-logo">
+                    <a href="index.html"><img alt="Kobolg" src="./././assets/images/logo.png" class="logo"></a>
+                </div>
+            </div>
+            <div class="header-mobile-right">
+                <div class="header-control-inner">
+                    <div class="meta-dreaming">
+                        <div class="menu-item block-user block-dreaming kobolg-dropdown">
+                            <a class="block-link" href="my-account.html">
+                                <span class="flaticon-profile"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li
+                                    class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--dashboard is-active">
+                                    <a href="#">Dashboard</a>
+                                </li>
+                                <li
+                                    class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--orders">
+                                    <a href="#">Orders</a>
+                                </li>
+                                <li
+                                    class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--downloads">
+                                    <a href="#">Downloads</a>
+                                </li>
+                                <li
+                                    class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--edit-addresses">
+                                    <a href="#">Addresses</a>
+                                </li>
+                                <li
+                                    class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--edit-account">
+                                    <a href="#">Account details</a>
+                                </li>
+                                <li
+                                    class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--customer-logout">
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="./cart.html">
+                            <div class="block-minicart block-dreaming kobolg-mini-cart kobolg-dropdown">
+                                <div class="shopcart-dropdown block-cart-link">
+                                    <a class="block-link link-dropdown" href="./cart.html">
+                                        <span class="flaticon-online-shopping-cart"></span>
+                                        <!-- <span class="count" id="cartnum"></span> -->
+                                    </a>
+
+                                </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </header>
+
+    <div class="fullwidth-template">
+        <section id="home">
+            <div class="slide-home-01">
+
+
+                <div class="container">
+
+
+                    <div class="kobolg-heading style-01" style="padding-bottom: 10px;">
+                        <div class="heading-inner">
+                            <h3 class="title">
+                                About us </h3>
+
+                        </div>
+                    </div>
+
+                    <div class="response-product">
+                        <p class="p-engl">
+                            Procam Electronics is a leading company in supplying high quality Imaging and Video
+                            products,
+                            Providing ideal solutions in digital imaging technologies for Governmental entities, NGOs,
+                            corporates
+                            and consumers.
+                            With more than 15 year of experience in the Jordanian Market, we have provided our clients
+                            with
+                            multiple solutions from image capturing to high-quality printout, expanding to home and
+                            office
+                            supplies
+                            Serving our clients with more than 20 well-known brands in the latest products for
+                            Cinematography,
+                            Professional Video & Photography industry.
+                            Procam Electronics is an official distributor of Canon Products and the authorized service
+                            center of
+                            Canon Cameras & Lenses in Jordan.
+                        </p>
+                        <br>
+
+
+                        <p class="p-arab" style="font-size: 15pt;">
+                            شركة الكاميرا الإحترافية للإلكترونيات هي شركة رائدة في مجال تجهيزات تقنية الصوت و الصورة
+                            وتقديم
+                            الحلول المبتكرة
+                            للجهات الحكومية والمنظمات والأفراد.
+
+                            بخبرة تتجاوز الخمسة عشر عاماً في السوق الأردنية، نقدم لزبائننا حلولاً متكاملة بالتصوير
+                            الفوتوغرافي الإحترافي والسينمائي
+                            و
+                            الطباعة.
+
+                            نقدم لعملائنا أحدث المنتجات من أشهر الماركات العالمية المتخصصة فنحن موزعون معتمدون لمنتجات
+                            Canon
+                            ومركز الصيانة
+                            المعتمد والوحيد لكاميرات و عدسات Canon في الأردن.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="grid-container">
+                    <div class="grid-item"><img src="./assets/images/logos/1.jpg"></div>
+                    <div class="grid-item"><img src="./assets/images/logos/2.png"></div>
+                    <div class="grid-item"><img src="./assets/images/logos/3.jpg"></div>
+                    <div class="grid-item"><img src="./assets/images/logos/4.jpg"></div>
+                    <div class="grid-item"><img src="./assets/images/logos/5.jpg"></div>
+                    <div class="grid-item"><img src="./assets/images/logos/6.jpg"></div>
+                    <div class="grid-item"><img src="./assets/images/logos/7.jpg"></div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <section id="Products">
+
+        <div class="section-001">
+            <div class="container">
+                <div class="kobolg-heading style-01">
+
+                    <div class="heading-inner">
+                        <h3 class="title">Products</h3>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div id="prod">
+                    
+                    <div id="slick-slide01"
+                        class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple ">
+                        <div id="dropbtn" class="product-inner tooltip-left camtype">
+                            <div class="product-thumb"  onclick="myFunction()">
+                                
+                                    <img class="img-responsive" src="./assets/images/700.jpg" alt="White Watches"
+                                        width="270" height="350" ; ">
+                                
+
+                            </div>
+                            <div class=" product-info equal-elem">
+                                    <h3 class="product-name product_title" style="text-align: center;">
+                                        <p>Cameras</p>
+                                    </h3>
+
+                                    <div id="mycamtype" class="camtype-content">
+                                        <a href="#home">Home</a>
+                                        <a href="#about">About</a>
+                                        <a href="#contact">Contact</a>
+                                    </div>
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div id="slick-slide01"
+                        class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                        <div class="product-inner tooltip-left">
+                            <div class="product-thumb" id="Lenses" data-type="Lenses">
+
+                                <img id="class=" dropbtn"" class="img-responsive"
+                                    src="./assets/images/EF_180mm_f3.5L_Macro_USM_Default_tcm13-950174.jpg"
+                                    alt="White Watches" width="270" height="350">
+
+
+                            </div>
+                            <div class="product-info equal-elem">
+                                <h3 class="product-name product_title" style="text-align: center;">
+                                    <p>Lenses</p>
+                                </h3>
+
+
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    
+
+                    <div id="slick-slide01"
+                        class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                        <div class="product-inner tooltip-left">
+                            <div class="product-thumb" id="accessories" data-type="accessories">
+
+                                <img class="img-responsive"
+                                    src="./assets/images/Polaroid_PLTRI72_PLTRI72_72_Tripod_W_3_Way_1293021011_748512.png"
+                                    alt="White Watches" width="270" height="350" style="margin-bottom: 20xp;">
+
+
+                            </div>
+                            <div class="product-info equal-elem">
+                                <h3 class="product-name product_title" style="text-align: center;">
+                                    <p>accessories</p>
+                                </h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="slick-slide01"
+                        class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple" >
+                        <div class="product-inner tooltip-left">
+                            <div class="product-thumb" id="Printers" data-type="Printers">
+                                
+                                    <img class="img-responsive" src="./assets/images/pixma_g6040.jpg"
+                                        alt="White Watches" width="270" height="350">
+                             
+
+                            </div>
+                            <div class="product-info equal-elem">
+                                <h3 class="product-name product_title" style="text-align: center;">
+                                    <p>Printers</p>
+                                </h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <section id="services">
+
+                    <div class="container">
+
+
+
+                        <div class="kobolg-heading style-01" style="padding-bottom: 10px;">
+                            <div class="heading-inner">
+                                <h3 class="title">
+                                    services </h3>
+
+                            </div>
+                        </div>
+
+                        <div class="response-product">
+                            <p class="p-engl">
+                                MAINTENACE <br>
+                                In order to maintain the performance of your Canon Camera and lenses, we suggest
+                                regularly
+                                checking the following: <br> <br>
+
+                                - Checking latest firmware updates. <br>
+                                - Checking sensor dust regularly and if required contact us to arrange for a Check &
+                                amp; Clean. <br>
+                                - Maintain your Camera body and lenses in a clean environment. <br>
+                                - Canon trained technicians will only use Canon Genuine Parts, using the latest tools
+                                and
+                                diagnostic equipment <br> <br>
+
+                                You can find more information and advice in your Canon user manual.
+                            </p>
+                            <br>
+
+
+                            <p class="p-arab">
+                                : الصيانة
+                                <br>
+                                للحفاظ على الكاميرا والعدسات الخاصة بك ، ننصحك باتباع الإجراءات التالية بشكل دوري
+                                <br>
+                                <br>
+                                الإطلاع على آخر تحديثات البرامج الخاصة بكاميرتك و التأكد من تحديث كاميرتك بالشكل المناسب
+                                -<br>
+                                التأكد من عدم وجود بقع على الحساس الخاص بكاميرتك بعد كل استخدام وفي حال وجودها يرجى
+                                التواصل معنا لنتمكن
+                                من ترتيب عملية فخص وتنظيف للكاميرا - <br>
+                                الحفاظ على الكاميرا والعدسات الخاصة بك في بيئة نظيفة وخالية من الغبار والرطوبة -<br>
+
+                                Canon كما يستخدم أحدث المعدات الموصى بها من شركة Canon الأصلية فقط والمعتمدة من Canon
+                                فريقنا المختص يستخدم قطع -
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+
+                <div class="kobolg-products style-02">
+
+                    <div class="heading-inner">
+                        <h3 class="title" id="best">Best Offers</h3>
+                    </div>
+
+                    <div id="seller" class="response-product product-list-owl owl-slick equal-container better-height"
+                        data-slick="{&quot;arrows&quot;:true,&quot;slidesMargin&quot;:30,&quot;dots&quot;:true,&quot;infinite&quot;:false,&quot;speed&quot;:300,&quot;slidesToShow&quot;:4,&quot;rows&quot;:1}"
+                        data-responsive="[{&quot;breakpoint&quot;:480,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesMargin&quot;:&quot;10&quot;}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesMargin&quot;:&quot;10&quot;}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesMargin&quot;:&quot;20&quot;}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesMargin&quot;:&quot;20&quot;}},{&quot;breakpoint&quot;:1500,&quot;settings&quot;:{&quot;slidesToShow&quot;:4,&quot;slidesMargin&quot;:&quot;30&quot;}}]">
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/1.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/2.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/3.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/4.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/5.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/6.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/7.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/8.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/9.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/10.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/11.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/12.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
+                            <div class="product-inner tooltip-left">
+                                <div class="product-thumb">
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                        tabindex="0">
+                                        <img class="img-responsive" src="./assets/images/s/13.jpg">
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+    </section>
+
+
+
+
+    <section id="news">
+
+        <div class="section-001">
+            <div class="container">
+                <div class="kobolg-heading style-01">
+                    <div class="heading-inner">
+                        <h3 class="title">
+                            news </h3>
+
+                    </div>
+                </div>
+                <div class="kobolg-blog style-01">
+                    <div class="blog-list-owl owl-slick equal-container better-height"
+                        data-slick="{&quot;arrows&quot;:false,&quot;slidesMargin&quot;:30,&quot;dots&quot;:true,&quot;infinite&quot;:false,&quot;speed&quot;:300,&quot;slidesToShow&quot;:3,&quot;rows&quot;:1}"
+                        data-responsive="[{&quot;breakpoint&quot;:480,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;10&quot;}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesMargin&quot;:&quot;10&quot;}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesMargin&quot;:&quot;20&quot;}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesMargin&quot;:&quot;20&quot;}},{&quot;breakpoint&quot;:1500,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesMargin&quot;:&quot;30&quot;}}]">
+                        <article
+                            class="post-item post-grid rows-space-0 post-195 post type-post status-publish format-standard has-post-thumbnail hentry category-light category-table category-life-style tag-light tag-life-style">
+                            <div class="post-inner blog-grid">
+                                <div class="post-thumb">
+                                    <a href="#" tabindex="0">
+                                        <img src="./assets/images/s/246138591_5208152765867589_4582297512787981920_n.jpg"
+                                            class="img-responsive attachment-370x330 size-370x330" alt="img" width="370"
+                                            height="330"> </a>
+                                    <a class="datebox" href="#" tabindex="0">
+                                        <span>19</span>
+                                        <span>Dec</span>
+                                    </a>
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="post-author">
+                                            By:<a href="#" tabindex="0">
+                                                admin </a>
+                                        </div>
+                                        <div class="post-comment-icon">
+                                            <a href="#" tabindex="0">
+                                                0 </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-info equal-elem">
+                                        <h2 class="post-title"><a href="#" tabindex="0">Not your ordinary multi
+                                                service.</a></h2>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada sodales
+                                        quisque litora dapibus primis lacinia
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article
+                            class="post-item post-grid rows-space-0 post-192 post type-post status-publish format-standard has-post-thumbnail hentry category-light category-fashion category-multi category-life-style tag-light tag-fashion tag-multi">
+                            <div class="post-inner blog-grid">
+                                <div class="post-thumb">
+                                    <a href="#" tabindex="0">
+                                        <img src="./assets/images/s/246138591_5208152765867589_4582297512787981920_n.jpg"
+                                            class="img-responsive attachment-370x330 size-370x330" alt="img" width="370"
+                                            height="330"> </a>
+                                    <a class="datebox" href="#" tabindex="0">
+                                        <span>19</span>
+                                        <span>Dec</span>
+                                    </a>
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="post-author">
+                                            By:<a href="#" tabindex="0">
+                                                admin </a>
+                                        </div>
+                                        <div class="post-comment-icon">
+                                            <a href="#" tabindex="0">
+                                                0 </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-info equal-elem">
+                                        <h2 class="post-title"><a href="#" tabindex="0">We bring you the best by
+                                                working</a></h2>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada sodales
+                                        quisque litora dapibus primis lacinia
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article
+                            class="post-item post-grid rows-space-0 post-189 post type-post status-publish format-video has-post-thumbnail hentry category-table category-life-style tag-multi tag-life-style post_format-post-format-video">
+                            <div class="post-inner blog-grid">
+                                <div class="post-thumb">
+                                    <a href="#" tabindex="0">
+                                        <img src="./assets/images/s/246138591_5208152765867589_4582297512787981920_n.jpg"
+                                            class="img-responsive attachment-370x330 size-370x330" alt="img" width="370"
+                                            height="330"> </a>
+                                    <a class="datebox" href="#" tabindex="0">
+                                        <span>19</span>
+                                        <span>Dec</span>
+                                    </a>
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="post-author">
+                                            By:<a href="#" tabindex="0">
+                                                admin </a>
+                                        </div>
+                                        <div class="post-comment-icon">
+                                            <a href="#" tabindex="0">
+                                                0 </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-info equal-elem">
+                                        <h2 class="post-title"><a href="#" tabindex="0">We design functional best
+                                                multi</a></h2>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada sodales
+                                        quisque litora dapibus primis lacinia
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article
+                            class="post-item post-grid rows-space-0 post-186 post type-post status-publish format-standard has-post-thumbnail hentry category-light category-life-style tag-life-style">
+                            <div class="post-inner blog-grid">
+                                <div class="post-thumb">
+                                    <a href="#" tabindex="-1">
+                                        <img src="./assets/images/s/246138591_5208152765867589_4582297512787981920_n.jpg"
+                                            class="img-responsive attachment-370x330 size-370x330" alt="img" width="370"
+                                            height="330"> </a>
+                                    <a class="datebox" href="#" tabindex="-1">
+                                        <span>19</span>
+                                        <span>Dec</span>
+                                    </a>
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="post-author">
+                                            By:<a href="#" tabindex="-1">
+                                                admin </a>
+                                        </div>
+                                        <div class="post-comment-icon">
+                                            <a href="#" tabindex="-1">
+                                                0 </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-info equal-elem">
+                                        <h2 class="post-title"><a href="#" tabindex="-1">The child is swimming with a
+                                                buoy</a></h2>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada sodales
+                                        quisque litora dapibus primis lacinia
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article
+                            class="post-item post-grid rows-space-0 post-183 post type-post status-publish format-standard has-post-thumbnail hentry category-light category-fashion tag-light tag-multi">
+                            <div class="post-inner blog-grid">
+                                <div class="post-thumb">
+                                    <a href="#" tabindex="-1">
+                                        <img src="./assets/images/s/246138591_5208152765867589_4582297512787981920_n.jpg"
+                                            class="img-responsive attachment-370x330 size-370x330" alt="img" width="370"
+                                            height="330"> </a>
+                                    <a class="datebox" href="#" tabindex="-1">
+                                        <span>19</span>
+                                        <span>Dec</span>
+                                    </a>
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="post-author">
+                                            By:<a href="#" tabindex="-1">
+                                                admin </a>
+                                        </div>
+                                        <div class="post-comment-icon">
+                                            <a href="#" tabindex="-1">
+                                                0 </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-info equal-elem">
+                                        <h2 class="post-title"><a href="#" tabindex="-1">Collection hiding beside beige
+                                                wall</a></h2>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada sodales
+                                        quisque litora dapibus primis lacinia
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+    <footer id="footer" class="footer style-01">
+        <div class="section-001 section-009">
+            <div class="container">
+                <div class="kobolg-newsletter style-01">
+                    <div class="newsletter-inner">
+                        <div class="newsletter-info">
+                            <div class="newsletter-wrap">
+                                <h3 class="title" style="margin-bottom: 30px;">Newsletter</h3>
+                                <h4 class="subtitle" style="margin-bottom: 60px; font-size: 15pt;">Subscribe to receive
+                                    our offers and news</h4>
+
+                            </div>
+                        </div>
+                        <div class="newsletter-form-wrap">
+                            <div class="newsletter-form-inner">
+                                <input id="emailSubscribe" class="email email-newsletter" name="email"
+                                    placeholder="Enter your email ..." type="email">
+                                <button id="submit" class="button btn-submit submit-newsletter">Subscribe</button>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-010">
+            <div class="container">
+                <div class="row" style="flex-wrap: nowrap;">
+                    <div id="infodata">
+                        <div id="fonefax">
+                            <p>Phone : +962 6 5828442 <br>
+                                Fax :+962 6 5828442</p>
+                        </div>
+                        <div id="tel">
+                            <p> Mobile 1 :<a href="tel+962777850080"> +962777850080 </a> <br>
+                                Mobile 2 : +962777642888
+                            </p>
+                        </div>
+                        <div id="loceshin">
+                            <p>- Location :Al- Bayader – HusniSobar Street- Building no.34 floor 1 office 103
+                                - Opening hours : Sun – Thursday 8:30 am – 5:00 pm
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="kobolg-socials style-01">
+                            <div class="content-socials">
+                                <ul class="socials-list">
+                                    <li>
+                                        <a href="https://web.facebook.com/ProcamElectronics.jo" target="_blank">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/procam.electronics/" target="_blank">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://www.google.jo/maps/dir/31.9767111,35.9623705/pro+cam/@31.9682355,35.8937913,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x151ca1153e61a017:0x10ae62be233752ff!2m2!1d35.8419105!2d31.9552317"
+                                            target="_blank">
+                                            <i class="fa fa-map-pin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-device-mobile">
+        <div class="wapper">
+            <div class="footer-device-mobile-item device-home">
+                <a href="index.html">
+                    <span class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </span>
+                    Home
+                </a>
+            </div>
+
+            <div class="footer-device-mobile-item device-home device-cart">
+                <a href="cart.html">
+                    <span class="icon">
+                        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        <span class="count-icon">
+                            0
+                        </span>
+                    </span>
+                    <span class="text">Cart</span>
+                </a>
+            </div>
+            <div class="footer-device-mobile-item device-home device-user">
+                <a href="my-account.html">
+                    <span class="icon">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                    Account
+                </a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="backtotop active">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the camtype content */
+function myFunction() {
+  document.getElementById("mycamtype").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdiv')) {
+    var dropdowns = document.getElementsByClassName("camtype-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/chosen.min.js"></script>
+    <script src="./assets/js/countdown.min.js"></script>
+    <script src="./assets/js/jquery.scrollbar.min.js"></script>
+    <script src="./assets/js/lightbox.min.js"></script>
+    <script src="./assets/js/magnific-popup.min.js"></script>
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/jquery.zoom.min.js"></script>
+    <script src="./assets/js/threesixty.min.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/mobilemenu.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
+    <script src="./assets/js/functions.js"></script>
+    <script src="./email/email.js" type="module"></script>
+    <script src="./assets/js/searsh.js"></script>
+    <script src="./assets/js/cart/shoppingcart_FUN.js" type="module"></script>
+
+    <!--firebase start-->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+    <!--firebase end-->
+
+
+</body>
+
+</html>
