@@ -40,6 +40,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IdasdasdasdasXUS qualit"],
   },
 
   {
@@ -52,6 +53,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable daddddddddddddddddddddddddddddddIXUS qualit"],
   },
 
   {
@@ -64,6 +66,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -76,6 +79,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -88,6 +92,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -100,6 +105,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -112,6 +118,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -124,6 +131,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -137,6 +145,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -149,6 +158,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -161,6 +171,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -173,6 +184,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -185,6 +197,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -197,6 +210,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -209,6 +223,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -221,6 +236,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -233,6 +249,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -245,6 +262,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   ///////////////////////////////////////////////////////////////COMPACT////////////////////////////////////////////////////////////////////////////
@@ -260,6 +278,7 @@ var products = [
     href: "./compact/IXUS 185.html",
     total: 0,
     type: "compact",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -273,6 +292,7 @@ var products = [
     href: "./compact/POWERSHOT SX-620.html",
     total: 0,
     type: "compact",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -285,7 +305,9 @@ var products = [
     href: "/kobolg/DSLR/PowerShot SX540 HS.html",
     total: 0,
     type: "compact",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
+  
 
   {
     id: 24,
@@ -296,6 +318,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "compact",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -307,6 +330,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "compact",
+
   },
 
   {
@@ -318,6 +342,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "compact",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   ///////////////////////////////////////////////////////////////ACCESSORIES////////////////////////////////////////////////////////////////////////////
@@ -331,6 +356,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "accessories",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -342,6 +368,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "accessories",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   /////////////////////////////////////////////////////////////////////Lenses/////////////////////////////////////////////////////////////////////////////
@@ -355,7 +382,9 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
+
 
   {
     id: 30,
@@ -366,6 +395,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -377,6 +407,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -388,6 +419,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -399,6 +431,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -410,6 +443,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -421,6 +455,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -432,6 +467,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -443,6 +479,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -454,6 +491,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -465,6 +503,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   /////////////////////////////////////////////////////////////////////Printers/////////////////////////////////////////////////////////////////////////////
@@ -479,6 +518,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -490,6 +530,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -501,6 +542,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -512,6 +554,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -523,6 +566,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -534,6 +578,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -545,6 +590,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -556,6 +602,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -567,6 +614,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
+    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 ];
 
@@ -649,38 +697,7 @@ function add(id) {
       products[index].cart = true;
       con2.push(products[index]);
       localStorage.setItem("cartItems", JSON.stringify(con2));
-      document.getElementById("cart_Items").innerHTML += `
-            <td class="product-btn btn-primary">
-                                                <a href="#" class="remove" aria-label="Remove this item"
-                                                    data-product_id="27" data-product_sku="885B712">×</a>
-                                            </td>
-                                            <td class="product-thumbnail">
-                                                <a href="#"><img src= "${products[index].img}"
-                                                        class="attachment-kobolg_thumbnail size-kobolg_thumbnail"
-                                                        alt="img" width="600" height="778"></a>
-                                            </td>
-                                            <td class="product-name" data-title="Product">
-                                                <a href="#">${products[index].name}</a>
-                                            </td>
-                                            <td class="product-price" data-title="Price">
-                                                <span class="kobolg-Price-amount amount"><span
-                                                        class="kobolg-Price-currencySymbol">$</span>150.00</span>
-                                            </td>
-                                            <td class="product-quantity" data-title="Quantity">
-                                                <div class="quantity">
-                                                    <span class="qty-label">Quantiy:</span>
-                                                    <div class="control">
-                                                        <a class="btn-number qtyminus quantity-minus" href="#">-</a>
-                                                        <input type="text" value="1" title="Qty"
-                                                            class="input-qty input-text qty text">
-                                                        <a class="btn-number qtyplus quantity-plus" href="#">+</a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="product-subtotal" data-title="Total">
-                                                <span class="kobolg-Price-amount amount"><span
-                                                        class="kobolg-Price-currencySymbol">$</span>150.00</span>
-                                            </td>`;
+      
       con++;
       var total = (products[index].total =
         products[index].price * products[index].quantity);
@@ -852,80 +869,90 @@ searchResultsContainer.addEventListener("click", (e) => {
   const selectedProduct = products.find(
     (product) => product.id === Number(e.target.dataset.productId)
   );
-  localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
+  const saveditem = localStorage.setItem("item-name" , selectedProduct.name);
+  const saveditem2 = localStorage.setItem("item-price" , selectedProduct.price);
+  const saveditem3 = localStorage.setItem("item-img" , selectedProduct.img);
+  const saveditem4 = localStorage.setItem("item-info" , selectedProduct.info);
+  // localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
   window.location.href = "./single-product.html";
 });
 
-var item_name = localStorage.getItem("item-name");
-var item_price = localStorage.getItem("item-price");
-var item_quentity = localStorage.getItem("item-quentity");
-var item_id = localStorage.getItem("item-id");
-var item_cart_status = localStorage.getItem("item-cart_status");
-var item_img = localStorage.getItem("item-img");
-var item_total_price = localStorage.getItem("item-total");
+// var item_name = localStorage.getItem("item-name");
+// var item_price = localStorage.getItem("item-price");
+// var item_quentity = localStorage.getItem("item-quentity");
+// var item_id = localStorage.getItem("item-id");
+// var item_cart_status = localStorage.getItem("item-cart_status");
+// var item_img = localStorage.getItem("item-img");
+// var item_total_price = localStorage.getItem("item-total");
 
-document.getElementById("title").innerText = item_name;
-document.getElementById("price").innerText = item_price;
-document.getElementById("img").innerHTML = `
-    <img style="width: 90%;" alt="img"
-        src="${item_img}">
-`;
+// document.getElementById("title").innerText = item_name;
+// document.getElementById("price").innerText = item_price;
+// document.getElementById("img").innerHTML = `
+//     <img style="width: 90%;" alt="img"
+//         src="${item_img}">
+// `;
 
-document.getElementById("id").innerText = item_id;
+// document.getElementById("id").innerText = item_id;
 
-var products = [
-  {
-    id: item_id,
-    img: item_img,
-    name: item_name,
-    price: item_price,
-    cart: item_cart_status,
-    quantity: item_quentity,
-    total: item_total_price,
-  },
-];
+// var products = [
+//   {
+//     id: item_id,
+//     img: item_img,
+//     name: item_name,
+//     price: item_price,
+//     cart: item_cart_status,
+//     quantity: item_quentity,
+//     total: item_total_price,
+//   },
+// ];
 
-// ///////////////////////////////////////
+// // ///////////////////////////////////////
 
-const searchFieldmob = document.querySelector("#searchinputmob");
-const searchResultsContainermob = document.querySelector("#searchresultsmob");
+// const searchFieldmob = document.querySelector("#searchinputmob");
+// const searchResultsContainermob = document.querySelector("#searchresultsmob");
 
-searchFieldmob.addEventListener("input", (e) => {
-  // if input field is empty, clear the search results
-  if (e.target.value === "") {
-    searchResultsContainermob.innerHTML = "";
-  }
+// searchFieldmob.addEventListener("input", (e) => {
+//   // if input field is empty, clear the search results
+//   if (e.target.value === "") {
+//     searchResultsContainermob.innerHTML = "";
+//   }
 
-  if (e.target.value.length > 0) {
-    searchResultsContainermob.style.display = "block";
-  } else if (e.target.value.length == 0) {
-    searchResultsContainermob.style.display = "none ";
-  }
+//   if (e.target.value.length > 0) {
+//     searchResultsContainermob.style.display = "block";
+//   } else if (e.target.value.length == 0) {
+//     searchResultsContainermob.style.display = "none ";
+//   }
 
-  // filter the products array
-  const searchResults = products.filter((meal) => {
-    return meal.name.toLowerCase().includes(e.target.value.toLowerCase());
-  });
+//   // filter the products array
+//   const searchResults = products.filter((meal) => {
+//     return meal.name.toLowerCase().includes(e.target.value.toLowerCase());
+//   });
 
-  if (searchResults.length == 0) {
-    searchResultsContainermob.style.display = "none ";
-  }
+//   if (searchResults.length == 0) {
+//     searchResultsContainermob.style.display = "none ";
+//   }
 
-  // before displaying the search results, clear the search results div
-  searchResultsContainermob.innerHTML = "";
+//   // before displaying the search results, clear the search results div
+//   searchResultsContainermob.innerHTML = "";
 
-  searchResultsContainermob.innerHTML = searchResults.reduce((acc, element) => {
-    acc += `<p data-product-id="${element.id}" style="border: 1px solid red,padding: 4px">
-            ${element.name}
-        </p>`;
-    return acc;
-  }, "");
-});
+//   searchResultsContainermob.innerHTML = searchResults.reduce((acc, element) => {
+//     acc += `<p data-product-id="${element.id}" style="border: 1px solid red,padding: 4px">
+//             ${element.name}
+//         </p>`;
+//     return acc;
+//   }, "");
+// });
 
-searchResultsContainermob.addEventListener("click", (e) => {
-  const selectedProduct = products.find(
-    (product) => product.id === Number(e.target.dataset.productId)
-  );
-  localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
-  window.location.href = "./single-product.html";
-});
+// searchResultsContainermob.addEventListener("click", (e) => {
+//   const selectedProduct = 
+//   // const selectedProduct = products.find(
+//   //   (product) => product.id === Number(e.target.dataset.productId)
+//   // );
+//   localStorage.setItem("selectedProduct", selectedProduct);
+//   window.location.href = "./single-product.html";
+// });
+
+
+const Printers = document.getElementById("Printers");
+
+

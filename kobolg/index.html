@@ -413,7 +413,7 @@
 
                 <div id="prod">
 
-                    <div id="slick-slide01"
+                    <div id="b "
                         class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                         <div id="dropbtn" class="product-inner tooltip-left">
                             <div class="product-thumb">
@@ -458,26 +458,7 @@
                         </div>
                     </div>
 
-                    <div id="slick-slide01"
-                        class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                        <div class="product-inner tooltip-left">
-                            <div class="product-thumb">
-
-                                <img id="class=" dropbtn"" class="img-responsive"
-                                    src="./assets/images/Compact/ixus-185 box.jpg" alt="White Watches" width="270"
-                                    height="350">
-
-
-                            </div>
-                            <div class="product-info equal-elem">
-                                <h3 class="product-name product_title" style="text-align: center;">
-                                    <a href="#" tabindex="0">compact CAMERA</a>
-                                </h3>
-
-
-                            </div>
-                        </div>
-                    </div>
+                    
 
                     <div id="slick-slide01"
                         class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
@@ -503,7 +484,7 @@
                     <div id="slick-slide01"
                         class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                         <div class="product-inner tooltip-left">
-                            <div class="product-thumb">
+                            <div class="product-thumb" id="Printers">
                                 <a class="thumb-link" href="./Printers.html" tabindex="0">
                                     <img class="img-responsive" src="./assets/images/pixma_g6040.jpg"
                                         alt="White Watches" width="270" height="350">
@@ -1096,7 +1077,27 @@
     </a>
 
 
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
 
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
 
 
     <script src="./assets/js/jquery-1.12.4.min.js"></script>

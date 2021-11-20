@@ -4,19 +4,15 @@ var item_quentity = localStorage.getItem("item-quentity");
 var item_id = localStorage.getItem("item-id");
 var item_cart_status = localStorage.getItem("item-cart_status");
 var item_img = localStorage.getItem("item-img");
-
 var item_total_price = localStorage.getItem("item-total");
 
 document.getElementById("title").innerText = item_name;
 document.getElementById("price").innerText = item_price;
+
 document.getElementById("img").innerHTML = `
     <img style="width: 90%;" alt="img"
         src="${item_img}">
 `;
-
-
-
-document.getElementById("id").innerText = item_id;
 
 var products = [
   {
@@ -30,7 +26,7 @@ var products = [
   },
 ];
 
-const db = getDatabase();
+
 
 function buy() {
   var productsFirebase = [];
@@ -89,70 +85,16 @@ function add(id) {
       products[index].cart = true;
       con2.push(products[index]);
       localStorage.setItem("cartItems", JSON.stringify(con2));
-      document.getElementById("cart_Items").innerHTML += `
-            <td class="product-btn btn-primary">
-                                                <a href="#" class="remove" aria-label="Remove this item"
-                                                    data-product_id="27" data-product_sku="885B712">×</a>
-                                            </td>
-                                            <td class="product-thumbnail">
-                                                <a href="#"><img src= "${products[index].img}"
-                                                        class="attachment-kobolg_thumbnail size-kobolg_thumbnail"
-                                                        alt="img" width="600" height="778"></a>
-                                            </td>
-                                            <td class="product-name" data-title="Product">
-                                                <a href="#">${products[index].name}</a>
-                                            </td>
-                                            <td class="product-price" data-title="Price">
-                                                <span class="kobolg-Price-amount amount"><span
-                                                        class="kobolg-Price-currencySymbol">$</span>150.00</span>
-                                            </td>
-                                            <td class="product-quantity" data-title="Quantity">
-                                                <div class="quantity">
-                                                    <span class="qty-label">Quantiy:</span>
-                                                    <div class="control">
-                                                        <a class="btn-number qtyminus quantity-minus" href="#">-</a>
-                                                        <input type="text" value="1" title="Qty"
-                                                            class="input-qty input-text qty text">
-                                                        <a class="btn-number qtyplus quantity-plus" href="#">+</a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="product-subtotal" data-title="Total">
-                                                <span class="kobolg-Price-amount amount"><span
-                                                        class="kobolg-Price-currencySymbol">$</span>150.00</span>
-                                            </td>`;
       con++;
       var total = (products[index].total =
         products[index].price * products[index].quantity);
       total;
       localStorage.setItem("total", JSON.stringify(total));
+      console.log(con2);
     }
   }
 
-  document.getElementById("total").innerHTML = `
-   <tr>
-   <th scope="row"></th>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td>
-       <h4>Total:</h4>
-   </td>
-   <td>$ ${total()}.00</td>
-    </tr>
-    <tr>
-    <th scope="row"></th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>
- 
-    </td>
-    <td>
-      <button onclick="buy()"class="btn btn-success">Buy</button>
-    </td>
-     </tr>
-   `;
+  
 }
 
 window.add = add;
@@ -175,15 +117,12 @@ function updateCart() {
            <td><img style="width: 5rem;" src="${products[index3].img}" ></td>
            <td>${products[index3].name}</td>
            <td>
-           <button class="btn btn-primary" onclick="reduceAmount(${
-             products[index3].id
-           })">-</button>
-           <input style="width: 2rem;" id="input${
-             products[index3].id
-           }" value="${products[index3].quantity}" disabled>
-           <button class="btn btn-primary" onclick="addAmount(${
-             products[index3].id
-           })" >+</button>
+           <button class="btn btn-primary" onclick="reduceAmount(${products[index3].id
+          })">-</button>
+           <input style="width: 2rem;" id="input${products[index3].id
+          }" value="${products[index3].quantity}" disabled>
+           <button class="btn btn-primary" onclick="addAmount(${products[index3].id
+          })" >+</button>
            </td>
            <td>$ ${products[index3].price * products[index3].quantity}.00</td>
             </tr>
