@@ -5,10 +5,15 @@ var item_id = localStorage.getItem("item-id");
 var item_cart_status = localStorage.getItem("item-cart_status");
 var item_img = localStorage.getItem("item-img");
 var item_total_price = localStorage.getItem("item-total");
+let cartItemsString = localStorage.getItem("cartItems");
+var con2 =
+  cartItemsString != null && cartItemsString.length > 4
+    ? JSON.parse(cartItemsString)
+    : [];
+var con = con2.length;
 
 document.getElementById("title").innerText = item_name;
 document.getElementById("price").innerText = item_price;
-
 document.getElementById("img").innerHTML = `
     <img style="width: 90%;" alt="img"
         src="${item_img}">
@@ -25,8 +30,6 @@ var products = [
     total: item_total_price,
   },
 ];
-
-
 
 function buy() {
   var productsFirebase = [];
@@ -63,9 +66,6 @@ function total() {
   return total;
 }
 
-var con = 0;
-
-var con2 = [];
 //POSITION AT TABLE
 
 function clean() {
@@ -90,11 +90,8 @@ function add(id) {
         products[index].price * products[index].quantity);
       total;
       localStorage.setItem("total", JSON.stringify(total));
-      console.log(con2);
     }
   }
-
-  
 }
 
 window.add = add;

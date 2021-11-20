@@ -95,7 +95,6 @@ function remove(id) {
   //         total();
   var myItem = JSON.parse(localStorage.getItem("cartItems"));
   var filter = myItem.filter((Item) => Item.id != id);
-  localStorage.clear();
   localStorage.setItem("cartItems", JSON.stringify(filter));
   console.log(id);
   console.log(filter);
@@ -124,21 +123,17 @@ function updateCart() {
         document.getElementById("cartItems").innerHTML += `
             <tr>
            <th scope="row">${con + 1}</th>
-           <td><button class="btn btn-danger" onclick="remove(${
-             cartItems[index3].id
-           })">X</button></td>
+           <td><button class="btn btn-danger" onclick="remove(${cartItems[index3].id
+          })">X</button></td>
            <td><img style="width: 5rem;" src="${cartItems[index3].img}" ></td>
            <td>${cartItems[index3].name}</td>
            <td>
-           <button class="btn btn-primary" onclick="reduceAmount(${
-             cartItems[index3].id
-           })">-</button>
-           <input style="width: 2rem;" id="input${
-             cartItems[index3].id
-           }" value="${cartItems[index3].quantity}" disabled>
-           <button class="btn btn-primary" onclick="addAmount(${
-             cartItems[index3].id
-           })" >+</button>
+           <button class="btn btn-primary" onclick="reduceAmount(${cartItems[index3].id
+          })">-</button>
+           <input style="width: 2rem;" id="input${cartItems[index3].id
+          }" value="${cartItems[index3].quantity}" disabled>
+           <button class="btn btn-primary" onclick="addAmount(${cartItems[index3].id
+          })" >+</button>
            </td>
            <td>$ ${cartItems[index3].price * cartItems[index3].quantity}.00</td>
             </tr>
@@ -206,15 +201,14 @@ function addAmount(id) {
     }
   }
 }
-
 for (let index = 0; index < cartItems.length; index++) {
   console.log(cartItems);
   document.getElementById("cart_Items").innerHTML += `
     
         <tr class="kobolg-cart-form__cart-item cart_item">
-                                            <td class="product-remove">
-                                                <a  class="remove" aria-label="Remove this item" onclick="remove(${cartItems[index].id})">×</a>
-                                            </td>
+                                            <div class="product-remove">
+                                                <button  class="remove" aria-label="Remove this item" onclick="remove(${cartItems[index].id})">×</bu>
+                                            </dic>
                                             <td class="product-thumbnail">
                                                 <a href="#">
                                                     <img class="img-responsive" src="${cartItems[index].img}"  width="600" height="600   ">
@@ -245,9 +239,7 @@ for (let index = 0; index < cartItems.length; index++) {
                                                         class="kobolg-Price-currencySymbol">$</span>150.00</span>
                                             </td>
                                         </tr>
-                                        <div>
-                                        <br>
-        
+                                        
         
         
         `;
