@@ -5,7 +5,7 @@ var item_id = localStorage.getItem("item-id");
 var item_cart_status = localStorage.getItem("item-cart_status");
 var item_img = localStorage.getItem("item-img");
 var item_total_price = localStorage.getItem("item-total");
-let cartItemsString = localStorage.getItem("cartItems");
+var cartItemsString = localStorage.getItem("cartItems");
 var con2 =
   cartItemsString != null && cartItemsString.length > 4
     ? JSON.parse(cartItemsString)
@@ -102,28 +102,11 @@ window.buy = buy;
 function updateCart() {
   con = 0;
   var totalTable = 0;
-  document.getElementById("cartItems").innerHTML = "";
   for (let index = 0; index < con2.length; index++) {
     var position = con2[index];
     for (let index3 = 0; index3 < products.length; index3++) {
       if (position == products[index3].id) {
-        document.getElementById("cartItems").innerHTML += `
-            <tr>
-           <th scope="row">${con + 1}</th>
-       
-           <td><img style="width: 5rem;" src="${products[index3].img}" ></td>
-           <td>${products[index3].name}</td>
-           <td>
-           <button class="btn btn-primary" onclick="reduceAmount(${products[index3].id
-          })">-</button>
-           <input style="width: 2rem;" id="input${products[index3].id
-          }" value="${products[index3].quantity}" disabled>
-           <button class="btn btn-primary" onclick="addAmount(${products[index3].id
-          })" >+</button>
-           </td>
-           <td>$ ${products[index3].price * products[index3].quantity}.00</td>
-            </tr>
-           `;
+
         products[index3].total =
           products[index3].price * products[index3].quantity;
       } else {
@@ -132,64 +115,61 @@ function updateCart() {
 
     con = con + 1;
   }
-  if (total() == 0) {
-    document.getElementById("total").innerHTML = "";
-  } else {
-    document.getElementById("total").innerHTML = `
-    <tr>
-    <th scope="row"></th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>
-        <h4>Total:</h4>
-    </td>
-    <td>$ ${total(totalTable)}.00</td>
-     </tr>
-     <tr>
-     <th scope="row"></th>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td>
 
-     </td>
-     <td>
-       <button onclick="buy()" class="btn btn-success">Buy</button>
-     </td>
-      </tr>
-    `;
-  }
 }
 
 function reduceAmount(id) {
-  for (let index = 0; index < products.length; index++) {
-    if (products[index].id == id) {
-      if (products[index].quantity > 1) {
-        products[index].quantity = products[index].quantity - 1;
-        updateCart();
-      } else {
-      }
-    } else {
-    }
+  const Quen_input = document.getElementById("Quen_val");
+  const current_item = products.find(product => product.id == id);
+  if (current_item.quantity > 1) {
+    current_item.quantity = current_item.quantity - 1;
+    updateCart();
+    localStorage.setItem("cartItems", JSON.stringify(current_item));
+    console.log(current_item.quantity);
+    Quen_input.value = current_item.quantity;
+  } else {
+
   }
+  // if (products[index].id == id) {
+  // if (products[index].quantity > 1) {
+  //   products[index].quantity = products[index].quantity - 1;
+  //   console.log(products[index].quantity);
+  //   updateCart();
+  // } else {
+  // }
+  // } else {
+  // }
 }
 
 function addAmount(id) {
-  for (let index = 0; index < products.length; index++) {
-    if (products[index].id == id) {
-      if (products[index].quantity > 0) {
-        products[index].quantity = products[index].quantity + 1;
-        updateCart();
-      } else {
-      }
-    } else {
-    }
+  const Quen_input = document.getElementById("Quen_val");
+  const current_item = products.find(product => product.id == id);
+  const Quen_localstorage = JSON.parse(localStorage.getItem("cartItems"));
+  console.log(Quen_localstorage);
+
+
+  if (true) {
+    current_item.quantity = Number(current_item.quantity) + 1;
+    updateCart();
+    localStorage.setItem("cartItems", JSON.stringify(current_item));
+    Quen_input.value = current_item.quantity;
+  } else {
+
   }
+  // for (let index = 0; index < products.length; index++) {
+  //   if (products[index].id == id) {
+  //     if (products[index].quantity > 0) {
+  //       products[index].quantity = products[index].quantity + 1;
+  //       updateCart();
+  //     } else {
+  //     }
+  //   } else {
+  //   }
+  // }
 }
 
-document.getElementById("add-button-container").innerHTML += `<button
-                                            onclick="add(${item_id})"
-                                            type="submit" id="add" class="single_add_to_cart_button button alt kobolg-variation-selection-needed">
-                                                Add to cart
-                                            </button>`;
+document.getElementById("add-button-container").innerHTML +=`<button
+    onclick="add(${item_id})"
+    type="button" class="single_add_to_cart_button button alt kobolg-variation-selection-needed">
+    Add to cart
+  </button>`;

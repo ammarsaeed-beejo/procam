@@ -1,9 +1,9 @@
 // Import the functions you need from the SDKs you need
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-analytics.js";
 import {
-  getDatabase,
-  ref,
-  set,
+    getDatabase,
+    ref,
+    set,
 } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -12,14 +12,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCwDLNDUINuCDZckS5C1M-I-9ia7ZoKIsw",
-  authDomain: "pro-cam-web.firebaseapp.com",
-  databaseURL: "https://pro-cam-web-default-rtdb.firebaseio.com",
-  projectId: "pro-cam-web",
-  storageBucket: "pro-cam-web.appspot.com",
-  messagingSenderId: "1043601014942",
-  appId: "1:1043601014942:web:c4608e15cdafb23fb3bb8f",
-  measurementId: "G-L8XZNC95BJ",
+    apiKey: "AIzaSyCwDLNDUINuCDZckS5C1M-I-9ia7ZoKIsw",
+    authDomain: "pro-cam-web.firebaseapp.com",
+    databaseURL: "https://pro-cam-web-default-rtdb.firebaseio.com",
+    projectId: "pro-cam-web",
+    storageBucket: "pro-cam-web.appspot.com",
+    messagingSenderId: "1043601014942",
+    appId: "1:1043601014942:web:c4608e15cdafb23fb3bb8f",
+    measurementId: "G-L8XZNC95BJ",
 };
 
 // Initialize Firebase
@@ -27,34 +27,34 @@ const app = initializeApp(firebaseConfig);
 getAnalytics(app);
 
 var products = [
-  {
-    id: 20,
-    img: "./assets/images/Compact/ixus-185-bk-frt-flipped-800x524.jpg",
-    name: "IXUS 185",
-    price: 249,
-    color: "Black,Silver,red",
-    cart: false,
-    quantity: 1,
-    href: "./compact/IXUS 185.html",
-    total: 0,
-    type: "compact",
-  },
+    {
+        id: 20,
+        img: "./assets/images/Compact/ixus-185-bk-frt-flipped-800x524.jpg",
+        name: "IXUS 185",
+        price: 249,
+        color: "Black,Silver,red",
+        cart: false,
+        quantity: 1,
+        href: "./compact/IXUS 185.html",
+        total: 0,
+        type: "compact",
+    },
 
-  {
-    id: 21,
-    img: "./assets/images/Compact/PowerShot SX620.jpg",
-    img2: "./assets/imges/compact/PowerShot SX620 HS Angle3_tcm13-1390546.jpg",
-    img3: "./assets/imges/compact/PowerShot SX620 HS Angle3_tcm13-1390546.jpg",
-    img4: "./assets/imges/compact/PowerShot SX620 HS Angle3_tcm13-1390546.jpg",
-    name: "POWERSHOT SX-620 HS",
-    price: 129,
-    color: "Black,red",
-    cart: false,
-    quantity: 1,
-    href: "./compact/POWERSHOT SX-620.html",
-    total: 0,
-    type: "compact",
-    info: `<div>
+    {
+        id: 21,
+        img: "./assets/images/Compact/PowerShot SX620.jpg",
+        img2: "./assets/imges/compact/PowerShot SX620 HS Angle3_tcm13-1390546.jpg",
+        img3: "./assets/imges/compact/PowerShot SX620 HS Angle3_tcm13-1390546.jpg",
+        img4: "./assets/imges/compact/PowerShot SX620 HS Angle3_tcm13-1390546.jpg",
+        name: "POWERSHOT SX-620 HS",
+        price: 129,
+        color: "Black,red",
+        cart: false,
+        quantity: 1,
+        href: "./compact/POWERSHOT SX-620.html",
+        total: 0,
+        type: "compact",
+        info: `<div>
         <h2 class="pl-h2">Specifications in detail</h2>
 
         <div class="product-specification__item pl-spacer pl-spacer--out--small pl-spacer--cut-h" id="image-sensor_1">
@@ -791,89 +791,89 @@ var products = [
         </div>
 
     </div>`,
-  },
+    },
 
-  {
-    id: 23,
-    img: "./assets/images/Compact/PowerShot SX540 HS.jpg",
-    name: "POWERSHOT SX540 HS",
-    price: 199,
-    cart: false,
-    quantity: 1,
-    href: "/kobolg/DSLR/PowerShot SX540 HS.html",
-    total: 0,
-    type: "compact",
-  },
+    {
+        id: 23,
+        img: "./assets/images/Compact/PowerShot SX540 HS.jpg",
+        name: "POWERSHOT SX540 HS",
+        price: 199,
+        cart: false,
+        quantity: 1,
+        href: "/kobolg/DSLR/PowerShot SX540 HS.html",
+        total: 0,
+        type: "compact",
+    },
 
-  {
-    id: 24,
-    img: "./assets/images/Compact/PowerShot-SX430.jpg",
-    name: "POWERSHOT SX-430 IS BK",
-    price: 299,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "compact",
-  },
+    {
+        id: 24,
+        img: "./assets/images/Compact/PowerShot-SX430.jpg",
+        name: "POWERSHOT SX-430 IS BK",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "compact",
+    },
 
-  {
-    id: 25,
-    img: "./assets/images/Compact/PowerShot SX70 HS.jpg",
-    name: "PowerShot SX70 HS",
-    price: 499,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "compact",
-  },
+    {
+        id: 25,
+        img: "./assets/images/Compact/PowerShot SX70 HS.jpg",
+        name: "PowerShot SX70 HS",
+        price: 499,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "compact",
+    },
 
-  {
-    id: 26,
-    img: "./assets/images/Compact/canon_powershot_g7_x_mark_iii.jpg",
-    name: "POWERSHOT G7X MK-III",
-    price: 299,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "compact",
-  },
+    {
+        id: 26,
+        img: "./assets/images/Compact/canon_powershot_g7_x_mark_iii.jpg",
+        name: "POWERSHOT G7X MK-III",
+        price: 299,
+        cart: false,
+        quantity: 1,
+        total: 0,
+        type: "compact",
+    },
 ];
 
 const db = getDatabase();
 
 function buy() {
-  var productsFirebase = [];
-  for (let index = 0; index < products.length; index++) {
-    if (products[index].cart) {
-      var product = {
-        name: products[index].name,
-        price: products[index].price,
-        quantity: products[index].quantity,
-        total: products[index].total,
-      };
-      productsFirebase.push(product);
+    var productsFirebase = [];
+    for (let index = 0; index < products.length; index++) {
+        if (products[index].cart) {
+            var product = {
+                name: products[index].name,
+                price: products[index].price,
+                quantity: products[index].quantity,
+                total: products[index].total,
+            };
+            productsFirebase.push(product);
+        }
     }
-  }
-  set(ref(db, "order/"), {
-    total: total(),
-    products: productsFirebase,
-  });
-  Swal.fire({
-    type: "success",
-    title: "Success",
-    text: "Operation Completed!",
-  });
-  clean();
+    set(ref(db, "order/"), {
+        total: total(),
+        products: productsFirebase,
+    });
+    Swal.fire({
+        type: "success",
+        title: "Success",
+        text: "Operation Completed!",
+    });
+    clean();
 }
 
 function total() {
-  let total = 0;
-  for (let index = 0; index < products.length; index++) {
-    if (products[index].cart) {
-      total += products[index].total;
+    let total = 0;
+    for (let index = 0; index < products.length; index++) {
+        if (products[index].cart) {
+            total += products[index].total;
+        }
     }
-  }
-  return total;
+    return total;
 }
 
 var con = 0;
@@ -882,23 +882,23 @@ var con2 = [];
 //POSITION AT TABLE
 
 function clean() {
-  for (let index = 0; index < products.length; index++) {
-    products[index].total = 0;
-    products[index].quantity = 1;
-    products[index].cart = false;
-    con2 = [];
-    updateCart();
-  }
+    for (let index = 0; index < products.length; index++) {
+        products[index].total = 0;
+        products[index].quantity = 1;
+        products[index].cart = false;
+        con2 = [];
+        updateCart();
+    }
 }
 
 function add(id) {
-  for (let index = 0; index < products.length; index++) {
-    if (products[index].id != id || products[index].cart == true) {
-    } else {
-      products[index].cart = true;
-      con2.push(products[index]);
-      localStorage.setItem("cartItems", JSON.stringify(con2));
-      document.getElementById("cart_Items").innerHTML += `
+    for (let index = 0; index < products.length; index++) {
+        if (products[index].id != id || products[index].cart == true) {
+        } else {
+            products[index].cart = true;
+            con2.push(products[index]);
+            localStorage.setItem("cartItems", JSON.stringify(con2));
+            document.getElementById("cart_Items").innerHTML += `
             <td class="product-btn btn-primary">
                                                 <a href="#" class="remove" aria-label="Remove this item"
                                                     data-product_id="27" data-product_sku="885B712">×</a>
@@ -930,15 +930,15 @@ function add(id) {
                                                 <span class="kobolg-Price-amount amount"><span
                                                         class="kobolg-Price-currencySymbol">$</span>150.00</span>
                                             </td>`;
-      con++;
-      var total = (products[index].total =
-        products[index].price * products[index].quantity);
-      total;
-      localStorage.setItem("total", JSON.stringify(total));
+            con++;
+            var total = (products[index].total =
+                products[index].price * products[index].quantity);
+            total;
+            localStorage.setItem("total", JSON.stringify(total));
+        }
     }
-  }
 
-  document.getElementById("total").innerHTML = `
+    document.getElementById("total").innerHTML = `
    <tr>
    <th scope="row"></th>
    <td></td>
@@ -970,45 +970,42 @@ window.addAmount = addAmount;
 window.buy = buy;
 
 function updateCart() {
-  con = 0;
-  var totalTable = 0;
-  document.getElementById("cartItems").innerHTML = "";
-  for (let index = 0; index < con2.length; index++) {
-    var position = con2[index];
-    for (let index3 = 0; index3 < products.length; index3++) {
-      if (position == products[index3].id) {
-        document.getElementById("cartItems").innerHTML += `
+    con = 0;
+    var totalTable = 0;
+    document.getElementById("cartItems").innerHTML = "";
+    for (let index = 0; index < con2.length; index++) {
+        var position = con2[index];
+        for (let index3 = 0; index3 < products.length; index3++) {
+            if (position == products[index3].id) {
+                document.getElementById("cartItems").innerHTML += `
             <tr>
            <th scope="row">${con + 1}</th>
        
            <td><img style="width: 5rem;" src="${products[index3].img}" ></td>
            <td>${products[index3].name}</td>
            <td>
-           <button class="btn btn-primary" onclick="reduceAmount(${
-             products[index3].id
-           })">-</button>
-           <input style="width: 2rem;" id="input${
-             products[index3].id
-           }" value="${products[index3].quantity}" disabled>
-           <button class="btn btn-primary" onclick="addAmount(${
-             products[index3].id
-           })" >+</button>
+           <button class="btn btn-primary" onclick="reduceAmount(${products[index3].id
+                    })">-</button>
+           <input style="width: 2rem;" id="input${products[index3].id
+                    }" value="${products[index3].quantity}" disabled>
+           <button class="btn btn-primary" onclick="addAmount(${products[index3].id
+                    })" >+</button>
            </td>
            <td>$ ${products[index3].price * products[index3].quantity}.00</td>
             </tr>
            `;
-        products[index3].total =
-          products[index3].price * products[index3].quantity;
-      } else {
-      }
-    }
+                products[index3].total =
+                    products[index3].price * products[index3].quantity;
+            } else {
+            }
+        }
 
-    con = con + 1;
-  }
-  if (total() == 0) {
-    document.getElementById("total").innerHTML = "";
-  } else {
-    document.getElementById("total").innerHTML = `
+        con = con + 1;
+    }
+    if (total() == 0) {
+        document.getElementById("total").innerHTML = "";
+    } else {
+        document.getElementById("total").innerHTML = `
     <tr>
     <th scope="row"></th>
     <td></td>
@@ -1032,33 +1029,33 @@ function updateCart() {
      </td>
       </tr>
     `;
-  }
+    }
 }
 
 function reduceAmount(id) {
-  for (let index = 0; index < products.length; index++) {
-    if (products[index].id == id) {
-      if (products[index].quantity > 1) {
-        products[index].quantity = products[index].quantity - 1;
-        updateCart();
-      } else {
-      }
-    } else {
+    for (let index = 0; index < products.length; index++) {
+        if (products[index].id == id) {
+            if (products[index].quantity > 1) {
+                products[index].quantity = products[index].quantity - 1;
+                updateCart();
+            } else {
+            }
+        } else {
+        }
     }
-  }
 }
 
 function addAmount(id) {
-  for (let index = 0; index < products.length; index++) {
-    if (products[index].id == id) {
-      if (products[index].quantity > 0) {
-        products[index].quantity = products[index].quantity + 1;
-        updateCart();
-      } else {
-      }
-    } else {
+    for (let index = 0; index < products.length; index++) {
+        if (products[index].id == id) {
+            if (products[index].quantity > 0) {
+                products[index].quantity = products[index].quantity + 1;
+                updateCart();
+            } else {
+            }
+        } else {
+        }
     }
-  }
 }
 
 // for (let index = 0; index < products.length; index++) {
@@ -1068,7 +1065,7 @@ function addAmount(id) {
 //                                     data-wow-duration="1s" data-wow-delay="0ms" data-wow="fadeInUp">
 //                                 <div class="product-inner tooltip-left" >
 //                                     <div class="product-thumb">
-                                            
+
 //                                             <a href="./single-product.html">
 
 
@@ -1098,49 +1095,49 @@ function addAmount(id) {
 // }
 
 for (let index = 0; index < products.length; index++) {
-  document.getElementById(products[index].id).onclick = () => {
-    var name = products[index].name;
-    var price = products[index].price;
-    var quentity = products[index].quantity;
-    var id = products[index].id;
-    var cart_status = products[index].cart;
-    var total_items_price = products[index].total;
-    var img = products[index].img;
-    var info = products[index].info;
-    localStorage.setItem("item-name", name);
-    localStorage.setItem("item-price", price);
-    localStorage.setItem("item-total", total_items_price);
-    localStorage.setItem("item-quentity", quentity);
-    localStorage.setItem("item-cart_status", cart_status);
-    localStorage.setItem("item-id", id);
-    localStorage.setItem("item-img", img);
-    localStorage.setItem("item-info", info);
-  };
+    document.getElementById(products[index].id).onclick = () => {
+        var name = products[index].name;
+        var price = products[index].price;
+        var quentity = products[index].quantity;
+        var id = products[index].id;
+        var cart_status = products[index].cart;
+        var total_items_price = products[index].total;
+        var img = products[index].img;
+        var info = products[index].info;
+        localStorage.setItem("item-name", name);
+        localStorage.setItem("item-price", price);
+        localStorage.setItem("item-total", total_items_price);
+        localStorage.setItem("item-quentity", quentity);
+        localStorage.setItem("item-cart_status", cart_status);
+        localStorage.setItem("item-id", id);
+        localStorage.setItem("item-img", img);
+        localStorage.setItem("item-info", info);
+    };
 }
 
 const searchField = document.querySelector("#searchinput");
 const searchResultsContainer = document.querySelector("#  ");
 
 searchField.addEventListener("input", (e) => {
-  // if input field is empty, clear the search results
-  if (e.target.value === "") {
+    // if input field is empty, clear the search results
+    if (e.target.value === "") {
+        searchResultsContainer.innerHTML = "";
+        return;
+    }
+
+    // filter the products array
+    const searchResults = products.filter((meal) => {
+        return meal.name.toLowerCase().includes(e.target.value.toLowerCase());
+    });
+
+    // before displaying the search results, clear the search results div
     searchResultsContainer.innerHTML = "";
-    return;
-  }
 
-  // filter the products array
-  const searchResults = products.filter((meal) => {
-    return meal.name.toLowerCase().includes(e.target.value.toLowerCase());
-  });
-
-  // before displaying the search results, clear the search results div
-  searchResultsContainer.innerHTML = "";
-
-  // display the names of the meal objects that include the text entered in input field
-  searchResults.forEach((element, index) => {
-    const p = document.createElement("p");
-    p.textContent = element.name;
-    searchResultsContainer.appendChild(p);
-  });
+    // display the names of the meal objects that include the text entered in input field
+    searchResults.forEach((element, index) => {
+        const p = document.createElement("p");
+        p.textContent = element.name;
+        searchResultsContainer.appendChild(p);
+    });
 });
 

@@ -1,4 +1,4 @@
-
+ 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
 
@@ -23,7 +23,9 @@ firebase.analytics();
 
 let firestore = firebase.firestore();
 
-const db = firestore.collection("normal");
+const db = firestore.collection("orders");
+
+var checkoutItem = localStorage.getItem("cartItems");
 
 const submitBtn = document.querySelector("#submit");
 let first_name = document.querySelector("#first_name");
@@ -53,6 +55,7 @@ submitBtn.addEventListener("click", function () {
 
             name: first_nameInput,
             last_name: last_nameInput,
+            order : checkoutItem,
             email: emailInput,
             addresses_1: addresses_1Input,
             city: cityInput,
