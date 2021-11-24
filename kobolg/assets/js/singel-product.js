@@ -1,23 +1,4 @@
-var item_name = localStorage.getItem("item-name");
-var item_price = localStorage.getItem("item-price");
-var item_quentity = localStorage.getItem("item-quentity");
-var item_id = localStorage.getItem("item-id");
-var item_cart_status = localStorage.getItem("item-cart_status");
-var item_img = localStorage.getItem("item-img");
-var item_total_price = localStorage.getItem("item-total");
-var cartItemsString = localStorage.getItem("cartItems");
-var con2 =
-  cartItemsString != null && cartItemsString.length > 4
-    ? JSON.parse(cartItemsString)
-    : [];
-var con = con2.length;
 
-document.getElementById("title").innerText = item_name;
-document.getElementById("price").innerText = item_price;
-document.getElementById("img").innerHTML = `
-    <img style="width: 90%;" alt="img"
-        src="${item_img}">
-`;
 
 var products = [
   {
@@ -173,3 +154,24 @@ document.getElementById("add-button-container").innerHTML +=`<button
     type="button" class="single_add_to_cart_button button alt kobolg-variation-selection-needed">
     Add to cart
   </button>`;
+  
+var item_name = localStorage.getItem("item-name");
+var item_price = localStorage.getItem("item-price");
+var item_quentity = localStorage.getItem("item-quentity");
+var item_id = localStorage.getItem("item-id");
+var item_cart_status = localStorage.getItem("item-cart_status");
+var item_img = localStorage.getItem("item-img");
+var item_total_price = localStorage.getItem("item-total");
+var cartItemsString = localStorage.getItem("cartItems");
+var con2 =
+  cartItemsString != null && cartItemsString.length > 4
+    ? JSON.parse(cartItemsString)
+    : [];
+var con = con2.length;
+
+document.getElementById("title").innerText = item_name;
+document.getElementById("price").innerText = item_price;
+document.getElementById("img").innerHTML = `
+    <img style="width: 90%;" alt="img"
+        src="${item_img}">
+`;

@@ -40,7 +40,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IdasdasdasdasXUS qualit"],
+    specificationlink: ".../cam/dslr/CANON EOS 4000D/index.html",
   },
 
   {
@@ -53,7 +53,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable daddddddddddddddddddddddddddddddIXUS qualit"],
+    specificationlink: "../cam/dslr/CANON EOS 2000D/index.html",
   },
 
   {
@@ -66,7 +66,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/CANON EOS 250d/index.html",
   },
 
   {
@@ -79,7 +79,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/CANON EOS 850d/index.html",
   },
 
   {
@@ -92,7 +92,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/CANON EOS 850d/index.html",
   },
 
   {
@@ -105,7 +105,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/CANON EOS 80D/index.html",
   },
 
   {
@@ -118,7 +118,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/CANON EOS 90d/index.html",
   },
 
   {
@@ -131,7 +131,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/Canon EOS 5D Mark IV/index.html",
   },
 
   {
@@ -145,7 +145,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/Canon EOS M50/index.html",
   },
 
   {
@@ -158,7 +158,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/Canon EOS M50/index.html",
   },
 
   {
@@ -171,7 +171,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/Canon EOS RP/index.html",
   },
 
   {
@@ -184,7 +184,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/Canon EOS RP/index.html",
   },
 
   {
@@ -197,7 +197,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/Canon EOS R/index.html",
   },
 
   {
@@ -210,7 +210,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/Canon EOS R/index.html",
   },
 
   {
@@ -223,7 +223,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/Canon EOS R6/index.html",
   },
 
   {
@@ -236,7 +236,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/Canon EOS R5/index.html",
   },
 
   {
@@ -249,7 +249,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/Canon EOS R3/index.html",
   },
 
   {
@@ -262,7 +262,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "../cam/dslr/Canon LEGRIA HF R806/index.html",
   },
 
   ///////////////////////////////////////////////////////////////COMPACT////////////////////////////////////////////////////////////////////////////
@@ -278,7 +278,7 @@ var products = [
     href: "./compact/IXUS 185.html",
     total: 0,
     type: "compact",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "./cam/Compact/ixus 185/index.html",
   },
 
   {
@@ -292,7 +292,7 @@ var products = [
     href: "./compact/POWERSHOT SX-620.html",
     total: 0,
     type: "compact",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "./cam/Compact/Canon PowerShot SX620 HS/index.html",
   },
 
   {
@@ -305,9 +305,7 @@ var products = [
     href: "/kobolg/DSLR/PowerShot SX540 HS.html",
     total: 0,
     type: "compact",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
-  
 
   {
     id: 24,
@@ -318,7 +316,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "compact",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -330,7 +327,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "compact",
-
+    specificationlink: "./cam/Compact/PowerShot SX70 HS/index.html",
   },
 
   {
@@ -342,7 +339,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "compact",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
+    specificationlink: "./cam/Compact/PowerShot G7 X Mark III/index.html",
   },
 
   ///////////////////////////////////////////////////////////////ACCESSORIES////////////////////////////////////////////////////////////////////////////
@@ -356,7 +353,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "accessories",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -368,7 +364,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "accessories",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   /////////////////////////////////////////////////////////////////////Lenses/////////////////////////////////////////////////////////////////////////////
@@ -382,9 +377,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
-
 
   {
     id: 30,
@@ -395,7 +388,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -407,7 +399,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -419,7 +410,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -431,7 +421,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -443,7 +432,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -455,7 +443,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -467,7 +454,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -479,7 +465,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -491,7 +476,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -503,14 +487,13 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Lenses",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   /////////////////////////////////////////////////////////////////////Printers/////////////////////////////////////////////////////////////////////////////
 
   {
     id: 40,
-    img: "./assets/images/Printers/selphy-cp-1300-bk-frt_810x475.webp",
+    img: "./assets/images/Printers/selphy-cp-1300-bk-frt_810x475.jpg",
     name: "SELPHY CP-1300",
     color: "black,white,pink",
     price: 299,
@@ -518,7 +501,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -530,7 +512,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -542,7 +523,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -554,7 +534,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -566,7 +545,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -578,7 +556,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -590,7 +567,6 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 
   {
@@ -602,41 +578,8 @@ var products = [
     quantity: 1,
     total: 0,
     type: "Printers",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
-  },
-
-  {
-    id: 48,
-    img: "./assets/images/Printers/i-SENSYS MF640 Series-hero_810x475-50c969d8-190f-4f36-9587-be37fa8a83b7.jpg",
-    name: "i-SENSYS MF-643Cdw",
-    price: 299,
-    cart: false,
-    quantity: 1,
-    total: 0,
-    type: "Printers",
-    info: ["Simple pocketable IXUS quality" , "Simple pocketable IXUS qualit"],
   },
 ];
-
-var filterdslr = products.filter(function (product) {
-  return product.type == "dslr";
-});
-
-var filtercompact = products.filter(function (product) {
-  return product.type == "compact";
-});
-
-var filteraccessories = products.filter(function (product) {
-  return product.type == "accessories";
-});
-
-var filterPrinters = products.filter(function (product) {
-  return product.type == "Printers";
-});
-
-var filterLenses = products.filter(function (product) {
-  return product.type == "Lenses";
-});
 
 const db = getDatabase();
 
@@ -877,82 +820,100 @@ searchResultsContainer.addEventListener("click", (e) => {
   window.location.href = "./single-product.html";
 });
 
-// var item_name = localStorage.getItem("item-name");
-// var item_price = localStorage.getItem("item-price");
-// var item_quentity = localStorage.getItem("item-quentity");
-// var item_id = localStorage.getItem("item-id");
-// var item_cart_status = localStorage.getItem("item-cart_status");
-// var item_img = localStorage.getItem("item-img");
-// var item_total_price = localStorage.getItem("item-total");
 
-// document.getElementById("title").innerText = item_name;
-// document.getElementById("price").innerText = item_price;
-// document.getElementById("img").innerHTML = `
-//     <img style="width: 90%;" alt="img"
-//         src="${item_img}">
-// `;
+const Printersitems = document.getElementById("Printers");
 
-// document.getElementById("id").innerText = item_id;
+Printersitems.addEventListener("click", function (e) {
+  const filteredItems = products.filter(
+    (item) => item.type === e.currentTarget.dataset.type
+  );
 
-// var products = [
-//   {
-//     id: item_id,
-//     img: item_img,
-//     name: item_name,
-//     price: item_price,
-//     cart: item_cart_status,
-//     quantity: item_quentity,
-//     total: item_total_price,
-//   },
-// ];
+  localStorage.setItem("filteredItems", JSON.stringify(filteredItems));
+  console.log(JSON.parse(localStorage.getItem("filteredItems")));
+  console.log("-------------------------------");
 
-// // ///////////////////////////////////////
+  window.location.href = "./products.html";
+});
 
-// const searchFieldmob = document.querySelector("#searchinputmob");
-// const searchResultsContainermob = document.querySelector("#searchresultsmob");
+const accessoriesitems = document.getElementById("accessories");
 
-// searchFieldmob.addEventListener("input", (e) => {
-//   // if input field is empty, clear the search results
-//   if (e.target.value === "") {
-//     searchResultsContainermob.innerHTML = "";
-//   }
+accessoriesitems.addEventListener("click", function (e) {
+  const filteredItems = products.filter(
+    (item) => item.type === e.currentTarget.dataset.type
+  );
 
-//   if (e.target.value.length > 0) {
-//     searchResultsContainermob.style.display = "block";
-//   } else if (e.target.value.length == 0) {
-//     searchResultsContainermob.style.display = "none ";
-//   }
+  localStorage.setItem("filteredItems", JSON.stringify(filteredItems));
+  console.log(JSON.parse(localStorage.getItem("filteredItems")));
+  console.log("-------------------------------");
 
-//   // filter the products array
-//   const searchResults = products.filter((meal) => {
-//     return meal.name.toLowerCase().includes(e.target.value.toLowerCase());
-//   });
+  window.location.href = "./products.html";
+});
 
-//   if (searchResults.length == 0) {
-//     searchResultsContainermob.style.display = "none ";
-//   }
+const Lensesitems = document.getElementById("Lenses");
 
-//   // before displaying the search results, clear the search results div
-//   searchResultsContainermob.innerHTML = "";
+Lensesitems.addEventListener("click", function (e) {
+  const filteredItems = products.filter(
+    (item) => item.type === e.currentTarget.dataset.type
+  );
 
-//   searchResultsContainermob.innerHTML = searchResults.reduce((acc, element) => {
-//     acc += `<p data-product-id="${element.id}" style="border: 1px solid red,padding: 4px">
-//             ${element.name}
-//         </p>`;
-//     return acc;
-//   }, "");
-// });
+  localStorage.setItem("filteredItems", JSON.stringify(filteredItems));
+  console.log(JSON.parse(localStorage.getItem("filteredItems")));
+  console.log("-------------------------------");
 
-// searchResultsContainermob.addEventListener("click", (e) => {
-//   const selectedProduct = 
-//   // const selectedProduct = products.find(
-//   //   (product) => product.id === Number(e.target.dataset.productId)
-//   // );
-//   localStorage.setItem("selectedProduct", selectedProduct);
-//   window.location.href = "./single-product.html";
-// });
+  window.location.href = "./products.html";
+});
+
+const compacttems = document.getElementById("compact");
+
+compacttems.addEventListener("click", function (e) {
+  const filteredItems = products.filter(
+    (item) => item.type === e.currentTarget.dataset.type
+  );
+
+  localStorage.setItem("filteredItems", JSON.stringify(filteredItems));
+  console.log(JSON.parse(localStorage.getItem("filteredItems")));
+  console.log("-------------------------------");
+
+  window.location.href = "./products.html";
+});
+
+const dslrtems = document.getElementById("dslr");
+
+dslrtems.addEventListener("click", function (e) {
+  const filteredItems = products.filter(
+    (item) => item.type === e.currentTarget.dataset.type
+  );
+
+  localStorage.setItem("filteredItems", JSON.stringify(filteredItems));
+  console.log(JSON.parse(localStorage.getItem("filteredItems")));
+  console.log("-------------------------------");
+
+  window.location.href = "./products.html";
+});
 
 
-const Printers = document.getElementById("Printers");
+// for (let index = 0; index < products.length; index++) {
+//   document.getElementById(products[index].id).onclick = () => {
+//     var name = products[index].name;
+//     var price = products[index].price;
+//     var quentity = products[index].quantity;
+//     var id = products[index].id;
+//     var cart_status = products[index].cart;
+//     var total_items_price = products[index].total;
+//     var img = products[index].img;
+//     var info = products[index].info;
+//     localStorage.setItem("item-name", name);
+//     localStorage.setItem("item-price", price);
+//     localStorage.setItem("item-total", total_items_price);
+//     localStorage.setItem("item-quentity", quentity);
+//     localStorage.setItem("item-cart_status", cart_status);
+//     localStorage.setItem("item-id", id);
+//     localStorage.setItem("item-img", img);
+//     localStorage.setItem("item-info", info);
+//   };
+// }
+
+
+
 
 

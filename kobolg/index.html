@@ -24,13 +24,59 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/megamenu.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/dreaming-attribute.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <style>
+        .dropdiv {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdiv:hover,
+        .dropdiv:focus {
+            background-color: #2980B9;
+        }
+
+        .camtype {
+            position: relative;
+            display: inline-block;
+        }
+
+        .camtype-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 100%;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .camtype-content p {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            margin: 0;
+            cursor: pointer;
+        }
+
+      
+
+        .show {
+            display: block;
+        }
+    </style>
 
     <title>pro cam</title>
 </head>
 
 <body>
 
-    <header id="header" class="header style-04 header-dark">
+ <header id="header" class="header style-04 header-dark">
 
         <div class="header-top">
             <div class="container">
@@ -124,6 +170,11 @@
                             <a class="kobolg-menu-item-title" title="News" href="#news">News</a>
                         </li>
 
+                        <li id="menu-item-996"
+                            class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-996 parent parent-megamenu item-megamenu menu-item-has-children">
+                            <a class="kobolg-menu-item-title" title="blog   " href="#blog">blog</a>
+                        </li>
+
                         <li id="menu-item-238"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238">
 
@@ -151,30 +202,30 @@
                                 </div>
                                 <div class="block-content verticalmenu-content">
                                     <ul id="menu-vertical-menu" class="azeroth-nav vertical-menu default">
-                                        <li id="menu-item-886"
+                                        <li  id="dslrli" data-type="dslr"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-886">
-                                            <a class="azeroth-menu-item-title" title="Camera" href="./EOS DSLR.html">EOS
+                                            <a class="azeroth-menu-item-title" title="Camera" >EOS
                                                 DSLR Cameras</a>
                                         </li>
-                                        <li id="menu-item-886"
+                                        <li  id="compactli" data-type="compact"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-886">
                                             <a class="azeroth-menu-item-title" title="Camera"
-                                                href="./Compact.html">Compact Cameras</a>
+                                               >Compact Cameras</a>
                                         </li>
-                                        <li id="menu-item-895"
+                                        <li id="Lensesli" data-type="Lenses"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-895">
                                             <a class="azeroth-menu-item-title" title="Lenses"
-                                                href="./Lenses.html">Lenses</a>
+                                                >Lenses</a>
                                         </li>
-                                        <li id="menu-item-888"
+                                        <li id="Printersli" data-type="Printers"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-888">
                                             <a class="azeroth-menu-item-title" title="Printers"
-                                                href="./Printers.html">Printers</a>
+                                                >Printers</a>
                                         </li>
-                                        <li id="menu-item-889"
+                                        <li id="accessoriesli" data-type="accessories"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-889">
                                             <a class="azeroth-menu-item-title" title="Speaker"
-                                                href="./accessories.html">accessories</a>
+                                                >accessories</a>
                                         </li>
 
 
@@ -413,34 +464,36 @@
 
                 <div id="prod">
 
-                    <div id="b "
-                        class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                        <div id="dropbtn" class="product-inner tooltip-left">
-                            <div class="product-thumb">
-                                <a class="thumb-link" href="./cameras.html" tabindex="0">
-                                    <img class="img-responsive" src="./assets/images/700.jpg" alt="White Watches"
-                                        width="270" height="350" ; ">
-                                </a>
+                    <div id="slick-slide01"
+                        class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple ">
+                        <div id="dropbtn" class="product-inner tooltip-left camtype">
+                            <div class="product-thumb" onclick="myFunction()">
+
+                                <img class="img-responsive" src="./assets/images/700.jpg" alt="White Watches"
+                                    width="270" height="350" ; ">
+                                
 
                             </div>
                             <div class=" product-info equal-elem">
-                                    <h3 class="product-name product_title" style="text-align: center;">
-                                        <a href="#" tabindex="0">DSLR Cameras</a>
-                                    </h3>
-
-
+                                <h3 class="product-name product_title" style="text-align: center;">
+                                    <p>Cameras</p>
+                                </h3>
                             </div>
 
-
+                            <div id="mycamtype" class="camtype-content">
+                                <p id="compact" data-type="compact"> compact camera</p>
+                                <p  id="dslr" data-type="dslr"> dslr camera</p>
+                               
+                            </div>
 
 
                         </div>
                     </div>
 
-                    <div onclick="myFunction()" id="slick-slide01"
+                   <div id="slick-slide01"
                         class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                         <div class="product-inner tooltip-left">
-                            <div class="product-thumb">
+                            <div class="product-thumb" id="Lenses" data-type="Lenses">
 
                                 <img id="class=" dropbtn"" class="img-responsive"
                                     src="./assets/images/EF_180mm_f3.5L_Macro_USM_Default_tcm13-950174.jpg"
@@ -450,25 +503,21 @@
                             </div>
                             <div class="product-info equal-elem">
                                 <h3 class="product-name product_title" style="text-align: center;">
-                                    <a href="#" tabindex="0">Lenses</a>
+                                    <p>Lenses</p>
                                 </h3>
 
 
                             </div>
                         </div>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="#home">Compact</a>
-                            <a href="#about">dslr</a>
-                            
-                        </div>
+
                     </div>
 
-                    
+
 
                     <div id="slick-slide01"
                         class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                         <div class="product-inner tooltip-left">
-                            <div class="product-thumb">
+                            <div class="product-thumb" id="accessories" data-type="accessories">
 
                                 <img class="img-responsive"
                                     src="./assets/images/Polaroid_PLTRI72_PLTRI72_72_Tripod_W_3_Way_1293021011_748512.png"
@@ -478,7 +527,7 @@
                             </div>
                             <div class="product-info equal-elem">
                                 <h3 class="product-name product_title" style="text-align: center;">
-                                    <a href="#" tabindex="0">accessories</a>
+                                    <p>accessories</p>
                                 </h3>
 
 
@@ -489,16 +538,16 @@
                     <div id="slick-slide01"
                         class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                         <div class="product-inner tooltip-left">
-                            <div class="product-thumb" id="Printers">
-                                <a class="thumb-link" href="./Printers.html" tabindex="0">
-                                    <img class="img-responsive" src="./assets/images/pixma_g6040.jpg"
-                                        alt="White Watches" width="270" height="350">
-                                </a>
+                            <div class="product-thumb" id="Printers" data-type="Printers">
+
+                                <img class="img-responsive" src="./assets/images/pixma_g6040.jpg" alt="White Watches"
+                                    width="270" height="350">
+
 
                             </div>
                             <div class="product-info equal-elem">
                                 <h3 class="product-name product_title" style="text-align: center;">
-                                    <a href="#" tabindex="0">Printers</a>
+                                    <p>Printers</p>
                                 </h3>
 
 
@@ -583,7 +632,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/1.jpg">
                                     </a>
@@ -598,7 +647,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/2.jpg">
                                     </a>
@@ -613,7 +662,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/3.jpg">
                                     </a>
@@ -628,7 +677,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/4.jpg">
                                     </a>
@@ -643,7 +692,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/5.jpg">
                                     </a>
@@ -658,7 +707,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/6.jpg">
                                     </a>
@@ -673,7 +722,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/7.jpg">
                                     </a>
@@ -688,7 +737,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/8.jpg">
                                     </a>
@@ -703,7 +752,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/9.jpg">
                                     </a>
@@ -718,7 +767,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/10.jpg">
                                     </a>
@@ -733,7 +782,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/11.jpg">
                                     </a>
@@ -748,7 +797,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/12.jpg">
                                     </a>
@@ -763,7 +812,7 @@
                             class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
                             <div class="product-inner tooltip-left">
                                 <div class="product-thumb">
-                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo"
+                                    <a class="thumb-link" href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
                                         tabindex="0">
                                         <img class="img-responsive" src="./assets/images/s/13.jpg">
                                     </a>
@@ -1011,7 +1060,7 @@
                             </p>
                         </div>
                         <div id="loceshin">
-                            <p>- Location :Al- Bayader – HusniSobar Street- Building no.34 floor 1 office 103
+                            <p>- Location :Al- Bayader – Husni Sobar Street- Building no.34 floor 1 office 103
                                 - Opening hours : Sun – Thursday 8:30 am – 5:00 pm
                             </p>
                         </div>
@@ -1083,25 +1132,26 @@
 
 
 <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the camtype content */
+        function myFunction() {
+            document.getElementById("mycamtype").classList.toggle("show");
+        }
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function (event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (event.target("product-thumbnail")) {
+                var dropdowns = document.getElementsByClassName("camtype-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
                 }
             }
         }
-    }
+    </script>
 </script>
 
 
