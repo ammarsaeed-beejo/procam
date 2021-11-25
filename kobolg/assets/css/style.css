@@ -1,4 +1,6 @@
- 
+#infodata {
+  display: flex;
+} 
 
 .dropdown-content {
   display: none;
