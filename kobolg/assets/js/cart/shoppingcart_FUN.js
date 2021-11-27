@@ -772,11 +772,10 @@ function addAmount(id) {
     }
   }
 }
-
-const searchinputmob = document.querySelector("#searchinput");
+//////////////////////////////////////////////////////////////////////////////////////
 const searchField = document.querySelector("#searchinput");
 const searchResultsContainer = document.querySelector("#searchresults");
-const searchresultsmob = document.querySelector("#searchresultsmob");
+
 
 searchField.addEventListener("input", (e) => {
   // if input field is empty, clear the search results
@@ -823,17 +822,23 @@ console.log(selectedProduct);
   // localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
   window.location.href = "./single-product.html";
 });
+/////////////////////////////////////////////////////////////////////////////////////////////
 
-searchinputmob.addEventListener("input", (e) => {
+//////////////////////////////////////////////////////////////////////////////////////
+const searchFieldMob = document.querySelector("#searchinputmob");
+const searchResultsContainerMob = document.querySelector("#searchresultsmob");
+
+
+searchFieldMob.addEventListener("input", (e) => {
   // if input field is empty, clear the search results
   if (e.target.value === "") {
-    searchresultsmob.innerHTML = "";
+    searchResultsContainerMob.innerHTML = "";
   }
 
   if (e.target.value.length > 0) {
-    searchresultsmob.style.display = "block";
+    searchResultsContainerMob.style.display = "block";
   } else if (e.target.value.length == 0) {
-    searchresultsmob.style.display = "none ";
+    searchResultsContainerMob.style.display = "none ";
   }
 
   // filter the products array
@@ -842,13 +847,13 @@ searchinputmob.addEventListener("input", (e) => {
   });
 
   if (searchResults.length == 0) {
-    searchresultsmob.style.display = "none ";
+    searchResultsContainerMob.style.display = "none ";
   }
 
   // before displaying the search results, clear the search results div
-  searchresultsmob.innerHTML = "";
+  searchResultsContainerMob.innerHTML = "";
 
-  searchresultsmob.innerHTML = searchResults.reduce((acc, element) => {
+  searchResultsContainerMob.innerHTML = searchResults.reduce((acc, element) => {
     acc += `<p data-product-id="${element.id}" class="searshdatap">
             ${element.name}
         </p>`;
@@ -856,17 +861,64 @@ searchinputmob.addEventListener("input", (e) => {
   }, "");
 });
 
-searchresultsmob.addEventListener("click", (e) => {
+searchResultsContainerMob.addEventListener("click", (e) => {
   const selectedProduct = products.find(
     (product) => product.id === Number(e.target.dataset.productId)
   );
-  // const saveditem = localStorage.setItem("item-name", selectedProduct.name);
-  // const saveditem2 = localStorage.setItem("item-price", selectedProduct.price);
-  // const saveditem3 = localStorage.setItem("item-img", selectedProduct.img);
-  // const saveditem4 = localStorage.setItem("item-info", selectedProduct.info);
+console.log(selectedProduct);
+    localStorage.setItem("selecteditem", JSON.stringify(selectedProduct));
+  // const saveditem = localStorage.setItem("item-name" , selectedProduct.name);
+  // const saveditem2 = localStorage.setItem("item-price" , selectedProduct.price);
+  // const saveditem3 = localStorage.setItem("item-img" , selectedProduct.img);
+  // const saveditem4 = localStorage.setItem("item-info" , selectedProduct.info);
   // localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
   window.location.href = "./single-product.html";
 });
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+// searchinputmob.addEventListener("input", (e) => {
+//   // if input field is empty, clear the search results
+//   if (e.target.value === "") {
+//     searchresultsmob.innerHTML = "";
+//   }
+
+//   if (e.target.value.length > 0) {
+//     searchresultsmob.style.display = "block";
+//   } else if (e.target.value.length == 0) {
+//     searchresultsmob.style.display = "none ";
+//   }
+
+//   // filter the products array
+//   const searchResults = products.filter((meal) => {
+//     return meal.name.toLowerCase().includes(e.target.value.toLowerCase());
+//   });
+
+//   if (searchResults.length == 0) {
+//     searchresultsmob.style.display = "none ";
+//   }
+
+//   // before displaying the search results, clear the search results div
+//   searchresultsmob.innerHTML = "";
+
+//   searchresultsmob.innerHTML = searchResults.reduce((acc, element) => {
+//     acc += `<p data-product-id="${element.id}" class="searshdatap">
+//             ${element.name}
+//         </p>`;
+//     return acc;
+//   }, "");
+// });
+
+// searchresultsmob.addEventListener("click", (e) => {
+//   const selectedProduct = products.find(
+//     (product) => product.id === Number(e.target.dataset.productId)
+//   );
+//   // const saveditem = localStorage.setItem("item-name", selectedProduct.name);
+//   // const saveditem2 = localStorage.setItem("item-price", selectedProduct.price);
+//   // const saveditem3 = localStorage.setItem("item-img", selectedProduct.img);
+//   // const saveditem4 = localStorage.setItem("item-info", selectedProduct.info);
+//   // localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
+//   window.location.href = "./single-product.html";
+// });
 
 
 const Printersitems = document.getElementById("Printers");

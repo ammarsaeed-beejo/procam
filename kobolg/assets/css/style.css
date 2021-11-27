@@ -3,27 +3,33 @@
 } 
 
 .searshdatap{
-  border: 1px solid red ;
   padding: 4px;
   cursor: pointer;
 }
 
-@keyframes fadeIn{
-  to{
-    opacity: 1;
-  }
-}
+/* body{
+  overflow: hidden;
+} */
 
-.fadeIn{
-  opacity:0;
-}
 
-#intro{
+
+.Splash{
   width: 100%;
   margin-top: auto;
-margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  background-color: #000;
+  position: absolute;
+  z-index: 11;
 }
+
+.intro{
+  width: 100%;
+  padding: 10px;
+}
+
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -74,7 +80,8 @@ margin-left: auto;
   border-radius: 21px;
   max-height: 400px;
   overflow: auto;
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
   z-index: 999;
 }
 

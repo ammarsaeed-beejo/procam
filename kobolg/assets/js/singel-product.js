@@ -71,6 +71,7 @@ function add(id) {
     if (products[index].id != id || products[index].cart == true) {
     } else {
       products[index].cart = true;
+      console.log(con2);
       con2.push(products[index]);
       localStorage.setItem("cartItems", JSON.stringify(con2));
       con++;

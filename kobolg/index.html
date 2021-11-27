@@ -76,8 +76,8 @@
 
 <body>
 
- <!-- <div class="Splash">
-        <video id="intro" autoplay="" controls src="./assets/images/2223.mp4" c></video>
+ <!-- <div class="Splash" id="intro">
+        <video class="intro" autoplay muted src="./assets/images/2223.mp4"></video>
     </div> -->
 
  <header id="header" class="header style-04 header-dark">
@@ -288,10 +288,11 @@
                         <form role="search" method="get" class="form-search block-search-form kobolg-live-search-form">
                             <div class="form-content search-box results-search">
                                 <div class="inner">
-                                    <input id="searchinputmob" autocomplete="off" class="searchfield txt-livesearch input" name="s" value=""
-                                        placeholder="Search here..." type="text">
+                                    <input id="searchinputmob" autocomplete="off"
+                                                        class="searchfield txt-livesearch input" name="s" value=""
+                                                        placeholder="Search here..." type="text">
                                 </div>
-                               
+                                <div id="searchresultsmob"></div>
                             </div>
                             <input name="post_type" value="product" type="hidden">
                             <input name="taxonomy" value="product_cat" type="hidden">
@@ -316,7 +317,7 @@
                        
                     </div>
                 </div>
- <div id="searchresultsmob"></div>
+
             </div>
             <div class="header-mobile-mid">
                 <div class="header-logo">
@@ -1139,6 +1140,17 @@
 
 
 <script>
+
+// const video = document.getElementById("intro");
+// const body = document.querySelector("body");
+
+// function endintro() {  
+//     video.style.display = "none";
+//     body.style.overflow = "auto";
+// }
+// setTimeout(endintro, 12000);
+
+
         /* When the user clicks on the button, 
         toggle between hiding and showing the camtype content */
         function myFunction() {
