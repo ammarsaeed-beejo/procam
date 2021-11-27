@@ -803,7 +803,7 @@ searchField.addEventListener("input", (e) => {
   searchResultsContainer.innerHTML = "";
 
   searchResultsContainer.innerHTML = searchResults.reduce((acc, element) => {
-    acc += `<p data-product-id="${element.id}" style="border: 1px solid red,padding: 4px">
+    acc += `<p data-product-id="${element.id}" class="searshdatap">
             ${element.name}
         </p>`;
     return acc;
@@ -814,10 +814,12 @@ searchResultsContainer.addEventListener("click", (e) => {
   const selectedProduct = products.find(
     (product) => product.id === Number(e.target.dataset.productId)
   );
-  const saveditem = localStorage.setItem("item-name" , selectedProduct.name);
-  const saveditem2 = localStorage.setItem("item-price" , selectedProduct.price);
-  const saveditem3 = localStorage.setItem("item-img" , selectedProduct.img);
-  const saveditem4 = localStorage.setItem("item-info" , selectedProduct.info);
+console.log(selectedProduct);
+    localStorage.setItem("selecteditem", JSON.stringify(selectedProduct));
+  // const saveditem = localStorage.setItem("item-name" , selectedProduct.name);
+  // const saveditem2 = localStorage.setItem("item-price" , selectedProduct.price);
+  // const saveditem3 = localStorage.setItem("item-img" , selectedProduct.img);
+  // const saveditem4 = localStorage.setItem("item-info" , selectedProduct.info);
   // localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
   window.location.href = "./single-product.html";
 });
@@ -847,7 +849,7 @@ searchinputmob.addEventListener("input", (e) => {
   searchresultsmob.innerHTML = "";
 
   searchresultsmob.innerHTML = searchResults.reduce((acc, element) => {
-    acc += `<p data-product-id="${element.id}" style="border: 1px solid red,padding: 4px">
+    acc += `<p data-product-id="${element.id}" class="searshdatap">
             ${element.name}
         </p>`;
     return acc;
@@ -858,10 +860,10 @@ searchresultsmob.addEventListener("click", (e) => {
   const selectedProduct = products.find(
     (product) => product.id === Number(e.target.dataset.productId)
   );
-  const saveditem = localStorage.setItem("item-name", selectedProduct.name);
-  const saveditem2 = localStorage.setItem("item-price", selectedProduct.price);
-  const saveditem3 = localStorage.setItem("item-img", selectedProduct.img);
-  const saveditem4 = localStorage.setItem("item-info", selectedProduct.info);
+  // const saveditem = localStorage.setItem("item-name", selectedProduct.name);
+  // const saveditem2 = localStorage.setItem("item-price", selectedProduct.price);
+  // const saveditem3 = localStorage.setItem("item-img", selectedProduct.img);
+  // const saveditem4 = localStorage.setItem("item-info", selectedProduct.info);
   // localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
   window.location.href = "./single-product.html";
 });
@@ -937,6 +939,8 @@ dslrtems.addEventListener("click", function (e) {
   window.location.href = "./products.html";
 });
 
+// function selecteditem() {
+  
 
 // for (let index = 0; index < products.length; index++) {
 //   document.getElementById(products[index].id).onclick = () => {
@@ -957,6 +961,8 @@ dslrtems.addEventListener("click", function (e) {
 //     localStorage.setItem("item-img", img);
 //     localStorage.setItem("item-info", info);
 //   };
+// }
+  
 // }
 
 

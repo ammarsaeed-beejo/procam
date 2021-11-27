@@ -1,14 +1,21 @@
-
+let cartItemsString = localStorage.getItem("cartItems");
+var con2 =
+  cartItemsString != null && cartItemsString.length > 4
+    ? JSON.parse(cartItemsString)
+    : [];
+var con = con2.length;
+const product = JSON.parse(localStorage.getItem("selecteditem"))
+console.log(product);
 
 var products = [
   {
-    id: item_id,
-    img: item_img,
-    name: item_name,
-    price: item_price,
-    cart: item_cart_status,
-    quantity: item_quentity,
-    total: item_total_price,
+    id: product.id,
+    img: product.img,
+    name: product.name,
+    price: product.price,
+    cart: product.cart_status,
+    quantity: product.quentity,
+    total: product.total_price,
   },
 ];
 
@@ -150,28 +157,36 @@ function addAmount(id) {
 }
 
 document.getElementById("add-button-container").innerHTML +=`<button
-    onclick="add(${item_id})"
+    onclick="add(${product.id})"
     type="button" class="single_add_to_cart_button button alt kobolg-variation-selection-needed">
     Add to cart
   </button>`;
   
-var item_name = localStorage.getItem("item-name");
-var item_price = localStorage.getItem("item-price");
-var item_quentity = localStorage.getItem("item-quentity");
-var item_id = localStorage.getItem("item-id");
-var item_cart_status = localStorage.getItem("item-cart_status");
-var item_img = localStorage.getItem("item-img");
-var item_total_price = localStorage.getItem("item-total");
-var cartItemsString = localStorage.getItem("cartItems");
-var con2 =
-  cartItemsString != null && cartItemsString.length > 4
-    ? JSON.parse(cartItemsString)
-    : [];
-var con = con2.length;
+// var item_name = localStorage.getItem("item-name");
+// var item_price = localStorage.getItem("item-price");
+// var item_quentity = localStorage.getItem("item-quentity");
+// var item_id = localStorage.getItem("item-id");
+// var item_cart_status = localStorage.getItem("item-cart_status");
+// var item_img = localStorage.getItem("item-img");
+// var item_total_price = localStorage.getItem("item-total");
+// var cartItemsString = localStorage.getItem("cartItems");
+// var con2 =
+//   cartItemsString != null && cartItemsString.length > 4
+//     ? JSON.parse(cartItemsString)
+//     : [];
+// var con = con2.length;
 
-document.getElementById("title").innerText = item_name;
-document.getElementById("price").innerText = item_price;
+// document.getElementById("title").innerText = item_name;
+// document.getElementById("price").innerText = item_price;
+// document.getElementById("img").innerHTML = `
+//     <img style="width: 90%;" alt="img"
+//         src="${item_img}">
+// `
+document.getElementById("title").innerText = product.name;
+document.getElementById("price").innerText = product.price;
 document.getElementById("img").innerHTML = `
     <img style="width: 90%;" alt="img"
-        src="${item_img}">
-`;
+        src="${product.img}">
+`
+
+

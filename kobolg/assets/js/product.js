@@ -9,12 +9,12 @@ maproductulin.innerHTML = localStorageData.reduce((acc, products) => {
                                 <div class="product-inner tooltip-left" >
                                     <div class="product-thumb">
                                             
-                                            <a href="./single-product.html">
+                                        
 
 
                                             <img class="img-responsive" src="${products.img}"
                                                 width="600" height="778">
-                                        </a>
+                                        
                                     </div>
                                     <div class="product-info equal-elem">
                                         <h3 class="product-name product_title">
@@ -36,7 +36,9 @@ maproductulin.innerHTML = localStorageData.reduce((acc, products) => {
                                 </div>
                             </li>
   `;
-    
+
+
+
     for (let index = 0; index < products.length; index++) {
         document.getElementById(products.id).onclick = () => {
             var name = products.name;
@@ -59,3 +61,14 @@ maproductulin.innerHTML = localStorageData.reduce((acc, products) => {
     }
     return acc;
 }, "");
+
+maproductulin.addEventListener("click", (e) => {
+    //console.log(e.target.classList.contains("product-item"))
+    if (e.target.closest('.product-item')) {
+        const productid = e.target.closest('.product-item').id
+        const selecteditem = JSON.parse(localStorage.getItem("filteredItems")).find(item => item.id == productid)
+        localStorage.setItem("selecteditem",JSON.stringify(selecteditem))
+        window.location.href = "../../single-product.html"
+    }
+})
+

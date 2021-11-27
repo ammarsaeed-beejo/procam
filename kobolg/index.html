@@ -76,11 +76,12 @@
 
 <body>
 
- <div class="Splash">
+ <!-- <div class="Splash">
         <video id="intro" autoplay="" controls src="./assets/images/2223.mp4" c></video>
-    </div>
+    </div> -->
 
  <header id="header" class="header style-04 header-dark">
+
 
         <div class="header-top">
             <div class="container">
@@ -1146,7 +1147,7 @@
 
         // Close the dropdown if the user clicks outside of it
         window.onclick = function (event) {
-            if (event.target("product-thumbnail")) {
+            if (event.target.matches('.product-thumb')) {
                 var dropdowns = document.getElementsByClassName("camtype-content");
                 var i;
                 for (i = 0; i < dropdowns.length; i++) {
