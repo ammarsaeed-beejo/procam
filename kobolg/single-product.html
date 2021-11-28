@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/megamenu.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/dreaming-attribute.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/snackbar.css">
     <!-- <link rel="stylesheet" href="./singleproduct.css"> -->
 
     <title>pro cam</title>
@@ -28,7 +29,8 @@
 
 <body>
 
-     <header id="header" class="header style-04 header-dark">
+    <header id="header" class="header style-04 header-dark">
+
 
         <div class="header-top">
             <div class="container">
@@ -235,8 +237,9 @@
                         <form role="search" method="get" class="form-search block-search-form kobolg-live-search-form">
                             <div class="form-content search-box results-search">
                                 <div class="inner">
-                                    <input id="searchinputmob" autocomplete="off" class="searchfield txt-livesearch input" name="s" value=""
-                                        placeholder="Search here..." type="text">
+                                    <input id="searchinputmob" autocomplete="off"
+                                                        class="searchfield txt-livesearch input" name="s" value=""
+                                                        placeholder="Search here..." type="text">
                                 </div>
                                 <div id="searchresultsmob"></div>
                             </div>
@@ -260,6 +263,7 @@
                                 <span class="flaticon-search"></span>
                             </button>
                         </form>
+                       
                     </div>
                 </div>
 
@@ -323,7 +327,6 @@
 
     </header>
 
-
     <div class="single-thumb-vertical main-container shop-page no-sidebar">
         <div class="container">
             <div class="row">
@@ -352,7 +355,7 @@
                                                 </div>
                                             </figure>
                                         </div>
-                                        <ol class="flex-control-nav flex-control-thumbs">
+                                        <!-- <ol class="flex-control-nav flex-control-thumbs">
                                             <li id="img">
                                             </li>
                                             <li  id="img2">
@@ -361,7 +364,7 @@
                                             </li>
                                             <li id="img4">
                                             </li>
-                                        </ol>
+                                        </ol> -->
                                     </div>
                                 </div>
                                 <div class="summary entry-summary">
@@ -376,30 +379,39 @@
                                         <span class="kobolg-Price-currencySymbol">jd</span>
                                     </p>
                                     
-                                <div id="Quen"></div>
                                     <form class="variations_form cart">
                                         <div class="single_variation_wrap">
                                             <div class="kobolg-variation single_variation"></div>
-                                            
+                                            <div id="add-button-container"
+                                                class="kobolg-variation-add-to-cart variations_button">
                                                 <div class="quantity">
                                                     <span class="qty-label">Quantiy:</span>
-                                                    <div class="control" id="Quen">
-                                                        
+                                                    <div class="control">
+                                                        <a class="btn-number qtyminus quantity-minus" href="#">-</a>
+
+                                                        <input type="text" data-step="1" min="0" max=""
+                                                            name="quantity[25]" value="0" title="Qty" id="quentity"
+                                                            class="input-qty input-text qty text" size="4"
+                                                            pattern="[0-9]*" inputmode="numeric">
+                                                        <a class="btn-number qtyplus quantity-plus" href="#">+</a>
                                                     </div>
                                                 </div>
-                                                <div>
 
-                                                    
-                                                    <a> <div id="add-button-container"> </a>
-                                                    <a href="./gitcot/get.html"> <input type="button" value="get a quote"> </a> 
+                                                <div id="checkout">
 
+                                                  
+                                                   <a href="./gitcot/get.html"> <input type="button" value="get a quote"> </a> 
+                                                        <div id="add-button-container"></div>
                                                 </div>
 
-                                                
+                                                <input name="add-to-cart" value="27" type="hidden">
+                                                <input name="product_id" value="27" type="hidden">
+                                                <input name="variation_id" class="variation_id" value="0" type="hidden">
+                                            </div>
                                         </div>
                                     </form>
 
-
+                                    <div id="specification"></div>
                                 </div>
                             </div>
                         </div>
@@ -411,7 +423,7 @@
                                 </li>
 
                             </ul>
-                            
+
                             
 
                         </div>
@@ -420,6 +432,12 @@
             </div>
         </div>
     </div>
+    
+    <button onclick="myFunction()">Show Snackbar</button>
+
+
+<div id="snackbar">Some text some message..</div>
+
     <footer id="footer" class="footer style-01">
         <div class="section-001 section-009">
             <div class="container">
@@ -495,6 +513,7 @@
             </div>
         </div>
     </footer>
+
     <div class="footer-device-mobile">
         <div class="wapper">
             <div class="footer-device-mobile-item device-home">
@@ -549,7 +568,6 @@
     <script src="./assets/js/functions.js"></script> 
     <script src="./assets/css/style.css"></script> 
     <script src="./assets/js/singel-product.js"  type="module"></script>
-    <!-- <script src="./assets/js/cart/Compact.js"  type="module"></script> -->
     <script src="./email/email.js" type="module"></script>
     
 
