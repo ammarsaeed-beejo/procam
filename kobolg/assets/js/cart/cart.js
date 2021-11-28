@@ -22,6 +22,12 @@ getAnalytics(app);
 
 const cartItems = JSON.parse(localStorage.getItem("cartItems"));
 const total = JSON.parse(localStorage.getItem("total"));
+console.log(localStorage.getItem("cartItems"));
+const total_price = cartItems.reduce((total,item) => {
+  total += item.price*item.quantity;
+  return total;
+},0);
+console.log(total_price);
 
 function buy() {
   var cartItemsFirebase = [];
@@ -138,9 +144,8 @@ function addAmount(id) {
 }
 
 for (let index = 0; index < cartItems.length; index++) {
-  console.log(cartItems);
   document.getElementById("cart_Items").innerHTML += `
-        <tr class="kobolg-cart-form__cart-item cart_item">
+       
                                             <td class="product-remove">
                                                 <button  class="remove" aria-label="Remove this item" onclick="remove(${cartItems[index].id})">×</button>
                                             </td>
@@ -162,10 +167,13 @@ for (let index = 0; index < cartItems.length; index++) {
                                                 <div class="quantity">
                                                     <span class="qty-label">Quantiy:</span>
                                                    <div class="control">
-                                                        <a class="btn-number qtyminus quantity-minus" onclick="reduceAmount(${cartItems[index].id})" href="#">-</a>
-                                                        <input id="Quen_val" type="text" value="${cartItems[index].quantity}" title="Qty"
-                                                            class="input-qty input-text qty text">
-                                                        <a class="btn-number qtyplus quantity-plus" onclick="addAmount(${cartItems[index].id})" href="#">+</a>
+                                                   <a class="btn-number qtyminus quantity-minus" href="#">-</a>
+
+                                                   <input type="text" data-step="1" min="1" max=""
+                                                       name="quantity[25]" value="1" title="Qty" id="quentity"
+                                                       class="input-qty input-text qty text" size="4"
+                                                       pattern="[0-9]*" inputmode="numeric">
+                                                   <a class="btn-number qtyplus quantity-plus" href="#">+</a>
                                                     </div>
                                                 </div>
                                             </td>
@@ -173,20 +181,21 @@ for (let index = 0; index < cartItems.length; index++) {
                                                 <span class="kobolg-Price-amount amount"><span
                                                         class="kobolg-Price-currencySymbol">$</span>150.00</span>
                                             </td>
-                                        </tr>
+                                        <br>
         `;
+      
+document.getElementById("quentity").value = cartItems[index].quantity;
 }
 
-document.getElementById("order-total").innerHTML = `
 
+document.getElementById("order-total").innerHTML = `
   <th>Total</th>
                                                 <td data-title="Total"><strong><span
                                                             class="kobolg-Price-amount amount"><span
-                                                                class="kobolg-Price-currencySymbol">$</span>${total}</span></strong>
+                                                                class="kobolg-Price-currencySymbol">$</span>${total_price}</span></strong>
                                                 </td>
 
 `;
-
 
 window.remove = remove;
 window.reduceAmount = reduceAmount;

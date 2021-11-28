@@ -170,7 +170,7 @@
 }
 
 .kobolg-cart-form__cart-item {
-  display: flex;
+  display: block;
 }
 
 .catecategory {
@@ -15344,6 +15344,9 @@ ul.products {
   list-style: none;
   display: flex;
 }
+
+
+
 
 /*.kobolg-socials.style-01*/
 

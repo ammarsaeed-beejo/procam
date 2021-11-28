@@ -66,20 +66,38 @@ function clean() {
 }
 
 function add(id) {
-  for (let index = 0; index < products.length; index++) {
-    if (products[index].id != id || products[index].cart == true) {
+  // if (products[index].id != id || products[index].cart == true) {
+  //   } else {
+  //     products[index].cart = true;
+  //     console.log(con2);
+  //     con2.push(products[index]);
+  //     localStorage.setItem("cartItems", JSON.stringify(con2));
+  //     con++;
+  //     var total = (products[index].total =
+  //       products[index].price * products[index].quantity);
+  //     total;
+  //     localStorage.setItem("total", JSON.stringify(total));
+  //   }
+  
+  const addedItem = products.find((findproduct) => findproduct.id == id);
+  const quantityVal = document.getElementById("quentity").value;
+  const cartItems = JSON.parse(localStorage.getItem("cartItems"))
+  addedItem.quantity = Number(quantityVal);
+  console.log(cartItems);
+  if (cartItems == null) {
+    console.log("true");
+    localStorage.setItem("cartItems", JSON.stringify([addedItem]));
+  } else {
+    if (cartItems.some(item => item.id == addedItem.id)) {
+      const filterdItems = cartItems.filter(item => item.id != addedItem.id);
+      localStorage.setItem("cartItems", JSON.stringify([...filterdItems, addedItem]));
     } else {
-      products[index].cart = true;
-      console.log(con2);
-      con2.push(products[index]);
-      localStorage.setItem("cartItems", JSON.stringify(con2));
-      con++;
-      var total = (products[index].total =
-        products[index].price * products[index].quantity);
-      total;
-      localStorage.setItem("total", JSON.stringify(total));
+      localStorage.setItem("cartItems", JSON.stringify([...cartItems, addedItem]));
     }
   }
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
 }
 
 function updateCart() {
@@ -151,7 +169,8 @@ function addAmount(id) {
   // }
 }
 
-document.getElementById("add-button-container").innerHTML +=`<button
+
+document.getElementById("add-button-container").innerHTML += `<button
     onclick="add(${product.id})"
     type="button" class="single_add_to_cart_button button alt kobolg-variation-selection-needed">
     Add to cart
