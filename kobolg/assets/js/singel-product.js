@@ -177,15 +177,15 @@ document.getElementById("add-button-container").innerHTML += `<button
   </button>`;
 
 document.getElementById("title").innerText = product.name;
+
 document.getElementById("price").innerText = product.price;
-document.getElementById("img").innerHTML = `
-    <img style="width: 90%;" alt="img"
-        src="${product.img}">
-`
-document.getElementById("specification").innerHTML = `
-<a href="${product.specificationlink}"></a>
-`
+
+document.getElementById("img").innerHTML = `<img style="width: 90%;" alt="img" src="${product.img}">`;
+
+document.getElementById("specification").innerHTML = `<a  href="${product.specificationlink}" id="View full specification">View full specification</a>`;
+
 window.add = add;
+
 window.reduceAmount = reduceAmount;
 window.addAmount = addAmount;
 window.buy = buy;

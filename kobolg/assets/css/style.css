@@ -1,10 +1,23 @@
 #infodata {
   display: flex;
-} 
+}
 
-.searshdatap{
+.searshdatap {
   padding: 4px;
   cursor: pointer;
+}
+
+#maxlogo{
+  width: 80%;
+}
+
+#asclogo {
+  width: 10%;
+  margin-left: 20px;
+}
+
+#Authorized {
+  font-size: 15pt;
 }
 
 /* body{
@@ -13,7 +26,7 @@
 
 
 
-.Splash{
+.Splash {
   width: 100%;
   margin-top: auto;
   margin-left: auto;
@@ -24,7 +37,7 @@
   z-index: 11;
 }
 
-.intro{
+.intro {
   width: 100%;
   padding: 10px;
 }
@@ -219,7 +232,7 @@
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
+
   width: 170px;
   font-size: 30px;
   text-align: center;
@@ -2209,7 +2222,6 @@ select {
   border: 1px solid #ebebeb;
   padding: 0 20px;
   max-width: 100%;
-  background-color: transparent;
   font-size: 14px;
   color: #999;
   height: 40px;
@@ -4039,7 +4051,7 @@ td {
 
 .logo {
   width: 150px;
-  margin-top: 14px;
+  margin-top: 19px;
   margin-bottom: 10px;
 }
 
@@ -9392,6 +9404,7 @@ body.admin-bar #yith-quick-view-modal {
   position: relative;
   text-transform: uppercase;
   border-radius: 4px;
+  margin-top: 10px;
 }
 
 .entry-summary .cart .single_add_to_cart_button::before {
@@ -11343,7 +11356,8 @@ form.kobolg-checkout::after {
   width: 100%;
   height: 52px;
   line-height: 50px;
-  background-color: #e7e7e7;
+  background-color: #fff;
+  border: 3 px solid #e7e7e7;
 }
 
 .form-row-first {

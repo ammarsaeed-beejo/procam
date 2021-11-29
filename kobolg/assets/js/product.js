@@ -49,6 +49,7 @@ maproductulin.innerHTML = localStorageData.reduce((acc, products) => {
             var total_items_price = products.total;
             var img = products.img;
             var info = products.info;
+            var link = products.specificationlink;
             localStorage.setItem("item-name", name);
             localStorage.setItem("item-price", price);
             localStorage.setItem("item-total", total_items_price);
@@ -57,6 +58,7 @@ maproductulin.innerHTML = localStorageData.reduce((acc, products) => {
             localStorage.setItem("item-id", id);
             localStorage.setItem("item-img", img);
             localStorage.setItem("item-info", info);
+            localStorage.setItem("item-specificationlink", specificationlink);
         };
     }
     return acc;
@@ -68,7 +70,7 @@ maproductulin.addEventListener("click", (e) => {
         const productid = e.target.closest('.product-item').id
         const selecteditem = JSON.parse(localStorage.getItem("filteredItems")).find(item => item.id == productid)
         localStorage.setItem("selecteditem",JSON.stringify(selecteditem))
-        window.location.href = "../../single-product.html"
+        window.location.href = "/kobolg/single-product.html"
     }
 })
 

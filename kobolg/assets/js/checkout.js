@@ -1,4 +1,4 @@
- 
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
 
@@ -55,7 +55,7 @@ submitBtn.addEventListener("click", function () {
 
             name: first_nameInput,
             last_name: last_nameInput,
-            order : checkoutItem,
+            order: checkoutItem,
             email: emailInput,
             addresses_1: addresses_1Input,
             city: cityInput,

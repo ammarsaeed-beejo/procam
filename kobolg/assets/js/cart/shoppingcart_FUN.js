@@ -40,7 +40,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: ".../cam/dslr/CANON EOS 4000D/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/CANON EOS 4000D/CANON EOS 4000D.html",
   },
 
   {
@@ -53,7 +53,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/CANON EOS 2000D/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/CANON EOS 2000D/CANON EOS 2000D.html",
   },
 
   {
@@ -66,7 +66,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/CANON EOS 250d/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/CANON EOS 250d/CANON EOS 250d.html",
   },
 
   {
@@ -79,7 +79,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/CANON EOS 850d/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/CANON EOS 850d/index.html",
   },
 
   {
@@ -92,7 +92,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/CANON EOS 850d/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/CANON EOS 850d/index.html",
   },
 
   {
@@ -105,7 +105,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/CANON EOS 80D/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/CANON EOS 80D/index.html",
   },
 
   {
@@ -118,7 +118,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/CANON EOS 90d/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/CANON EOS 90d/index.html",
   },
 
   {
@@ -131,7 +131,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/Canon EOS 5D Mark IV/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/Canon EOS 5D Mark IV/index.html",
   },
 
   {
@@ -145,7 +145,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/Canon EOS M50/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/Canon EOS M50/index.html",
   },
 
   {
@@ -158,7 +158,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/Canon EOS M50/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/Canon EOS M50/index.html",
   },
 
   {
@@ -171,7 +171,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/Canon EOS RP/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/Canon EOS RP/index.html",
   },
 
   {
@@ -184,7 +184,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/Canon EOS RP/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/Canon EOS RP/index.html",
   },
 
   {
@@ -197,7 +197,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/Canon EOS R/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/Canon EOS R/index.html",
   },
 
   {
@@ -210,7 +210,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/Canon EOS R/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/Canon EOS R/index.html",
   },
 
   {
@@ -223,7 +223,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/Canon EOS R6/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/Canon EOS R6/index.html",
   },
 
   {
@@ -236,7 +236,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/Canon EOS R5/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/Canon EOS R5/index.html",
   },
 
   {
@@ -249,7 +249,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/Canon EOS R3/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/Canon EOS R3/index.html",
   },
 
   {
@@ -262,7 +262,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "dslr",
-    specificationlink: "../cam/dslr/Canon LEGRIA HF R806/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/dslr/Canon LEGRIA HF R806/index.html",
   },
 
   ///////////////////////////////////////////////////////////////COMPACT////////////////////////////////////////////////////////////////////////////
@@ -278,7 +278,7 @@ var products = [
     href: "./compact/IXUS 185.html",
     total: 0,
     type: "compact",
-    specificationlink: "./cam/Compact/ixus 185/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/compcat/ixus 185/ixus 185.html",
   },
 
   {
@@ -292,7 +292,7 @@ var products = [
     href: "./compact/POWERSHOT SX-620.html",
     total: 0,
     type: "compact",
-    specificationlink: "./cam/Compact/Canon PowerShot SX620 HS/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/compcat/SX620HS/Canon PowerShot SX620 HS.html",
   },
 
   {
@@ -302,7 +302,7 @@ var products = [
     price: 199,
     cart: false,
     quantity: 1,
-    href: "/kobolg/DSLR/PowerShot SX540 HS.html",
+    href: "./DSLR/PowerShot SX540 HS.html",
     total: 0,
     type: "compact",
   },
@@ -316,6 +316,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "compact",
+    specificationlink: "/kobolg/assets/js/cart/cam/compcat/SX430IS/SX430IS.html",
   },
 
   {
@@ -327,7 +328,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "compact",
-    specificationlink: "./cam/Compact/PowerShot SX70 HS/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/compcat/SX70HS/PowerShot SX70 HS.html",
   },
 
   {
@@ -339,7 +340,7 @@ var products = [
     quantity: 1,
     total: 0,
     type: "compact",
-    specificationlink: "./cam/Compact/PowerShot G7 X Mark III/index.html",
+    specificationlink: "/kobolg/assets/js/cart/cam/compcat/G7XMarkIII/PowerShot G7 X Mark III.html",
   },
 
   ///////////////////////////////////////////////////////////////ACCESSORIES////////////////////////////////////////////////////////////////////////////
@@ -815,11 +816,7 @@ searchResultsContainer.addEventListener("click", (e) => {
   );
 console.log(selectedProduct);
     localStorage.setItem("selecteditem", JSON.stringify(selectedProduct));
-  // const saveditem = localStorage.setItem("item-name" , selectedProduct.name);
-  // const saveditem2 = localStorage.setItem("item-price" , selectedProduct.price);
-  // const saveditem3 = localStorage.setItem("item-img" , selectedProduct.img);
-  // const saveditem4 = localStorage.setItem("item-info" , selectedProduct.info);
-  // localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
+
   window.location.href = "./single-product.html";
 });
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -867,59 +864,82 @@ searchResultsContainerMob.addEventListener("click", (e) => {
   );
 console.log(selectedProduct);
     localStorage.setItem("selecteditem", JSON.stringify(selectedProduct));
-  // const saveditem = localStorage.setItem("item-name" , selectedProduct.name);
-  // const saveditem2 = localStorage.setItem("item-price" , selectedProduct.price);
-  // const saveditem3 = localStorage.setItem("item-img" , selectedProduct.img);
-  // const saveditem4 = localStorage.setItem("item-info" , selectedProduct.info);
-  // localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
+
   window.location.href = "./single-product.html";
 });
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-// searchinputmob.addEventListener("input", (e) => {
-//   // if input field is empty, clear the search results
-//   if (e.target.value === "") {
-//     searchresultsmob.innerHTML = "";
-//   }
+const Printersitemscat = document.getElementById("Printersli");
 
-//   if (e.target.value.length > 0) {
-//     searchresultsmob.style.display = "block";
-//   } else if (e.target.value.length == 0) {
-//     searchresultsmob.style.display = "none ";
-//   }
+Printersitemscat.addEventListener("click", function (e) {
+  const filteredItems = products.filter(
+    (item) => item.type === e.currentTarget.dataset.type
+  );
 
-//   // filter the products array
-//   const searchResults = products.filter((meal) => {
-//     return meal.name.toLowerCase().includes(e.target.value.toLowerCase());
-//   });
+  localStorage.setItem("filteredItems", JSON.stringify(filteredItems));
+  console.log(JSON.parse(localStorage.getItem("filteredItems")));
+  console.log("-------------------------------");
 
-//   if (searchResults.length == 0) {
-//     searchresultsmob.style.display = "none ";
-//   }
+  window.location.href = "./products.html";
+});
 
-//   // before displaying the search results, clear the search results div
-//   searchresultsmob.innerHTML = "";
+const accessoriesitemscat = document.getElementById("accessoriesli");
 
-//   searchresultsmob.innerHTML = searchResults.reduce((acc, element) => {
-//     acc += `<p data-product-id="${element.id}" class="searshdatap">
-//             ${element.name}
-//         </p>`;
-//     return acc;
-//   }, "");
-// });
+accessoriesitemscat.addEventListener("click", function (e) {
+  const filteredItems = products.filter(
+    (item) => item.type === e.currentTarget.dataset.type
+  );
 
-// searchresultsmob.addEventListener("click", (e) => {
-//   const selectedProduct = products.find(
-//     (product) => product.id === Number(e.target.dataset.productId)
-//   );
-//   // const saveditem = localStorage.setItem("item-name", selectedProduct.name);
-//   // const saveditem2 = localStorage.setItem("item-price", selectedProduct.price);
-//   // const saveditem3 = localStorage.setItem("item-img", selectedProduct.img);
-//   // const saveditem4 = localStorage.setItem("item-info", selectedProduct.info);
-//   // localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
-//   window.location.href = "./single-product.html";
-// });
+  localStorage.setItem("filteredItems", JSON.stringify(filteredItems));
+  console.log(JSON.parse(localStorage.getItem("filteredItems")));
+  console.log("-------------------------------");
 
+  window.location.href = "./products.html";
+});
+
+const Lensesitemscat = document.getElementById("Lensesli");
+
+Lensesitemscat.addEventListener("click", function (e) {
+  const filteredItems = products.filter(
+    (item) => item.type === e.currentTarget.dataset.type
+  );
+
+  localStorage.setItem("filteredItems", JSON.stringify(filteredItems));
+  console.log(JSON.parse(localStorage.getItem("filteredItems")));
+  console.log("-------------------------------");
+
+  window.location.href = "./products.html";
+});
+
+const compacttemscat = document.getElementById("compactli");
+
+compacttemscat.addEventListener("click", function (e) {
+  const filteredItems = products.filter(
+    (item) => item.type === e.currentTarget.dataset.type
+  );
+
+  localStorage.setItem("filteredItems", JSON.stringify(filteredItems));
+  console.log(JSON.parse(localStorage.getItem("filteredItems")));
+  console.log("-------------------------------");
+
+  window.location.href = "./products.html";
+});
+
+const dslrtemscat = document.getElementById("dslrli");
+
+dslrtemscat.addEventListener("click", function (e) {
+  const filteredItems = products.filter(
+    (item) => item.type === e.currentTarget.dataset.type
+  );
+
+  localStorage.setItem("filteredItems", JSON.stringify(filteredItems));
+  console.log(JSON.parse(localStorage.getItem("filteredItems")));
+  console.log("-------------------------------");
+
+  window.location.href = "./products.html";
+});
+
+////////////////////////////////////////////////////////////////////////////////////////////
 
 const Printersitems = document.getElementById("Printers");
 

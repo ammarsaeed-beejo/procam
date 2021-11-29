@@ -146,42 +146,36 @@ function addAmount(id) {
 for (let index = 0; index < cartItems.length; index++) {
   document.getElementById("cart_Items").innerHTML += `
        
-                                            <td class="product-remove">
+                                            <th class="product-remove">
                                                 <button  class="remove" aria-label="Remove this item" onclick="remove(${cartItems[index].id})">×</button>
-                                            </td>
-                                            <td class="product-thumbnail">
+                                            </th>
+                                            <th class="product-thumbnail">
                                                 <a href="#">
-                                                    <img class="img-responsive" src="${cartItems[index].img}"  width="600" height="600   ">
+                                                    <img class="img-responsive" src="${cartItems[index].img}"  width="300" height="300   ">
                                                 </a>
-                                            </td>
-                                            <td class="product-name" data-title="Product">
+                                            </th>
+                                            <th class="product-name" data-title="Product">
                                                 <h3 class="product-name product_title">
                                                     <a href="#" tabindex="0">${cartItems[index].name}</a>
                                                 </h3>
-                                            </td>
-                                            <td class="product-price" data-title="Price">
+                                            </th>
+                                            <th class="product-price" data-title="Price">
                                                 <span class="price"><span class="kobolg-Price-amount amount"><span
                                                 class="kobolg-Price-currencySymbol">$</span>${cartItems[index].price}</span></span>
-                                            </td>
-                                            <td class="product-quantity" data-title="Quantity">
-                                                <div class="quantity">
-                                                    <span class="qty-label">Quantiy:</span>
-                                                   <div class="control">
-                                                   <a class="btn-number qtyminus quantity-minus" href="#">-</a>
-
+                                            </th>
+                                            <th class="product-quantity" data-title="Quantity">
+                                                
                                                    <input type="text" data-step="1" min="1" max=""
                                                        name="quantity[25]" value="1" title="Qty" id="quentity"
                                                        class="input-qty input-text qty text" size="4"
                                                        pattern="[0-9]*" inputmode="numeric">
-                                                   <a class="btn-number qtyplus quantity-plus" href="#">+</a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="product-subtotal" data-title="Total">
+                                                   
+                                            </th>
+                                            <th class="product-subtotal" data-title="Total">
                                                 <span class="kobolg-Price-amount amount"><span
                                                         class="kobolg-Price-currencySymbol">$</span>150.00</span>
-                                            </td>
-                                        <br>
+                                            </th>
+                                       
         `;
       
 document.getElementById("quentity").value = cartItems[index].quantity;

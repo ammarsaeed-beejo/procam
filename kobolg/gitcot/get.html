@@ -41,7 +41,7 @@
                         </div>
                         <div class="header-logo">
                             <a href="index.html" style="text-align: center;"><img class="logo"
-                                    src="./././assets/images/logo.png"></a>
+                                    src="../assets/images/logo.svg"></a>
                         </div>
                     </div>
                     <div class="header-control">
@@ -51,7 +51,7 @@
                                     <a class="block-link" href="my-account.html">
                                         <span class="flaticon-profile"></span>
                                     </a>
-                                    <ul class="sub-menu">
+                                    <!-- <ul class="sub-menu">
                                         <li
                                             class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--dashboard is-active">
                                             <a href="#">Dashboard</a>
@@ -76,7 +76,7 @@
                                             class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--customer-logout">
                                             <a href="#">Logout</a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
                                 <a href="./cart.html">
                                     <div class="block-minicart block-dreaming kobolg-mini-cart kobolg-dropdown">
@@ -335,66 +335,80 @@
                                 enctype="multipart/form-data" novalidate="novalidate">
                                 <div class="col2-set" id="customer_details">
                                     <div class="col-1">
-                                        <div class="kobolg-fields">
-                                            <h3>Get a quote</h3>
-                                            <div class="kobolg-fields__field-wrapper">
+                                        <div class="kobolg-billing-fields">
+                                            <h3 style="border-top: 10px solid #f6f6f6;">get a quote</h3>
+                                            <div class="kobolg-billing-fields__field-wrapper">
                                                 <p class="form-row form-row-first validate-required"
-                                                    id="first_name_field" data-priority="10"><label for="first_name"
-                                                        class="">First name&nbsp;<abbr class="required"
-                                                            title="required"></abbr></label><span
-                                                        class="kobolg-input-wrapper"><input itemid="" type="text"
-                                                            class="input-text " name="first_name" id="first_name"
-                                                            placeholder="" value="" autocomplete="given-name"></span>
-                                                </p>
-                                                <p class="form-row form-row-last validate-required" id="last_name_field"
-                                                    data-priority="20"><label for="last_name" class="">Last
-                                                        name&nbsp;<abbr class="required"
-                                                            title="required"></abbr></label><span
+                                                    id="first_name_field" data-priority="10"><label
+                                                        for="first_name" class="">First name&nbsp;<abbr
+                                                            class="required" title="required">*</abbr></label><span
                                                         class="kobolg-input-wrapper"><input type="text"
-                                                            class="input-text " name="last_name" id="last_name"
-                                                            placeholder="" value="" autocomplete="family-name"></span>
+                                                            class="input-text " name="first_name"
+                                                            id="first_name" placeholder="" value=""
+                                                            autocomplete="given-name"></span>   
                                                 </p>
-                                                <p class="form-row form-row-wide" id="company_field" data-priority="30">
-                                                    <label for="company" class="">Company
-                                                        name&nbsp;</label><span class="kobolg-input-wrapper"><input
-                                                            type="text" class="input-text " name="company" id="company"
-                                                            placeholder="" value="" autocomplete="organization"></span>
+                                                <p class="form-row form-row-last validate-required"
+                                                    id="last_name_field" data-priority="20"><label
+                                                        for="last_name" class="">Last name&nbsp;<abbr
+                                                            class="required" title="required">*</abbr></label><span
+                                                        class="kobolg-input-wrapper"><input type="text"
+                                                            class="input-text " name="last_name"
+                                                            id="last_name" placeholder="" value=""
+                                                            autocomplete="family-name"></span>
                                                 </p>
-
-
 
                                                 <p class="form-row form-row-wide addresses-field validate-required"
                                                     id="city_field" data-priority="70"
                                                     data-o_class="form-row form-row-wide addresses-field validate-required">
-                                                    <label for="city" class="">City&nbsp;<abbr class="required"
-                                                            title="required"></abbr></label><span
+                                                    <label for="city" class="">City&nbsp;<abbr
+                                                            class="required" title="required">*</abbr></label><span
                                                         class="kobolg-input-wrapper"><input type="text"
-                                                            class="input-text " name="city" id="city" placeholder=""
-                                                            value="" autocomplete="addresses-level2" required></span>
+                                                            class="input-text " name="city" id="city"
+                                                            placeholder="" value=""
+                                                            autocomplete="addresses-level2"></span>
+                                                </p>
+
+                                                <p class="form-row form-row-wide addresses-field validate-required"
+                                                    id="addresses_1_field" data-priority="50"><label
+                                                        for="addresses_1" class="">company name&nbsp;<abbr
+                                                            class="required" title="required">*</abbr></label><span
+                                                        class="kobolg-input-wrapper"><input type="text"
+                                                            class="input-text " name="addresses_1"
+                                                            id="addresses_1"
+                                                            placeholder="" value=""
+                                                            autocomplete="addresses-line1"
+                                                            data-placeholder=""></span>
                                                 </p>
 
                                                 <p class="form-row form-row-wide validate-required validate-phone"
-                                                    id="phone_field" data-priority="100"><label for="phone"
-                                                        class="">Phone&nbsp;<abbr class="required"
-                                                            title="required"></abbr></label><span
+                                                    id="phone_field" data-priority="100"><label
+                                                        for="phone" class="">Phone&nbsp;<abbr class="required"
+                                                            title="required">*</abbr></label><span
                                                         class="kobolg-input-wrapper"><input type="tel"
-                                                            class="input-text " name="phone" id="phone" placeholder=""
-                                                            value="" autocomplete="tel"></span>
+                                                            class="input-text " name="phone" id="phone"
+                                                            placeholder="" value="" autocomplete="tel"></span>
                                                 </p>
                                                 <p class="form-row form-row-wide validate-required validate-email"
-                                                    id="email_field" data-priority="110"><label for="email"
-                                                        class="">Email
+                                                    id="email_field" data-priority="110"><label
+                                                        for="email" class="">Email
                                                         addresses&nbsp;<abbr class="required"
-                                                            title="required"></abbr></label><span
+                                                            title="required">*</abbr></label><span
                                                         class="kobolg-input-wrapper"><input type="email"
-                                                            class="input-text " name="email" id="email" placeholder=""
-                                                            value="" autocomplete="email username"></span>
+                                                            class="input-text " name="email" id="email"
+                                                            placeholder="" value=""
+                                                            autocomplete="email username"></span>
                                                 </p>
+                                               
+                                                
                                             </div>
                                         </div>
+                                        <div class="kobolg-account-fields">
+                                            <p class="form-row form-row-wide create-account kobolg-validated">
 
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="col-2">
+                                    <div style="border-bottom: 20px solid white;" class="col-2">
                                         <div class="kobolg-shipping-fields">
                                         </div>
                                         <div class="kobolg-additional-fields">
@@ -409,21 +423,17 @@
                                                             rows="2" cols="5"></textarea></span>
                                                 </p>
                                             </div>
-                                        </div>
-                                        <div style="text-align: center;">
-                                            <input type="submit" id="submit" class="btn btn-primary"
-                                                style="margin-top: 20px; text-align: center; width: 20%; background-color: blue;">
-                                        </div>
-                                    </div>
-                                </div>
-
+                                        <button style="margin-top: 20PX;" id="submit" type="button">get a quote</button>
+                                        </div>   
+                                    </div>                         
+                                </div>                             
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        
     </main>
    <footer id="footer" class="footer style-01">
         <div class="section-001 section-009">
