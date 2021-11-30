@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/pro cam icon.png" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
@@ -21,11 +21,12 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/dreaming-attribute.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../">
-    <title>Kobolg - HTML Template </title>
+    <title>pro cam</title>
 </head>
 
 <body>
     <header id="header" class="header style-04 header-dark">
+
 
         <div class="header-top">
             <div class="container">
@@ -40,7 +41,7 @@
                         </div>
                         <div class="header-logo">
                             <a href="index.html" style="text-align: center;"><img class="logo"
-                                    src="../assets/images/logo.png"></a>
+                                    src="../assets/images/logo.svg"></a>
                         </div>
                     </div>
                     <div class="header-control">
@@ -50,7 +51,7 @@
                                     <a class="block-link" href="my-account.html">
                                         <span class="flaticon-profile"></span>
                                     </a>
-                                    <ul class="sub-menu">
+                                    <!-- <ul class="sub-menu">
                                         <li
                                             class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--dashboard is-active">
                                             <a href="#">Dashboard</a>
@@ -75,7 +76,7 @@
                                             class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--customer-logout">
                                             <a href="#">Logout</a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
                                 <a href="./cart.html">
                                     <div class="block-minicart block-dreaming kobolg-mini-cart kobolg-dropdown">
@@ -119,6 +120,11 @@
                             <a class="kobolg-menu-item-title" title="News" href="#news">News</a>
                         </li>
 
+                        <li id="menu-item-996"
+                            class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-996 parent parent-megamenu item-megamenu menu-item-has-children">
+                            <a class="kobolg-menu-item-title" title="blog   " href="#blog">blog</a>
+                        </li>
+
                         <li id="menu-item-238"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238">
 
@@ -146,25 +152,30 @@
                                 </div>
                                 <div class="block-content verticalmenu-content">
                                     <ul id="menu-vertical-menu" class="azeroth-nav vertical-menu default">
-                                        <li id="menu-item-886"
+                                        <li  id="dslrli" data-type="dslr"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-886">
-                                            <a class="azeroth-menu-item-title" title="Camera" href="#"><span
-                                                    class="icon flaticon-technology"></span>Camera</a>
+                                            <a class="azeroth-menu-item-title" title="Camera" >EOS
+                                                DSLR Cameras</a>
                                         </li>
-                                        <li id="menu-item-895"
+                                        <li  id="compactli" data-type="compact"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-886">
+                                            <a class="azeroth-menu-item-title" title="Camera"
+                                               >Compact Cameras</a>
+                                        </li>
+                                        <li id="Lensesli" data-type="Lenses"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-895">
-                                            <a class="azeroth-menu-item-title" title="Lenses" href="#"><span
-                                                    class="icon flaticon-console"></span>Lenses</a>
+                                            <a class="azeroth-menu-item-title" title="Lenses"
+                                                >Lenses</a>
                                         </li>
-                                        <li id="menu-item-888"
+                                        <li id="Printersli" data-type="Printers"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-888">
-                                            <a class="azeroth-menu-item-title" title="Printers" href="#"><span
-                                                    class="icon flaticon-print-button"></span>Printers</a>
+                                            <a class="azeroth-menu-item-title" title="Printers"
+                                                >Printers</a>
                                         </li>
-                                        <li id="menu-item-889"
+                                        <li id="accessoriesli" data-type="accessories"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-889">
-                                            <a class="azeroth-menu-item-title" title="Speaker" href="#"><span
-                                                    class="icon flaticon-technology-1"></span>Speaker</a>
+                                            <a class="azeroth-menu-item-title" title="Speaker"
+                                                >accessories</a>
                                         </li>
 
 
@@ -180,9 +191,11 @@
                                             class="form-search block-search-form kobolg-live-search-form">
                                             <div class="form-content search-box results-search">
                                                 <div class="inner">
-                                                    <input autocomplete="off" class="searchfield txt-livesearch input"
-                                                        name="s" value="" placeholder="Search here..." type="text">
+                                                    <input id="searchinput" autocomplete="off"
+                                                        class="searchfield txt-livesearch input" name="s" value=""
+                                                        placeholder="Search here..." type="text">
                                                 </div>
+                                                <div id="searchresults"></div>
                                             </div>
                                             <input name="post_type" value="product" type="hidden">
                                             <input name="taxonomy" value="product_cat" type="hidden">
@@ -220,9 +233,11 @@
                         <form role="search" method="get" class="form-search block-search-form kobolg-live-search-form">
                             <div class="form-content search-box results-search">
                                 <div class="inner">
-                                    <input autocomplete="off" class="searchfield txt-livesearch input" name="s" value=""
-                                        placeholder="Search here..." type="text">
+                                    <input id="searchinputmob" autocomplete="off"
+                                                        class="searchfield txt-livesearch input" name="s" value=""
+                                                        placeholder="Search here..." type="text">
                                 </div>
+                                <div id="searchresultsmob"></div>
                             </div>
                             <input name="post_type" value="product" type="hidden">
                             <input name="taxonomy" value="product_cat" type="hidden">
@@ -244,13 +259,14 @@
                                 <span class="flaticon-search"></span>
                             </button>
                         </form>
+                       
                     </div>
                 </div>
 
             </div>
             <div class="header-mobile-mid">
                 <div class="header-logo">
-                    <a href="index.html"><img alt="Kobolg" src="../assets/images/logo.png" class="logo"></a>
+                    <a href="index.html"><img alt="Kobolg" src="./././assets/images/logo.png" class="logo"></a>
                 </div>
             </div>
             <div class="header-mobile-right">
@@ -319,52 +335,55 @@
                                 enctype="multipart/form-data" novalidate="novalidate">
                                 <div class="col2-set" id="customer_details">
                                     <div class="col-1">
-                                        <div class="kobolg-fields">
-                                            <h3>Get a quote</h3>
-                                            <div class="kobolg-fields__field-wrapper">
+                                        <div class="kobolg-billing-fields">
+                                            <h3 style="border-top: 10px solid #f6f6f6;">get a quote</h3>
+                                            <div class="kobolg-billing-fields__field-wrapper">
                                                 <p class="form-row form-row-first validate-required"
                                                     id="first_name_field" data-priority="10"><label
                                                         for="first_name" class="">First name&nbsp;<abbr
-                                                            class="required" title="required"></abbr></label><span
-                                                        class="kobolg-input-wrapper"><input itemid="" type="text"
+                                                            class="required" title="required">*</abbr></label><span
+                                                        class="kobolg-input-wrapper"><input type="text"
                                                             class="input-text " name="first_name"
                                                             id="first_name" placeholder="" value=""
-                                                            autocomplete="given-name"></span>
+                                                            autocomplete="given-name"></span>   
                                                 </p>
                                                 <p class="form-row form-row-last validate-required"
                                                     id="last_name_field" data-priority="20"><label
                                                         for="last_name" class="">Last name&nbsp;<abbr
-                                                            class="required" title="required"></abbr></label><span
+                                                            class="required" title="required">*</abbr></label><span
                                                         class="kobolg-input-wrapper"><input type="text"
                                                             class="input-text " name="last_name"
                                                             id="last_name" placeholder="" value=""
                                                             autocomplete="family-name"></span>
                                                 </p>
-                                                <p class="form-row form-row-wide" id="company_field"
-                                                    data-priority="30"><label for="company" class="">Company
-                                                        name&nbsp;</label><span class="kobolg-input-wrapper"><input
-                                                            type="text" class="input-text " name="company"
-                                                            id="company" placeholder="" value=""
-                                                            autocomplete="organization"></span>
-                                                </p>
-
-
 
                                                 <p class="form-row form-row-wide addresses-field validate-required"
                                                     id="city_field" data-priority="70"
                                                     data-o_class="form-row form-row-wide addresses-field validate-required">
-                                                    <label for="city" class="">City&nbsp;<abbr class="required"
-                                                            title="required"></abbr></label><span
+                                                    <label for="city" class="">City&nbsp;<abbr
+                                                            class="required" title="required">*</abbr></label><span
                                                         class="kobolg-input-wrapper"><input type="text"
                                                             class="input-text " name="city" id="city"
                                                             placeholder="" value=""
-                                                            autocomplete="addresses-level2" required></span>
+                                                            autocomplete="addresses-level2"></span>
                                                 </p>
-                                                
+
+                                                <p class="form-row form-row-wide addresses-field validate-required"
+                                                    id="addresses_1_field" data-priority="50"><label
+                                                        for="addresses_1" class="">company name&nbsp;<abbr
+                                                            class="required" title="required">*</abbr></label><span
+                                                        class="kobolg-input-wrapper"><input type="text"
+                                                            class="input-text " name="addresses_1"
+                                                            id="addresses_1"
+                                                            placeholder="" value=""
+                                                            autocomplete="addresses-line1"
+                                                            data-placeholder=""></span>
+                                                </p>
+
                                                 <p class="form-row form-row-wide validate-required validate-phone"
                                                     id="phone_field" data-priority="100"><label
                                                         for="phone" class="">Phone&nbsp;<abbr class="required"
-                                                            title="required"></abbr></label><span
+                                                            title="required">*</abbr></label><span
                                                         class="kobolg-input-wrapper"><input type="tel"
                                                             class="input-text " name="phone" id="phone"
                                                             placeholder="" value="" autocomplete="tel"></span>
@@ -373,17 +392,23 @@
                                                     id="email_field" data-priority="110"><label
                                                         for="email" class="">Email
                                                         addresses&nbsp;<abbr class="required"
-                                                            title="required"></abbr></label><span
+                                                            title="required">*</abbr></label><span
                                                         class="kobolg-input-wrapper"><input type="email"
                                                             class="input-text " name="email" id="email"
                                                             placeholder="" value=""
                                                             autocomplete="email username"></span>
                                                 </p>
+                                               
+                                                
                                             </div>
                                         </div>
+                                        <div class="kobolg-account-fields">
+                                            <p class="form-row form-row-wide create-account kobolg-validated">
 
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="col-2">
+                                    <div style="border-bottom: 20px solid white;" class="col-2">
                                         <div class="kobolg-shipping-fields">
                                         </div>
                                         <div class="kobolg-additional-fields">
@@ -398,19 +423,19 @@
                                                             rows="2" cols="5"></textarea></span>
                                                 </p>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                        <button style="margin-top: 20PX;" id="submit" type="button">get a quote</button>
+                                        </div>   
+                                    </div>                         
+                                </div>                             
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <input type="submit" id="submit" class="btn btn-primary">
+        
     </main>
-    <footer id="footer" class="footer style-01">
+   <footer id="footer" class="footer style-01">
         <div class="section-001 section-009">
             <div class="container">
                 <div class="kobolg-newsletter style-01">
@@ -425,9 +450,12 @@
                         </div>
                         <div class="newsletter-form-wrap">
                             <div class="newsletter-form-inner">
-                                <input id="emailsubscription" class="email email-newsletter" name="email" placeholder="Enter your email ..."
-                                    type="email">
+                                <input id="emailSubscribe" class="email email-newsletter" name="email"
+                                    placeholder="Enter your email ..." type="email">
                                 <button id="submit" class="button btn-submit submit-newsletter">Subscribe</button>
+
+
+
                             </div>
                         </div>
                     </div>
@@ -436,7 +464,7 @@
         </div>
         <div class="section-010">
             <div class="container">
-                <div class="row">
+                <div class="row" style="flex-wrap: nowrap;">
                     <div id="infodata">
                         <div id="fonefax">
                             <p>Phone : +962 6 5828442 <br>
@@ -448,7 +476,7 @@
                             </p>
                         </div>
                         <div id="loceshin">
-                            <p>- Location :Al- Bayader – HusniSobar Street- Building no.34 floor 1 office 103
+                            <p>- Location :Al- Bayader – Husni Sobar Street- Building no.34 floor 1 office 103
                                 - Opening hours : Sun – Thursday 8:30 am – 5:00 pm
                             </p>
                         </div>
@@ -531,22 +559,24 @@
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
     <script src="../assets/js/functions.js" type="module"></script>
     <script src="../assets/js/Get a quote.js" type="module"></script>
-    <script src="../email/email.js" type="module"></script>
+    <script src="../assets/js/cart/shoppingcart_FUN.js" type="module"></script>
+
+
 
     <!--firebase start-->
-    
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    
-    
+
+
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
-    
+
     <!-- TODO: Add SDKs for Firebase products that you want to use
     https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
-    
+
     <!--firebase end-->
-   
+
 </body>
 
 </html>
