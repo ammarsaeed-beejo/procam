@@ -28,8 +28,8 @@ const db = firestore.collection("togetaqupte");
 
 const product = JSON.parse(localStorage.getItem("selecteditem"));
 const submitBtn = document.querySelector("#submit");
-let first_name = document.querySelector("#first_name");
-let last_name = document.querySelector("#last_name");
+const first_name = document.querySelector("#first_name");
+const last_name = document.querySelector("#last_name");
 let company = document.querySelector("#company");
 let city = document.querySelector("#city");
 let phone = document.querySelector("#phone");
@@ -48,6 +48,7 @@ submitBtn.addEventListener("click", function () {
     let quentityInput = quentity.value;
     let cityInput = city.value;
     let camname = product.name;
+    console.log(camname);
     let phoneInput = phone.value;
     let emailInput = email.value;
     let order_commentsInput = order_comments.value;

@@ -48,6 +48,7 @@ submitBtn.addEventListener("click", function () {
     let quentityInput = quentity.value;
     let cityInput = city.value;
     let camname = product.name;
+    console.log(camname);
     let phoneInput = phone.value;
     let emailInput = email.value;
     let order_commentsInput = order_comments.value;

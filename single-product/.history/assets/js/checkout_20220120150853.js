@@ -16,32 +16,31 @@ const firebaseConfig = {
     measurementId: "G-L8XZNC95BJ"
   };
 
+
 // Initialize Firebase
- // Initialize Firebase
+// Initialize Firebase error here
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
 let firestore = firebase.firestore();
-  
-const db = firestore.collection("togetaqupte");
 
+const db = firestore.collection("orders");
 
-const product = JSON.parse(localStorage.getItem("selecteditem"));
+const checkoutItem = JSON.parse(localStorage.getItem("cartItems"));
 const submitBtn = document.querySelector("#submit");
-let first_name = document.querySelector("#first_name");
-let last_name = document.querySelector("#last_name");
-let company = document.querySelector("#company");
-let city = document.querySelector("#city");
-let phone = document.querySelector("#phone");
-let quentity = document.querySelector("#quentity");
-let email = document.querySelector("#email");
-let order_comments = document.querySelector("#order_comments");
-document.getElementById("title").innerText="Get a Quote for " + product.name;
+const first_name = document.querySelector("#first_name");
+const last_name = document.querySelector("#last_name");
+const addresses_1 = document.querySelector("#addresses_1");
+const city = document.querySelector("#city");
+const phone = document.querySelector("#phone");
+const email = document.querySelector("#email");
+const order_comments = document.querySelector("#order_comments");
 
 
 
-
-submitBtn.addEventListener("click", function () {
+submitBtn.addEventListener(
+  "click",
+  function () {
     let first_nameInput = first_name.value;
     let last_nameInput = last_name.value;
     let companyInput = company.value;
@@ -50,9 +49,7 @@ submitBtn.addEventListener("click", function () {
     let camname = product.name;
     let phoneInput = phone.value;
     let emailInput = email.value;
-    let order_commentsInput = order_comments.value;
-
-
+    let checkoutItem = checkoutItem.value;
 
     db.doc(companyInput)
       .set({
@@ -74,4 +71,6 @@ submitBtn.addEventListener("click", function () {
       .catch(function (error) {
         console.log(error);
       });
-}, { once: true });
+  },
+  { once: true }
+);

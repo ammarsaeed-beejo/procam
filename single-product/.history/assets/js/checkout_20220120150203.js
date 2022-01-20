@@ -11,42 +11,43 @@ const firebaseConfig = {
   appId: "1:1043601014942:web:c4608e15cdafb23fb3bb8f",
   measurementId: "G-L8XZNC95BJ",
 };
-
 // Initialize Firebase
-// Initialize Firebase
+// Initialize Firebase error here
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
-let firestore = firebase.firestore();
+const firestore = firebase.firestore();
 
-const db = firestore.collection("order");
-var checkoutItems = JSON.parse(localStorage.getItem("cartItems"));
-const product = JSON.parse(localStorage.getItem("selecteditem"));
+const db = firestore.collection("orders");
+
+const checkoutItem = JSON.parse(localStorage.getItem("cartItems"));
 const submitBtn = document.querySelector("#submit");
-let first_name = document.querySelector("#first_name");
-let last_name = document.querySelector("#last_name");
-let city = document.querySelector("#city");
-let phone = document.querySelector("#phone");
-let email = document.querySelector("#email");
-let order_comments = document.querySelector("#order_comments");
+const first_name = document.querySelector("#first_name");
+const last_name = document.querySelector("#last_name");
+const addresses_1 = document.querySelector("#addresses_1");
+const city = document.querySelector("#city");
+const phone = document.querySelector("#phone");
+const email = document.querySelector("#email");
+const order_comments = document.querySelector("#order_comments");
 
 submitBtn.addEventListener(
   "click",
   function () {
-    let first_nameInput = first_name.value;
-    let last_nameInput = last_name.value;
-    let cityInput = city.value;
-    let checkoutItem = checkoutItems;
-    let phoneInput = phone.value;
-    let emailInput = email.value;
-    let order_commentsInput = order_comments.value;
+    const first_nameInput = first_name.value;
+    const last_nameInput = last_name.value;
+    const addresses_1Input = addresses_1.value;
+    const cityInput = city.value;
+    const phoneInput = phone.value;
+    const emailInput = email.value;
+    const order_commentsInput = order_comments.value;
 
     db.doc(first_nameInput)
       .set({
         name: first_nameInput,
-        product: checkoutItem,
         last_name: last_nameInput,
+        order: checkoutItem.name,
         email: emailInput,
+        addresses_1: addresses_1Input,
         city: cityInput,
         phone: phoneInput,
         order_comments: order_commentsInput,
