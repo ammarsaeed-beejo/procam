@@ -35,7 +35,7 @@ var products = [
     img: "./assets/images/eos dslr/4000d.jpg",
     name: "EOS 4000D",
     lens: "EF-S 18-55mm",
-    price: 289,
+    price: 260,
     cart: false,
     quantity: 1,
     total: 0,
@@ -52,7 +52,7 @@ var products = [
     img: "./assets/images/eos dslr/2000d.jpg",
     name: "EOS 2000D",
     lens: "EF-S 18-55mm/DC",
-    price: 349,
+    price: 315,
     cart: false,
     quantity: 1,
     total: 0,
@@ -69,7 +69,7 @@ var products = [
     img: "./assets/images/eos dslr/250d.jpg",
     name: "EOS 250D",
     lens: "BK 18-55mm",
-    price: 550,
+    price: 520,
     cart: false,
     quantity: 1,
     total: 0,
@@ -184,21 +184,21 @@ var products = [
       gift:"./assets/images/card/gift.jpg",
   },
 
-  // {
-  //   id: 10,
-  //   img: "./assets/images/eos dslr/m50.jpg",
-  //   name: "EOS M50 VLOGGER Kit",
-  //   lens: "body only",
-  //   price: 550,
-  //   cart: false,
-  //   quantity: 1,
-  //   total: 0,
-  //   type: "dslr",
-  //   specificationlink:
-  //     "./assets/js/cart/cam/dslr/Canon EOS M50/index.html",
-  //   Detailed:
-  //     ".A Vari-Angle screen that lets you shoot the way you want<br>.Lightweight and compact<br>.Expand your creativity",
-  // },
+  {
+    id: 10,
+    img: "./assets/images/eos dslr/m50.jpg",
+    name: "EOS M50 Mark II Vlogger Kit",
+    lens: "15-45 IS STM",
+    price: 700,
+    cart: false,
+    quantity: 1,
+    total: 0,
+    type: "dslr",
+    specificationlink:
+      "./assets/js/cart/cam/dslr/Canon EOS M50/index.html",
+    Detailed:
+      ".A Vari-Angle screen that lets you shoot the way you want<br>.Lightweight and compact<br>.Expand your creativity",
+  },
 
   {
     id: 11,
@@ -266,19 +266,7 @@ var products = [
       gift:"./assets/images/card/gift.jpg",
   },
 
-  // {
-  //   id: 15,
-  //   img: "./assets/images/eos dslr/EOS-R6.jpg",
-  //   name: "EOS R6",
-  //   lens: "body only",
-  //   price: 2500,
-  //   cart: false,
-  //   quantity: 1,
-  //   total: 0,
-  //   type: "dslr",
-  //   specificationlink:
-  //     "./assets/js/cart/cam/dslr/Canon EOS R6/index.html",
-  // },
+ 
 
   // {
   //   id: 16,
@@ -327,30 +315,30 @@ var products = [
 
   ///////////////////////////////////////////////////////////////COMPACT////////////////////////////////////////////////////////////////////////////
 
-  // {
-  //   id: 20,
-  //   img: "./assets/images/Compact/ixus-185-bk-frt-flipped-800x524.jpg",
-  //   name: "IXUS 185",
-  //   lens: "compact",
-  //   price: 249,
-  //   color: "Black,Silver,red",
-  //   cart: false,
-  //   quantity: 1,
-  //   href: "./compact/IXUS 185.html",
-  //   total: 0,
-  //   type: "compact",
-  //   specificationlink:
-  //     "./assets/js/cart/cam/compcat/ixus-185/ixus-185.html",
-  //   Detailed:
-  //     ".Tiny camera with big zoom you can take everywhere <br> .Easily connect, share and shoot remotely with Wi-Fi & NFC <br> .Create stunning Full HD movies at the touch of a button <br> .Effortlessly capture the quality your memories deserve <br> .Play and experiment with your creativity <br><br>Free gift <br> 32GB SD Card <br> Bag",
-  //     gift:"./assets/images/card/gift.jpg",
-  // },
+  {
+    id: 20,
+    img: "./assets/images/Compact/ixus-185-bk-frt-flipped-800x524.jpg",
+    name: "DIGITAL IXUS 185",
+    lens: "compact",
+    price: 99,
+    color: "Black,Silver,red",
+    cart: false,
+    quantity: 1,
+    href: "./compact/IXUS 185.html",
+    total: 0,
+    type: "compact",
+    specificationlink:
+      "#",
+    Detailed:
+      ".Brilliant quality photos and HD movies are fun and easy with this chic, slim IXUS that has a versatile zoom and fits perfectly in your pocket <br> <br><br>Free gift <br> 32GB SD Card <br> Bag",
+      gift:"./assets/images/card/gift.jpg",
+  },
 
   {
     id: 21,
     img: "./assets/images/Compact/PowerShot SX620.jpg",
     name: "POWERSHOT SX-620 HS",
-    price: 215,
+    price: 200,
     color: "Black,red",
     cart: false,
     quantity: 1,

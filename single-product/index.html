@@ -24,6 +24,7 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/megamenu.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/dreaming-attribute.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/img.css">
   <style>
     .dropdiv {
       background-color: #3498DB;
@@ -57,7 +58,7 @@
 
     .camtype-content p {
       color: black;
-      padding: 12px 16px;
+      padding: 12px 16px; 
       text-decoration: none;
       display: block;
       margin: 0;
@@ -75,11 +76,11 @@
 </head>
 
 <body>
-
-  <!-- <div class="Splash" id="intro">
-        <video class="intro" autoplay muted src="./assets/images/2223.mp4"></video>
-    </div> -->
-
+  <div id="splashvideo">
+    <div class="Splash" id="intro">
+      <video class="intro" autoplay muted src="./assets/images/2223.mp4"></video>
+    </div>
+  </div>
   <header id="header" class="header style-04 header-dark">
 
 
@@ -167,7 +168,12 @@
 
             <li id="menu-item-996"
               class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-996 parent parent-megamenu item-megamenu menu-item-has-children">
-              <a class="kobolg-menu-item-title" title="blog   " href="#blog">Blog</a>
+              <a class="kobolg-menu-item-title" title="About Us" href="./About-Us.html">About Us</a>
+            </li>
+
+            <li id="menu-item-996"
+              class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-996 parent parent-megamenu item-megamenu menu-item-has-children">
+              <a class="kobolg-menu-item-title" title="blog" href="#blog">Blog</a>
             </li>
 
             <li id="menu-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238">
@@ -377,51 +383,31 @@
       <div class="slide-home-01">
 
 
-        <div class="container">
+
+        <div class="row">
+          <div class="container" style="width: 100%; margin-top: 50px;">
+            <section class="logo-carousel slider">
 
 
-          <div class="kobolg-heading style-01" style="padding-bottom: 10px;">
-            <div class="heading-inner">
-              <h3 class="title">
-                About Us </h3>
-
-            </div>
+              <div class="slide"><img src="./assets/images/slider/3.jpg"></div>
+              <div class="slide"><img src="./assets/images/slider/1-17-600x600.jpg"></div>
+              <div class="slide"><img src="./assets/images/slider/4.jpg"></div>
+              <div class="slide"><img src="./assets/images/slider/61XKonXOA3L._AC_SS450_.jpg"></div>
+              <div class="slide"><img src="./assets/images/slider/canon_3041c002_xf705_hd_camcorder_1434328.jpg"></div>
+              <div class="slide"><img src="./assets/images/slider/1.jpg"></div>
+              <div class="slide"><img src="./assets/images/slider/canon_eos_5d_mark_iv_1274705.jpg"></div>
+              <div class="slide"><img src="./assets/images/slider/eos-r3.jpg"></div>
+              <div class="slide"><img
+                  src="./assets/images/slider/pixma-g3420-frt-04_gallery_bc252724311948fdb39b941dd900bfee.webp">
+              </div>
+              <div class="slide"><img src="./assets/images/slider/selphy-cp-1300-bk-frt_810x475.jpg"></div>
+              <div class="slide"><img src="./assets/images/slider/2.jpg"></div>
+            </section>
           </div>
-
-          <div class="response-product">
-            <p class="p-engl">
-              Procam Electronics is a leading company in supplying high quality Imaging and Video
-              products,
-              Providing ideal solutions in digital imaging technologies for Governmental entities, NGOs,
-              corporates
-              and consumers.
-              With more than 15 year of experience in the Jordanian Market, we have provided our clients
-              with
-              multiple solutions from image capturing to high-quality printout, expanding to home and
-              office
-              supplies
-              Serving our clients with more than 20 well-known brands in the latest products for
-              Cinematography,
-              Professional Video & Photography industry.
-              Procam Electronics is an official distributor of Canon Products and the authorized service
-              center of
-              Canon Cameras & Lenses in Jordan.
-            </p>
-            <br>
-
-
-            <p class="p-arab" style="font-size: 15pt;">
-              شركة الكاميرا الإحترافية للإلكترونيات هي شركة رائدة في مجال تجهيزات تقنية الصوت و
-              الصورة و تقديم الحلول المبتكرة للجهات الحكومية والمنظمات والأفراد.
-              بخبرة تتجاوز الخمسة عشر عاماً في السوق الأردنية، نقدم لزبائننا حلولاً متكاملة
-              بالتصوير الفوتوغرافي الإحترافي والسينمائي و الطباعة. نقدم لعملائنا أحدث المنتجات من أشهر
-              الماركات العالمية المتخصصة فنحن موزعون معتمدون لمنتجات كانون ومركز الصيانة المعتمد والوحيد
-              لكاميرات و عدسات كانون في الأردن
-            </p>
-
-          </div>
-          <a href="./single-product.html"></a>
         </div>
+
+
+
 
         <div class="grid-container">
           <div class="grid-item"><img src="./assets/images/Canon.png"></div>
@@ -631,232 +617,6 @@
 
   </section>
 
-
-
-
-  <!-- <div class="kobolg-products style-02" style="padding-left: 10%;
-    padding-right: 10%;">
-
-        <div class="heading-inner">
-            <h3 class="title" id="best">Best Offers</h3>
-        </div>
-
-        <div id="seller" class="response-product product-list-owl owl-slick equal-container better-height"
-            data-slick="{&quot;arrows&quot;:true,&quot;slidesMargin&quot;:30,&quot;dots&quot;:true,&quot;infinite&quot;:false,&quot;speed&quot;:300,&quot;slidesToShow&quot;:4,&quot;rows&quot;:1}"
-            data-responsive="[{&quot;breakpoint&quot;:480,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesMargin&quot;:&quot;10&quot;}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesMargin&quot;:&quot;10&quot;}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesMargin&quot;:&quot;20&quot;}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesMargin&quot;:&quot;20&quot;}},{&quot;breakpoint&quot;:1500,&quot;settings&quot;:{&quot;slidesToShow&quot;:4,&quot;slidesMargin&quot;:&quot;30&quot;}}]">
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/1.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/2.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/3.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/4.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/5.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/6.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/7.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/8.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/9.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/10.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/11.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/12.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div
-                class="product-item recent-product style-01 rows-space-0 post-35 product type-product status-publish has-post-thumbnail product_cat-chair product_cat-new-arrivals product_cat-lamp product_tag-light product_tag-hat product_tag-sock first instock shipping-taxable purchasable product-type-simple">
-                <div class="product-inner tooltip-left">
-                    <div class="product-thumb">
-                        <a class="thumb-link"
-                            href="https://web.facebook.com/ProcamElectronics.jo/posts/381474753670216?__cft__[0]=AZWjS00U9XGMckD2RW_ecxXB6EWhGyOBfpFfBhkIoT_oVCI79TdCJCz9o_QvAV4Z3xxV8nDSWla51V5pGOufoceqeagYf71VVjxzM8Xg7zWHVMbeeRtCl5bkNvRc38ZNNNfD_mNXsGC38rauvWyLptCP&__tn__=%2CO%2CP-R"
-                            tabindex="0">
-                            <img class="img-responsive" src="./assets/images/s/13.jpg">
-                        </a>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-
-    </div> -->
   </section>
 
   <section id="news">
@@ -1022,14 +782,14 @@
 
   <script>
 
-    // const video = document.getElementById("intro");
-    // const body = document.querySelector("body");
+    const video = document.getElementById("splashvideo");
+    const body = document.querySelector("body");
 
-    // function endintro() {  
-    //     video.style.display = "none";
-    //     body.style.overflow = "auto";
-    // }
-    // setTimeout(endintro, 12000);
+    function endintro() {  
+        video.style.display = "none";
+        body.style.overflow = "auto";
+    }
+    setTimeout(endintro, 12000);
 
 
     /* When the user clicks on the button,
@@ -1163,6 +923,18 @@
   <script src="./email/email.js" type="module"></script>
   <script src="./assets/js/searsh.js"></script>
   <script src="./assets/js/cart/shoppingcart_FUN.js" type="module"></script>
+  <script src="./assets/js/img.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- jQuery first, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- Slick Slider JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
 
   <!--firebase start-->
 
