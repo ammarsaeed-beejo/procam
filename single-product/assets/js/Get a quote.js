@@ -48,6 +48,7 @@ submitBtn.addEventListener("click", function () {
     let quentityInput = quentity.value;
     let cityInput = city.value;
     let camname = product.name;
+    console.log(camname);
     let phoneInput = phone.value;
     let emailInput = email.value;
     let order_commentsInput = order_comments.value;
@@ -55,23 +56,29 @@ submitBtn.addEventListener("click", function () {
 
 
     db.doc(companyInput)
-      .set({
-        name: first_nameInput,
-        product: camname,
-        quentity: quentityInput,
-        last_name: last_nameInput,
-        email: emailInput,
-        company: companyInput,
-        city: cityInput,
-        phone: phoneInput,
-        order_comments: order_commentsInput,
-      })
-      .then(function () {
-        document.getElementById("submit").innerHTML = "Done!";
-        document.getElementById("submit").style.backgroundColor = "red";
-        alert("done");
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+        .set({
+
+            name: first_nameInput,
+            camera : camname,
+            quentity : quentityInput,
+            last_name: last_nameInput,
+            email: emailInput,
+            company: companyInput,
+            city: cityInput,
+            phone: phoneInput,
+            order_comments: order_commentsInput,
+
+
+
+
+
+        })
+        .then(function () {
+            document.getElementById("submit").innerHTML = "Done!";
+            document.getElementById("submit").style.backgroundColor = 'red';
+            alert("done");
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
 }, { once: true });

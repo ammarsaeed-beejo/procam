@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   console.log(product);
   render(product)
   localStorage.setItem("selecteditem", JSON.stringify(product));
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
 });
 
 // import { data } from "../../data.js"
@@ -221,7 +222,7 @@ function render(product) {
   document.getElementById("add-button-container").innerHTML = `
   <div class="quantity">
     <span class="qty-label">Quantiy:</span>
-    <div class="control">
+    <div class="control" style:"width:110px;">
       <a class="btn-number qtyminus quantity-minus" href="#">-</a>
       <input type="text" data-step="1" min="1" max="" name="quantity[25]" value="1" title="Qty" id="quentity" class="input-qty input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
       <a class="btn-number qtyplus quantity-plus" href="#">+</a>
@@ -237,7 +238,7 @@ function render(product) {
   <input name="product_id" value="27" type="hidden">
   <input name="variation_id" class="variation_id" value="0" type="hidden">
   `;
-  
+
   document.getElementById("add-button-container").innerHTML += `<button
     onclick="add(${product.id})"
     type="button" class="single_add_to_cart_button button alt kobolg-variation-selection-needed">
